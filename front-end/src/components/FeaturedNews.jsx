@@ -8,12 +8,12 @@ export default function FeaturedNews() {
 
   useEffect(() => {
     // Fetch featured news
-    fetch('http://localhost:5000/api/news/featured')
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/featured`)
       .then((res) => res.json())
       .then((data) => setFeaturedNews(data));
 
     // Fetch latest news
-    fetch('http://localhost:5000/api/news/latest')
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/latest`)
       .then((res) => res.json())
       .then((data) => setLatestNews(data));
   }, []);

@@ -9,7 +9,7 @@ export default function LatestNews() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/news/latest');
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/latest`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
