@@ -1,10 +1,7 @@
-// tailwind.config.js
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Add all your file extensions here
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'], // Adjust paths as needed
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require('@tailwindcss/line-clamp')], // Add the line-clamp plugin here
+};
