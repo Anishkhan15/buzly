@@ -8,9 +8,11 @@ const NewsDetail = () => {
 
   useEffect(() => {
     // Fetch news detail by ID
-    fetch(`http://localhost:5000/api/news/${id}`)
+    const backendUrl = process.env.REACT_APP_BACKEND_URL; // Use the environment variable for the backend URL
+    fetch(`${backendUrl}/api/news/${id}`)
       .then((res) => res.json())
-      .then((data) => setNews(data));
+      .then((data) => setNews(data))
+      .catch((error) => console.error('Error fetching news:', error));
   }, [id]);
 
   if (!news) {
