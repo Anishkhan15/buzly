@@ -3,20 +3,43 @@ import { useParams } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF, FaCopy } from 'react-icons/fa';
 
 const NewsDetail = () => {
-  const { id } = useParams();
+  const { id } = useParams(); // Extract the news ID from the route parameters
   const [news, setNews] = useState(null);
+  const [error, setError] = useState(null); // State to handle errors
 
   useEffect(() => {
     // Fetch news detail by ID
     const backendUrl = process.env.REACT_APP_BACKEND_URL; // Use the environment variable for the backend URL
+
+    // Ensure the backend URL is defined
+    if (!backendUrl) {
+      setError('Backend URL is not configured.');
+      return;
+    }
+
     fetch(`${backendUrl}/api/news/${id}`)
-      .then((res) => res.json())
-      .then((data) => setNews(data))
-      .catch((error) => console.error('Error fetching news:', error));
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Failed to fetch news: ${res.statusText}`);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setNews(data);
+        setError(null); // Clear any previous errors
+      })
+      .catch((error) => {
+        console.error('Error fetching news:', error);
+        setError('Failed to fetch news details. Please try again later.');
+      });
   }, [id]);
 
+  if (error) {
+    return <div className="text-red-500 text-center mt-8">{error}</div>;
+  }
+
   if (!news) {
-    return <div>Loading...</div>;
+    return <div className="text-center mt-8">Loading...</div>;
   }
 
   const handleShare = (platform) => {
@@ -24,10 +47,16 @@ const NewsDetail = () => {
     const message = `Check out this news: ${news.title} - ${news.description}`;
     switch (platform) {
       case 'whatsapp':
-        window.open(`https://wa.me/?text=${encodeURIComponent(message)} ${encodeURIComponent(url)}`, '_blank');
+        window.open(
+          `https://wa.me/?text=${encodeURIComponent(message)} ${encodeURIComponent(url)}`,
+          '_blank'
+        );
         break;
       case 'facebook':
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+        window.open(
+          `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+          '_blank'
+        );
         break;
       case 'copy':
         navigator.clipboard.writeText(url);
