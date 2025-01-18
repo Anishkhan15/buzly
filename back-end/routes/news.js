@@ -16,7 +16,7 @@ router.get('/featured', async (req, res) => {
 // Fetch latest news
 router.get('/latest', async (req, res) => {
   try {
-    const latestNews = await News.find().sort({ dateTime: -1 }).limit(5);
+    const latestNews = await News.find().sort({ dateTime: -1 }).limit(200000);
     res.json(latestNews);
   } catch (error) {
     res.status(500).json({ error: error.message });

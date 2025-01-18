@@ -25,36 +25,41 @@ export default function FeaturedNews() {
     return () => clearInterval(interval);
   }, [featuredNews]);
 
-  if (!featuredNews.length || !latestNews.length) {
+  if (!featuredNews.length && !latestNews.length) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Main featured article */}
-        <Link to={`/news/${featuredNews[currentSlide]._id}`} className="relative h-[500px] group overflow-hidden">
-          <img
-            src={featuredNews[currentSlide].image}
-            alt={featuredNews[currentSlide].title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
-            <div className="absolute bottom-0 p-6">
-              <span className="bg-red-600 text-white px-3 py-1 text-sm rounded-full">
-                {featuredNews[currentSlide].category}
-              </span>
-              <h2 className="text-2xl lg:text-3xl font-bold text-white mt-3">
-                {featuredNews[currentSlide].title}
-              </h2>
-              <p className="text-gray-200 mt-2">{featuredNews[currentSlide].description}</p>
+        {/* Left side: Latest news (4 items) */}
+        {featuredNews.length > 0 && (
+          <Link to={`/news/${featuredNews[currentSlide]._id}`} className="relative h-[500px] group overflow-hidden">
+            <img
+              src={featuredNews[currentSlide].image}
+              alt={featuredNews[currentSlide].title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+              <div className="absolute bottom-0 p-6">
+                <span className="bg-red-600 text-white px-3 py-1 text-sm rounded-full">
+                  {featuredNews[currentSlide].category}
+                </span>
+                <h2 className="text-2xl lg:text-3xl font-bold text-white mt-3">
+                  {featuredNews[currentSlide].title}
+                </h2>
+                <p className="text-gray-200 mt-2">{featuredNews[currentSlide].description}</p>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        )}
 
-        {/* Latest news articles */}
-        <div className="grid grid-cols-2 gap-4">
-          {latestNews.map((item, index) => (
+
+        
+
+        {/* Right side: Main featured article */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {latestNews.slice(0, 4).map((item, index) => (
             <Link key={index} to={`/news/${item._id}`} className="relative h-[240px] group overflow-hidden">
               <img
                 src={item.image}

@@ -67,18 +67,26 @@ const NewsDetail = () => {
     }
   };
 
+  // Function to calculate relative time (e.g., "3 hours ago")
   const timeAgo = (date) => {
     const now = new Date();
-    const diff = Math.floor((now - new Date(date)) / 1000);
+    const newsDate = new Date(date); // Convert the ISO string to a Date object
+    const diff = Math.floor((now - newsDate) / 1000); // Difference in seconds
+  
+    // If the difference is negative, return an error message
+    if (diff < 0) {
+      return "Invalid time";
+    }
+  
     const minutes = Math.floor(diff / 60);
     const hours = Math.floor(diff / 3600);
     const days = Math.floor(diff / 86400);
-
+  
     if (minutes < 60) return `${minutes} minute${minutes !== 1 ? 's' : ''} ago`;
     if (hours < 24) return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
     return `${days} day${days !== 1 ? 's' : ''} ago`;
   };
-
+  
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -89,7 +97,7 @@ const NewsDetail = () => {
 
         {/* News Date and Share Section */}
         <div className="flex justify-between items-center col-span-1 lg:col-span-1 mt-4 lg:mt-0">
-          <div className="text-gray-500">{timeAgo(news.date)}</div>
+          <div className="text-gray-500">{timeAgo(news.dateTime)}</div> {/* Display relative time */}
           <div className="flex space-x-4">
             <button
               onClick={() => handleShare('whatsapp')}
