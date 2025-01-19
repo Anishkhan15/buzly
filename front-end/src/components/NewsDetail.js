@@ -3,15 +3,13 @@ import { useParams } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF, FaCopy } from 'react-icons/fa';
 
 const NewsDetail = () => {
-  const { id } = useParams(); // Extract the news ID from the route parameters
+  const { id } = useParams();
   const [news, setNews] = useState(null);
-  const [error, setError] = useState(null); // State to handle errors
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch news detail by ID
-    const backendUrl = process.env.REACT_APP_BACKEND_URL; // Use the environment variable for the backend URL
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
-    // Ensure the backend URL is defined
     if (!backendUrl) {
       setError('Backend URL is not configured.');
       return;
@@ -26,7 +24,7 @@ const NewsDetail = () => {
       })
       .then((data) => {
         setNews(data);
-        setError(null); // Clear any previous errors
+        setError(null);
       })
       .catch((error) => {
         console.error('Error fetching news:', error);
@@ -67,38 +65,34 @@ const NewsDetail = () => {
     }
   };
 
-  // Function to calculate relative time (e.g., "3 hours ago")
   const timeAgo = (date) => {
     const now = new Date();
-    const newsDate = new Date(date); // Convert the ISO string to a Date object
-    const diff = Math.floor((now - newsDate) / 1000); // Difference in seconds
-  
-    // If the difference is negative, return an error message
+    const newsDate = new Date(date);
+    const diff = Math.floor((now - newsDate) / 1000);
+
     if (diff < 0) {
-      return "Invalid time";
+      return 'Invalid time';
     }
-  
+
     const minutes = Math.floor(diff / 60);
     const hours = Math.floor(diff / 3600);
     const days = Math.floor(diff / 86400);
-  
+
     if (minutes < 60) return `${minutes} minute${minutes !== 1 ? 's' : ''} ago`;
     if (hours < 24) return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
     return `${days} day${days !== 1 ? 's' : ''} ago`;
   };
-  
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* News Title */}
-        <div className="col-span-1">
-          <h2 className="text-4xl font-bold">{news.title}</h2>
-        </div>
+      <div className="space-y-6">
+        {/* Title */}
+        <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center">{news.title}</h1>
 
-        {/* News Date and Share Section */}
-        <div className="flex justify-between items-center col-span-1 lg:col-span-1 mt-4 lg:mt-0">
-          <div className="text-gray-500">{timeAgo(news.dateTime)}</div> {/* Display relative time */}
-          <div className="flex space-x-4">
+        {/* Time and Share Icons */}
+        <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm md:text-base">
+          <div>{timeAgo(news.dateTime)}</div>
+          <div className="flex space-x-4 mt-2 md:mt-0">
             <button
               onClick={() => handleShare('whatsapp')}
               className="text-green-500 hover:text-green-700"
@@ -120,18 +114,18 @@ const NewsDetail = () => {
           </div>
         </div>
 
-        {/* News Image */}
-        <div className="col-span-1 mt-4 lg:mt-8">
+        {/* Image */}
+        <div className="w-full h-[300px] md:h-[500px]">
           <img
             src={news.image}
             alt={news.title}
-            className="w-full h-[500px] object-cover"
+            className="w-full h-full object-cover rounded-lg shadow-md"
           />
         </div>
 
-        {/* News Description */}
-        <div className="col-span-1 mt-4">
-          <p>{news.description}</p>
+        {/* Description */}
+        <div className="text-justify text-gray-700 font-thin md:text-xl leading-relaxed">
+          {news.description}
         </div>
       </div>
     </div>

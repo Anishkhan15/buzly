@@ -3,6 +3,7 @@ import { Menu, X, Newspaper, Facebook, Instagram, Twitter } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
 
   useEffect(() => {
@@ -13,6 +14,10 @@ export default function Header() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const fetchCategoryNews = (category) => {
+    window.location.href = `/categories/${category}`;
   };
 
   return (
@@ -42,7 +47,7 @@ export default function Header() {
       {/* Main Header */}
       <div className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 md:px-40">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 group">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <Newspaper className="w-8 h-8 text-red-600" />
@@ -53,21 +58,56 @@ export default function Header() {
             <nav className="hidden md:flex space-x-8 relative">
               <a href="/" className="text-gray-700 font-bold hover:text-red-600">Home</a>
               <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
-              <div className="group relative">
-                <a
-                  href="/categories"
-                  className="text-gray-700 font-bold hover:text-red-600"
-                >
-                  Categories
-                </a>
-                <div className="absolute left-0 top-full mt-2 hidden group-hover:flex flex-col bg-white shadow-lg border border-gray-200 rounded-md overflow-hidden">
-                  <a href="/categories/india" className="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">India</a>
-                  <a href="/categories/business" className="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Business</a>
-                  <a href="/categories/politics" className="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Politics</a>
-                  <a href="/categories/international" className="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">International</a>
-                  <a href="/categories/sports" className="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Sports</a>
-                  <a href="/categories/entertainment" className="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-red-600">Entertainment</a>
-                </div>
+              <div
+  className="relative group"
+  onMouseEnter={() => setIsCategoryOpen(true)}
+  onMouseLeave={() => setIsCategoryOpen(false)}
+>
+  <a href="#" className="text-gray-700 font-bold hover:text-red-600">Categories</a>
+  {isCategoryOpen && (
+    <div className="absolute top-full left-0 md:left-auto md:right-0 bg-white shadow-lg py-4 z-50 w-full md:w-auto">
+      <div className="flex flex-col md:flex-row md:space-x-4 px-4 md:px-8">
+        <button
+          onClick={() => fetchCategoryNews('india')}
+          className="text-gray-700 font-bold hover:text-red-600"
+        >
+          India
+        </button>
+        <button
+          onClick={() => fetchCategoryNews('business')}
+          className="text-gray-700 font-bold hover:text-red-600"
+        >
+          Business
+        </button>
+        <button
+          onClick={() => fetchCategoryNews('politics')}
+          className="text-gray-700 font-bold hover:text-red-600"
+        >
+          Politics
+        </button>
+        <button
+          onClick={() => fetchCategoryNews('international')}
+          className="text-gray-700 font-bold hover:text-red-600"
+        >
+          International
+        </button>
+        <button
+          onClick={() => fetchCategoryNews('sports')}
+          className="text-gray-700 font-bold hover:text-red-600"
+        >
+          Sports
+        </button>
+        <button
+          onClick={() => fetchCategoryNews('entertainment')}
+          className="text-gray-700 font-bold hover:text-red-600"
+        >
+          Entertainment
+        </button>
+      </div>
+    </div>
+ 
+
+                )}
               </div>
               <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
             </nav>
@@ -81,39 +121,64 @@ export default function Header() {
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div
-          className={`fixed inset-0 bg-black text-white z-50 flex flex-col items-center justify-center transform transition-transform duration-300 ${
-            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          <button
-            onClick={toggleMenu}
-            className="absolute top-4 right-4 text-white hover:text-red-600"
-          >
-            <X className="w-8 h-8" />
-          </button>
-          <nav className="space-y-4 text-xl font-semibold">
-            <a href="/" className="hover:text-red-600" onClick={toggleMenu}>Home</a>
-            <a href="/about" className="hover:text-red-600" onClick={toggleMenu}>About Us</a>
-            <div className="space-y-2">
-              <a href="/categories" className="hover:text-red-600" onClick={toggleMenu}>Categories</a>
-              <ul className="space-y-2 pl-4">
-                <li><a href="/categories/india" className="hover:text-red-600" onClick={toggleMenu}>India</a></li>
-                <li><a href="/categories/business" className="hover:text-red-600" onClick={toggleMenu}>Business</a></li>
-                <li><a href="/categories/politics" className="hover:text-red-600" onClick={toggleMenu}>Politics</a></li>
-                <li><a href="/categories/international" className="hover:text-red-600" onClick={toggleMenu}>International</a></li>
-                <li><a href="/categories/sports" className="hover:text-red-600" onClick={toggleMenu}>Sports</a></li>
-                <li><a href="/categories/entertainment" className="hover:text-red-600" onClick={toggleMenu}>Entertainment</a></li>
-              </ul>
-            </div>
-            <a href="/contact" className="hover:text-red-600" onClick={toggleMenu}>Contact Us</a>
-          </nav>
-        </div>
-      )}
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white shadow-md">
+            <nav className="flex flex-col space-y-4 p-4">
+              <a href="/" className="text-gray-700 font-bold hover:text-red-600">Home</a>
+              <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
+              <button
+                onClick={toggleMenu}
+                className="text-gray-700 font-bold hover:text-red-600"
+              >
+                Categories
+              </button>
+              {isMenuOpen && (
+                <div className="flex flex-col space-y-2">
+                  <button
+                    onClick={() => fetchCategoryNews('india')}
+                    className="text-gray-700 font-bold hover:text-red-600"
+                  >
+                    India
+                  </button>
+                  <button
+                    onClick={() => fetchCategoryNews('business')}
+                    className="text-gray-700 font-bold hover:text-red-600"
+                  >
+                    Business
+                  </button>
+                  <button
+                    onClick={() => fetchCategoryNews('politics')}
+                    className="text-gray-700 font-bold hover:text-red-600"
+                  >
+                    Politics
+                  </button>
+                  <button
+                    onClick={() => fetchCategoryNews('international')}
+                    className="text-gray-700 font-bold hover:text-red-600"
+                  >
+                    International
+                  </button>
+                  <button
+                    onClick={() => fetchCategoryNews('sports')}
+                    className="text-gray-700 font-bold hover:text-red-600"
+                  >
+                    Sports
+                  </button>
+                  <button
+                    onClick={() => fetchCategoryNews('entertainment')}
+                    className="text-gray-700 font-bold hover:text-red-600"
+                  >
+                    Entertainment
+                  </button>
+                </div>
+              )}
+              <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
+            </nav>
+          </div>
+        )}
+      </div>
     </header>
   );
 }

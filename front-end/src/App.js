@@ -6,6 +6,8 @@ import LatestNews from './components/LatestNews';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
 import NewsDetails from './components/NewsDetail';
+import CategoryNewsPage from './components/CategoryNewsPage';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
                 <LatestNews />
               </main>
             } />
+            <Route path="/categories/:category" element={<CategoryNewsPage />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact/>} />
             <Route path="/news/:id" element={<NewsDetails />} />
           </Routes>
         </div>
