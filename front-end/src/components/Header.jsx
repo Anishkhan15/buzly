@@ -1,23 +1,48 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Newspaper, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Menu, X, Newspaper, Facebook, Instagram, Twitter, ChevronDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-export default function Header() {
+export default function Header({ onLanguageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
+  const [language, setLanguage] = useState('en'); // Track selected language
+  const navigate = useNavigate();
+
+  const categories = [
+    { key: 'technology', label: 'Technology' },
+    { key: 'sports', label: 'Sports' },
+    { key: 'business', label: 'Business' },
+    { key: 'entertainment', label: 'Entertainment' },
+  ];
 
   useEffect(() => {
     const today = new Date();
     const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
     setCurrentDate(today.toLocaleDateString('en-US', options));
-  }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+      onLanguageChange(savedLanguage); // Notify parent about the saved language
+    } else {
+      onLanguageChange('en'); // Default to English
+    }
+  }, [onLanguageChange]);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const toggleCategory = () => setIsCategoryOpen(!isCategoryOpen);
+
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang);
+    localStorage.setItem('preferredLanguage', lang);
+    onLanguageChange(lang); // Notify parent about the language change
   };
 
-  const fetchCategoryNews = (category) => {
-    window.location.href = `/categories/${category}`;
+  const handleCategorySelect = (categoryKey) => {
+    navigate(`/category/${categoryKey}?lang=${language}`);
+    setIsCategoryOpen(false);
   };
 
   return (
@@ -25,21 +50,24 @@ export default function Header() {
       {/* Top Black Bar */}
       <div className="bg-black text-white text-sm font-bold py-4">
         <div className="container mx-auto px-4 md:px-40 flex justify-between items-center">
-          {/* Left: Date */}
           <span>{currentDate}</span>
-
-          {/* Right: Contact and Social Icons */}
           <div className="flex items-center space-x-4">
             <a href="/contact" className="hover:text-red-600">Contact Us</a>
-            <a href="#" className="hover:text-red-600">
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-red-600">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-red-600">
-              <Twitter className="w-5 h-5" />
-            </a>
+            <a href="#" className="hover:text-red-600"><Facebook className="w-5 h-5" /></a>
+            <a href="#" className="hover:text-red-600"><Instagram className="w-5 h-5" /></a>
+            <a href="#" className="hover:text-red-600"><Twitter className="w-5 h-5" /></a>
+            <button
+              onClick={() => handleLanguageChange('en')}
+              className={`px-4 py-2 rounded-full ${language === 'en' ? 'bg-blue-600' : 'bg-gray-600'}`}
+            >
+              English
+            </button>
+            <button
+              onClick={() => handleLanguageChange('hi')}
+              className={`px-4 py-2 rounded-full ${language === 'hi' ? 'bg-blue-600' : 'bg-gray-600'}`}
+            >
+              Hindi
+            </button>
           </div>
         </div>
       </div>
@@ -47,72 +75,40 @@ export default function Header() {
       {/* Main Header */}
       <div className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 md:px-40">
-          <div className="flex items-center justify-between h-16 group">
-            {/* Logo */}
+          <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               <Newspaper className="w-8 h-8 text-red-600" />
               <h1 className="text-2xl font-bold text-red-600">Buzzlynow</h1>
             </div>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8 relative">
+            <nav className="hidden md:flex space-x-8">
               <a href="/" className="text-gray-700 font-bold hover:text-red-600">Home</a>
               <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
-              <div
-  className="relative group"
-  onMouseEnter={() => setIsCategoryOpen(true)}
-  onMouseLeave={() => setIsCategoryOpen(false)}
->
-  <a href="#" className="text-gray-700 font-bold hover:text-red-600">Categories</a>
-  {isCategoryOpen && (
-    <div className="absolute top-full left-0 md:left-auto md:right-0 bg-white shadow-lg py-4 z-50 w-full md:w-auto">
-      <div className="flex flex-col md:flex-row md:space-x-4 px-4 md:px-8">
-        <button
-          onClick={() => fetchCategoryNews('india')}
-          className="text-gray-700 font-bold hover:text-red-600"
-        >
-          India
-        </button>
-        <button
-          onClick={() => fetchCategoryNews('business')}
-          className="text-gray-700 font-bold hover:text-red-600"
-        >
-          Business
-        </button>
-        <button
-          onClick={() => fetchCategoryNews('politics')}
-          className="text-gray-700 font-bold hover:text-red-600"
-        >
-          Politics
-        </button>
-        <button
-          onClick={() => fetchCategoryNews('international')}
-          className="text-gray-700 font-bold hover:text-red-600"
-        >
-          International
-        </button>
-        <button
-          onClick={() => fetchCategoryNews('sports')}
-          className="text-gray-700 font-bold hover:text-red-600"
-        >
-          Sports
-        </button>
-        <button
-          onClick={() => fetchCategoryNews('entertainment')}
-          className="text-gray-700 font-bold hover:text-red-600"
-        >
-          Entertainment
-        </button>
-      </div>
-    </div>
- 
-
+              <div className="relative">
+                <button
+                  onClick={toggleCategory}
+                  className="text-gray-700 font-bold hover:text-red-600 flex items-center"
+                >
+                  Categories <ChevronDown className="ml-1 w-4 h-4" />
+                </button>
+                {isCategoryOpen && (
+                  <div className="absolute bg-white shadow-md mt-2 rounded-md">
+                    <ul className="py-2">
+                      {categories.map((category) => (
+                        <li
+                          key={category.key}
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                          onClick={() => handleCategorySelect(category.key)}
+                        >
+                          {category.label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
               </div>
               <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
+             
             </nav>
-
-            {/* Mobile menu button */}
             <button
               onClick={toggleMenu}
               className="md:hidden p-2 text-gray-600 hover:text-red-600"
@@ -121,60 +117,35 @@ export default function Header() {
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden bg-white shadow-md">
             <nav className="flex flex-col space-y-4 p-4">
               <a href="/" className="text-gray-700 font-bold hover:text-red-600">Home</a>
               <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
-              <button
-                onClick={toggleMenu}
-                className="text-gray-700 font-bold hover:text-red-600"
-              >
-                Categories
-              </button>
-              {isMenuOpen && (
-                <div className="flex flex-col space-y-2">
-                  <button
-                    onClick={() => fetchCategoryNews('india')}
-                    className="text-gray-700 font-bold hover:text-red-600"
-                  >
-                    India
-                  </button>
-                  <button
-                    onClick={() => fetchCategoryNews('business')}
-                    className="text-gray-700 font-bold hover:text-red-600"
-                  >
-                    Business
-                  </button>
-                  <button
-                    onClick={() => fetchCategoryNews('politics')}
-                    className="text-gray-700 font-bold hover:text-red-600"
-                  >
-                    Politics
-                  </button>
-                  <button
-                    onClick={() => fetchCategoryNews('international')}
-                    className="text-gray-700 font-bold hover:text-red-600"
-                  >
-                    International
-                  </button>
-                  <button
-                    onClick={() => fetchCategoryNews('sports')}
-                    className="text-gray-700 font-bold hover:text-red-600"
-                  >
-                    Sports
-                  </button>
-                  <button
-                    onClick={() => fetchCategoryNews('entertainment')}
-                    className="text-gray-700 font-bold hover:text-red-600"
-                  >
-                    Entertainment
-                  </button>
-                </div>
-              )}
               <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
+              <div className="relative">
+                <button
+                  onClick={toggleCategory}
+                  className="text-gray-700 font-bold hover:text-red-600 flex items-center"
+                >
+                  Categories <ChevronDown className="ml-1 w-4 h-4" />
+                </button>
+                {isCategoryOpen && (
+                  <div className="bg-white shadow-md mt-2 rounded-md">
+                    <ul className="py-2">
+                      {categories.map((category) => (
+                        <li
+                          key={category.key}
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                          onClick={() => handleCategorySelect(category.key)}
+                        >
+                          {category.label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
             </nav>
           </div>
         )}

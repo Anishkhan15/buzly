@@ -2,19 +2,26 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Clock } from 'lucide-react';
 
-export default function CategoryNewsPage() {
+export default function CategoryNewsPage({ language }) {
   const { category } = useParams();
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
+  // Log category and language to the console when they change
+  useEffect(() => {
+    console.log('Category:', category);
+    console.log('Current Language:', language);
+  }, [category, language]);
+
   useEffect(() => {
     const fetchNews = async () => {
+      const url = `${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/news/category/${language}/${category}`;
+      console.log('Fetching news from URL:', url);  // Log the URL for debugging
+
       try {
-        const response = await fetch(
-          `${process.env.REACT_APP_BACKEND_URL || ''}/api/news/category/${category}`
-        );
+        const response = await fetch(url);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -29,7 +36,7 @@ export default function CategoryNewsPage() {
     };
 
     fetchNews();
-  }, [category]);
+  }, [category, language]);
 
   if (loading) {
     return <div className="text-center py-8">Loading...</div>;
@@ -40,8 +47,10 @@ export default function CategoryNewsPage() {
   }
 
   return (
-    <div className="container mx-auto px-4  py-8">
-      <h1 className="text-2xl font-bold mb-4 capitalize">News in {category}</h1>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-2xl font-bold mb-4 capitalize">
+        News in {category} ({language === 'en' ? 'English' : 'Hindi'})
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {news.map((article) => (
           <article

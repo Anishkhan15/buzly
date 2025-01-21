@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF, FaCopy } from 'react-icons/fa';
 
-const NewsDetail = () => {
+const NewsDetail = ({ language = 'en' }) => {
   const { id } = useParams();
   const [news, setNews] = useState(null);
   const [error, setError] = useState(null);
@@ -15,7 +15,8 @@ const NewsDetail = () => {
       return;
     }
 
-    fetch(`${backendUrl}/api/news/${id}`)
+    // API call based on language
+    fetch(`${backendUrl}/api/news/${language}/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Failed to fetch news: ${res.statusText}`);
@@ -30,7 +31,7 @@ const NewsDetail = () => {
         console.error('Error fetching news:', error);
         setError('Failed to fetch news details. Please try again later.');
       });
-  }, [id]);
+  }, [id, language]);
 
   if (error) {
     return <div className="text-red-500 text-center mt-8">{error}</div>;
@@ -87,7 +88,9 @@ const NewsDetail = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="space-y-6">
         {/* Title */}
-        <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center">{news.title}</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center">
+          {news.title}
+        </h1>
 
         {/* Time and Share Icons */}
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm md:text-base">

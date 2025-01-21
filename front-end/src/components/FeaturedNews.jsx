@@ -1,38 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function FeaturedNews() {
+export default function FeaturedNews({ language }) {
   const [featuredNews, setFeaturedNews] = useState([]);
   const [latestNews, setLatestNews] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    // Fetch featured news
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/featured`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/featured/${language}`)
       .then((res) => res.json())
-      .then((data) => setFeaturedNews(data));
+      .then((data) => setFeaturedNews(data))
+      .catch((error) => console.error('Error fetching featured news:', error));
 
-    // Fetch latest news
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/latest`)
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/latest/${language}`)
       .then((res) => res.json())
-      .then((data) => setLatestNews(data));
-  }, []);
+      .then((data) => setLatestNews(data))
+      .catch((error) => console.error('Error fetching latest news:', error));
+  }, [language]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % featuredNews.length);
-    }, 5000);
-    return () => clearInterval(interval);
+    if (featuredNews.length > 0) {
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % featuredNews.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
   }, [featuredNews]);
-
-  if (!featuredNews.length && !latestNews.length) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Left side: Latest news (4 items) */}
+        {/* Left side: Featured news (carousel) */}
         {featuredNews.length > 0 && (
           <Link to={`/news/${featuredNews[currentSlide]._id}`} className="relative h-[500px] group overflow-hidden">
             <img
@@ -40,39 +38,25 @@ export default function FeaturedNews() {
               alt={featuredNews[currentSlide].title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
-              <div className="absolute bottom-0 p-6">
-                <span className="bg-red-600 text-white px-3 py-1 text-sm rounded-full">
-                  {featuredNews[currentSlide].category}
-                </span>
-                <h2 className="text-2xl lg:text-3xl font-bold text-white mt-3">
-                  {featuredNews[currentSlide].title}
-                </h2>
-                <p className="text-gray-200 mt-2">{featuredNews[currentSlide].description}</p>
-              </div>
+            <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-end p-4">
+              <h2 className="text-xl font-bold">{featuredNews[currentSlide].title}</h2>
+              <p>{featuredNews[currentSlide].description}</p>
             </div>
           </Link>
         )}
 
-
-        
-
-        {/* Right side: Main featured article */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {latestNews.slice(0, 4).map((item, index) => (
-            <Link key={index} to={`/news/${item._id}`} className="relative h-[240px] group overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
-                <div className="absolute bottom-0 p-4">
-                  <span className="bg-red-600 text-white px-2 py-1 text-xs rounded-full">
-                    {item.category}
-                  </span>
-                  <h3 className="text-lg font-semibold text-white mt-2">{item.title}</h3>
-                </div>
+        {/* Right side: Latest featured articles */}
+        <div className="space-y-4">
+          {latestNews.slice(0, 4).map((news) => (
+            <Link
+              key={news._id}
+              to={`/news/${news._id}`}
+              className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded"
+            >
+              <img src={news.image} alt={news.title} className="w-24 h-16 object-cover rounded" />
+              <div>
+                <h3 className="font-bold">{news.title}</h3>
+                <p className="text-sm text-gray-600">{news.description}</p>
               </div>
             </Link>
           ))}
