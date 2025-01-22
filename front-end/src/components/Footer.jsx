@@ -16,16 +16,22 @@ function Footer() {
               Your trusted source for the latest news, analysis, and in-depth reporting from around the globe.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              <a  href="https://www.facebook.com/" 
+  target="_blank" 
+  rel="noopener noreferrer" className="text-gray-400 hover:text-red-500 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              <a href="https://x.com/buzzlynow03" 
+  target="_blank" 
+  rel="noopener noreferrer"  className="text-gray-400 hover:text-red-500 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              {/* <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
                 <Youtube className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+              </a> */}
+              <a href="https://www.instagram.com/buzzly.now/" 
+  target="_blank" 
+  rel="noopener noreferrer"  className="text-gray-400 hover:text-red-500 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -73,7 +79,12 @@ function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-red-500 flex-shrink-0" />
-                <span className="text-gray-400">buzzlynow03@gmail.com</span>
+                <a 
+  href="mailto:buzzlynow03@gmail.com?cc=buzzlynow03@gmail.com" 
+  className="text-gray-400 hover:text-red-600"
+>
+  buzzlynow03@gmail.com
+</a>
               </li>
             </ul>
           </div>
@@ -82,7 +93,7 @@ function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-center text-gray-400">
-            &copy; {new Date().getFullYear()} RetNews. All rights reserved.
+            &copy; {new Date().getFullYear()} Buzzlynow. All rights reserved.
           </p>
         </div>
       </div>

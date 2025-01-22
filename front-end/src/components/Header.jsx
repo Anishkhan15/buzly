@@ -56,9 +56,20 @@ export default function Header({ onLanguageChange }) {
         <div className="container mx-auto px-4 md:px-40 flex justify-between items-center">
           <span>{currentDate}</span>
           <div className="flex items-center space-x-4">
-            <a href="#" className="hover:text-red-600"><Facebook className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-red-600"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="hover:text-red-600"><Twitter className="w-5 h-5" /></a>
+            <a   href="https://www.facebook.com/" 
+  target="_blank" 
+  rel="noopener noreferrer"  className="hover:text-red-600"><Facebook className="w-5 h-5" /></a>
+            <a 
+  href="https://www.instagram.com/buzzly.now/" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="hover:text-red-600"
+>
+  <Instagram className="w-5 h-5" />
+</a>
+            <a   href="https://x.com/buzzlynow03" 
+  target="_blank" 
+  rel="noopener noreferrer"  className="hover:text-red-600"><Twitter className="w-5 h-5" /></a>
             <button
               onClick={() => handleLanguageChange('en')}
               className={`px-4 py-2 rounded-full ${language === 'en' ? 'bg-blue-600' : 'bg-gray-600'}`}

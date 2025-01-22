@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, Globe, Clock } from 'lucide-react';
+import { Award, Users, Globe, Clock, ShieldCheck, PenTool } from 'lucide-react';
 
 export default function AboutUs() {
   return (
@@ -41,45 +41,11 @@ export default function AboutUs() {
             </p>
           </div>
           <div>
-            <img 
-              src="https://images.unsplash.com/photo-1495020689067-958852a7765e" 
-              alt="Newsroom" 
+            <img
+              src="https://images.unsplash.com/photo-1495020689067-958852a7765e"
+              alt="Newsroom"
               className="rounded-lg shadow-lg w-full"
             />
-          </div>
-        </div>
-
-        {/* Team Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Our Editorial Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Sarah Johnson',
-                role: 'Editor in Chief',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330',
-              },
-              {
-                name: 'Michael Chen',
-                role: 'Head of Digital News',
-                image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
-              },
-              {
-                name: 'Emily Williams',
-                role: 'Senior Political Editor',
-                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80',
-              },
-            ].map((member, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
-              </div>
-            ))}
           </div>
         </div>
 
@@ -91,17 +57,26 @@ export default function AboutUs() {
               {
                 title: 'Accuracy',
                 description: 'We are committed to delivering accurate, fact-based reporting you can trust.',
+                icon: ShieldCheck,
               },
               {
                 title: 'Independence',
                 description: 'Our journalism remains independent and free from external influences.',
+                icon: PenTool,
               },
               {
                 title: 'Innovation',
                 description: 'We embrace new technologies to deliver news in engaging ways.',
+                icon: Globe,
+              },
+              {
+                title: 'Ownership',
+                description: 'Buzzlynow is independently owned by Eram Shaikh, committed to journalistic integrity and transparency.',
+                icon: Users,
               },
             ].map((value, index) => (
               <div key={index} className="text-center">
+                <value.icon className="w-8 h-8 text-red-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>
