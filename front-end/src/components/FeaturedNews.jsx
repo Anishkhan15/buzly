@@ -32,15 +32,17 @@ export default function FeaturedNews({ language }) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left side: Featured news (carousel) */}
         {featuredNews.length > 0 && (
-          <Link to={`/news/${featuredNews[currentSlide]._id}`} className="relative h-[500px] group overflow-hidden">
+          <Link
+            to={`/news/${featuredNews[currentSlide]._id}`}
+            className="relative h-[500px] group overflow-hidden"
+          >
             <img
               src={featuredNews[currentSlide].image}
               alt={featuredNews[currentSlide].title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-end p-4">
+            <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex items-end p-4">
               <h2 className="text-xl font-bold">{featuredNews[currentSlide].title}</h2>
-              <p>{featuredNews[currentSlide].description}</p>
             </div>
           </Link>
         )}
@@ -51,14 +53,16 @@ export default function FeaturedNews({ language }) {
             <Link
               key={news._id}
               to={`/news/${news._id}`}
-              className="flex flex-col items-center space-y-2 p-4 border rounded hover:bg-gray-100"
+              className="relative h-[240px] group overflow-hidden"
             >
               <img
                 src={news.image}
                 alt={news.title}
-                className="w-full h-32 object-cover rounded"
+                className="w-full h-full object-cover"
               />
-              <h3 className="font-bold text-center">{news.title}</h3>
+              <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex items-end p-4">
+                <h3 className="text-sm font-bold">{news.title}</h3>
+              </div>
             </Link>
           ))}
         </div>
