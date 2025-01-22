@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Phone, Mail, Globe, Facebook, Twitter, Linkedin, Send, MessageSquare } from 'lucide-react';
+import { Home, Phone, Mail, Globe, Facebook, Twitter, Send, Instagram } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -109,20 +109,12 @@ export default function Contact() {
           {/* Info Section */}
           <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8">
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Info Location</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Information</h2>
               <div className="space-y-4">
-                <div className="flex items-start">
-                  <Home className="w-6 h-6 text-gray-600 mt-1 flex-shrink-0" />
-                  <p className="ml-4 text-gray-600">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="w-6 h-6 text-gray-600 flex-shrink-0" />
-                  <p className="ml-4 text-gray-600">(+12) 34567 890 123</p>
-                </div>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 text-gray-600 flex-shrink-0" />
-                  <a href="mailto:mail@example.com" className="ml-4 text-gray-600 hover:text-blue-500 transition-colors">
-                    mail@example.com
+                  <a href="mailto:buzzlynow03@gmail.com" className="ml-4 text-gray-600 hover:text-blue-500 transition-colors">
+                    buzzlynow03@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center">
@@ -137,17 +129,20 @@ export default function Contact() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Find Us</h2>
               <div className="flex space-x-4">
-                <a href="#" className="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                <a  href="https://www.facebook.com/" 
+  target="_blank" 
+  rel="noopener noreferrer" className="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                   <Facebook className="w-6 h-6" />
                 </a>
-                <a href="#" className="p-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition-colors">
+                <a href="https://x.com/buzzlynow03" 
+  target="_blank" 
+  rel="noopener noreferrer" className="p-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition-colors">
                   <Twitter className="w-6 h-6" />
                 </a>
-                <a href="#" className="p-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
-                  <MessageSquare className="w-6 h-6" />
-                </a>
-                <a href="#" className="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                  <Linkedin className="w-6 h-6" />
+                <a   href="https://www.instagram.com/buzzly.now/" 
+  target="_blank" 
+  rel="noopener noreferrer"  className="p-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+                  <Instagram className="w-6 h-6" />
                 </a>
               </div>
             </div>

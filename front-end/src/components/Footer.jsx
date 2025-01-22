@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Youtube, Instagram, MapPin, Phone, Mail, Newspaper } from 'lucide-react';
 
 function Footer() {
@@ -38,7 +39,7 @@ function Footer() {
           </div>
 
           {/* Categories */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Categories</h3>
             <ul className="space-y-2">
               {['Politics', 'Business', 'Technology', 'Entertainment', 'Sports', 'World', 'Health'].map((category) => (
@@ -49,21 +50,39 @@ function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {['About Us', 'Contact Us', 'Terms of Service', 'Privacy Policy', 'Advertise', 'Career'].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+  <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+  <ul className="space-y-2">
+    {[
+      { name: 'About Us', path: '/about' },
+      { name: 'Contact Us', path: '/contact' },
+      { name: 'Privacy Policy', path: '/privacy-policy.pdf', isExternal: true },
+    ].map((link) => (
+      <li key={link.name}>
+        {link.isExternal ? (
+          <a 
+            href={link.path} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-400 hover:text-red-500 transition-colors"
+          >
+            {link.name}
+          </a>
+        ) : (
+          <Link 
+            to={link.path} 
+            className="text-gray-400 hover:text-red-500 transition-colors"
+          >
+            {link.name}
+          </Link>
+        )}
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Contact Info */}
           <div>
