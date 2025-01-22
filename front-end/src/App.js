@@ -15,6 +15,7 @@ function App() {
   // Function to handle language change
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
+    localStorage.setItem('preferredLanguage', lang); // Persist language preference
   };
 
   return (
@@ -41,9 +42,9 @@ function App() {
             />
             {/* Category-specific news */}
             <Route
-  path="/category/:category"
-  element={<CategoryNewsPage language={language} />}
-/>
+              path="/category/:category"
+              element={<CategoryNewsPage language={language} />}
+            />
             {/* About Us page */}
             <Route path="/about" element={<AboutUs />} />
             {/* Contact page */}

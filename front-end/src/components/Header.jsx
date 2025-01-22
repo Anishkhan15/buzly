@@ -40,6 +40,10 @@ export default function Header({ onLanguageChange }) {
     onLanguageChange(lang); // Notify parent about the language change
   };
 
+  const handleHomeClick = () => {
+    navigate(`/?lang=${language}`);
+  };
+
   const handleCategorySelect = (categoryKey) => {
     navigate(`/category/${categoryKey}?lang=${language}`);
     setIsCategoryOpen(false);
@@ -52,7 +56,6 @@ export default function Header({ onLanguageChange }) {
         <div className="container mx-auto px-4 md:px-40 flex justify-between items-center">
           <span>{currentDate}</span>
           <div className="flex items-center space-x-4">
-            <a href="/contact" className="hover:text-red-600">Contact Us</a>
             <a href="#" className="hover:text-red-600"><Facebook className="w-5 h-5" /></a>
             <a href="#" className="hover:text-red-600"><Instagram className="w-5 h-5" /></a>
             <a href="#" className="hover:text-red-600"><Twitter className="w-5 h-5" /></a>
@@ -81,7 +84,9 @@ export default function Header({ onLanguageChange }) {
               <h1 className="text-2xl font-bold text-red-600">Buzzlynow</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-700 font-bold hover:text-red-600">Home</a>
+              <button onClick={handleHomeClick} className="text-gray-700 font-bold hover:text-red-600">
+                Home
+              </button>
               <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
               <div className="relative">
                 <button
@@ -107,7 +112,6 @@ export default function Header({ onLanguageChange }) {
                 )}
               </div>
               <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
-             
             </nav>
             <button
               onClick={toggleMenu}
@@ -120,7 +124,9 @@ export default function Header({ onLanguageChange }) {
         {isMenuOpen && (
           <div className="md:hidden bg-white shadow-md">
             <nav className="flex flex-col space-y-4 p-4">
-              <a href="/" className="text-gray-700 font-bold hover:text-red-600">Home</a>
+              <button onClick={handleHomeClick} className="text-gray-700 font-bold hover:text-red-600">
+                Home
+              </button>
               <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
               <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
               <div className="relative">

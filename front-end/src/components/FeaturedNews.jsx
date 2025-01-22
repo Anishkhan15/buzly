@@ -45,19 +45,20 @@ export default function FeaturedNews({ language }) {
           </Link>
         )}
 
-        {/* Right side: Latest featured articles */}
-        <div className="space-y-4">
+        {/* Right side: Latest featured articles (2x2 grid) */}
+        <div className="grid grid-cols-2 gap-4">
           {latestNews.slice(0, 4).map((news) => (
             <Link
               key={news._id}
               to={`/news/${news._id}`}
-              className="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded"
+              className="flex flex-col items-center space-y-2 p-4 border rounded hover:bg-gray-100"
             >
-              <img src={news.image} alt={news.title} className="w-24 h-16 object-cover rounded" />
-              <div>
-                <h3 className="font-bold">{news.title}</h3>
-                <p className="text-sm text-gray-600">{news.description}</p>
-              </div>
+              <img
+                src={news.image}
+                alt={news.title}
+                className="w-full h-32 object-cover rounded"
+              />
+              <h3 className="font-bold text-center">{news.title}</h3>
             </Link>
           ))}
         </div>
