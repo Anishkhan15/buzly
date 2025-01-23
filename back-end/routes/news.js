@@ -33,7 +33,7 @@ router.get('/latest/:lang', async (req, res) => {
   try {
     const collectionName = getCollectionName(lang);
     const newsModel = getNewsModel(collectionName);
-    const latestNews = await newsModel.find({ language: lang }).sort({ dateTime: -1 }).limit(10);
+    const latestNews = await newsModel.find({ language: lang }).sort({ dateTime: -1 }).limit(90000000);
     res.json(latestNews);
   } catch (error) {
     console.error(`Error fetching latest news for language ${lang}:`, error);
