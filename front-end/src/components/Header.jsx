@@ -10,9 +10,11 @@ export default function Header({ onLanguageChange }) {
   const navigate = useNavigate();
 
   const categories = [
+    { key: 'india', label: 'India' },
     { key: 'technology', label: 'Technology' },
     { key: 'sports', label: 'Sports' },
     { key: 'business', label: 'Business' },
+    { key: 'politics', label: 'Politics' },
     { key: 'entertainment', label: 'Entertainment' },
   ];
 
