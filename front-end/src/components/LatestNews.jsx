@@ -4,55 +4,35 @@ import { useNavigate } from 'react-router-dom';
 
 export default function LatestNews({ language }) {
   const [news, setNews] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(15);
   const navigate = useNavigate();
+  const categories = ['business', 'sports', 'politics', 'technology'];
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/latest/${language}`);
-        
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-
-        const contentType = response.headers.get("Content-Type");
-        if (contentType && contentType.includes("application/json")) {
+        const contentType = response.headers.get('Content-Type');
+        if (contentType && contentType.includes('application/json')) {
           const data = await response.json();
           setNews(data);
         } else {
-          throw new Error("Expected JSON response, but got HTML");
+          throw new Error('Expected JSON response, but got HTML');
         }
       } catch (error) {
-        console.error("Error fetching latest news:", error);
+        console.error('Error fetching latest news:', error);
       }
     };
 
     fetchNews();
   }, [language]);
 
-  const loadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 15);
-  };
-
-  const getCategoryColor = (category) => {
-    const colors = {
-      'politics': 'bg-red-600',
-      'technology': 'bg-blue-600',
-      'sports': 'bg-green-600',
-      'business': 'bg-purple-600',
-      'entertainment': 'bg-yellow-600',
-      'science': 'bg-indigo-600',
-      'health': 'bg-pink-600'
-    };
-    return colors[category.toLowerCase()] || 'bg-gray-600';
-  };
-
   const formatDate = (dateString) => {
     const now = new Date();
     const date = new Date(dateString);
     const diffInHours = Math.floor((now - date) / (1000 * 60 * 60));
-
     if (diffInHours < 1) {
       return 'Just now';
     } else if (diffInHours < 24) {
@@ -60,6 +40,13 @@ export default function LatestNews({ language }) {
     } else {
       return date.toLocaleDateString();
     }
+  };
+
+  const truncateTitle = (title) => {
+    if (title.length > 70) {
+      return title.substring(0, 70) + '...';
+    }
+    return title;
   };
 
   return (
@@ -72,80 +59,72 @@ export default function LatestNews({ language }) {
       </header>
 
       <div className="container mx-auto px-4 py-8">
-        {/* Featured Article */}
-        {news.length > 0 && (
-          <div className="mb-12">
-            <article 
-              className="relative rounded-xl overflow-hidden shadow-lg cursor-pointer"
-              onClick={() => navigate(`/news/${news[0]._id}`)}
-            >
-              <img
-                src={news[0].image}
-                alt={news[0].title}
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8">
-                <span className={`${getCategoryColor(news[0].category)} text-white px-3 py-1 text-sm rounded-full`}>
-                  {news[0].category}
-                </span>
-                <h2 className="text-4xl font-bold text-white mt-3 mb-2 line-clamp-2">{news[0].title}</h2>
-                <p className="text-gray-200 mb-4 line-clamp-2 text-lg">{news[0].description}</p>
-                <div className="flex items-center text-gray-300 text-sm">
-                  <Clock className="w-4 h-4 mr-1" />
-                  <span>{formatDate(news[0].dateTime)}</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        )}
+        {/* Categories Row */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          {categories.map((category) => (
+            <div key={category} className="bg-white p-4 rounded-lg shadow-md">
+            <h2
+  className="text-xl font-semibold text-black cursor-pointer mb-3 hover:underline italic"
+  onClick={() => navigate(`/category/${category}`)}
+>
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </h2>
+              <ul>
+                {/* Top 4 news without image */}
+                {news
+                  .filter((item) => item.category.toLowerCase() === category)
+                  .slice(0, 4)
+                  .map((item) => (
+                    <li key={item._id} className="mb-4">
+                      <p
+                        className="text-gray-800 font-medium cursor-pointer hover:underline hover:text-blue-400"
+                        onClick={() => navigate(`/news/${item._id}`)}
+                      >
+                        {truncateTitle(item.title)} {/* Truncate title to 80 characters */}
+                      </p>
+                      <div className="flex items-center text-gray-500 text-sm">
+                        <Clock className="w-4 h-4 mr-1" />
+                        <span>{formatDate(item.dateTime)}</span>
+                      </div>
+                      {/* Horizontal line */}
+                      <div className="border-t-2 border-gray-300 mt-4"></div>
+                    </li>
+                  ))}
 
-        {/* News Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {news.slice(1, visibleCount).map((item) => (
-            <article
-              key={item._id}
-              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-              onClick={() => navigate(`/news/${item._id}`)}
-            >
-              <div className="relative h-48">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className={`${getCategoryColor(item.category)} text-white px-3 py-1 text-sm rounded-full shadow-lg`}>
-                    {item.category}
-                  </span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 line-clamp-2 group-hover:text-blue-600">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2 text-sm">
-                  {item.description}
-                </p>
-                <div className="flex items-center text-gray-500 text-sm">
-                  <Clock className="w-4 h-4 mr-1" />
-                  <span>{formatDate(item.dateTime)}</span>
-                </div>
-              </div>
-            </article>
+                {/* Last news with image */}
+                {news
+                  .filter((item) => item.category.toLowerCase() === category)
+                  .slice(4, 5) // This gets the next item after the top 4
+                  .map((item) => (
+                    <li key={item._id} className="mb-4">
+                      <div className="flex flex-col">
+                        {/* Image above title */}
+                        <div className="w-full h-48 bg-gray-200 overflow-hidden rounded-lg">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                        <div className="w-full pt-4">
+                          <p
+                            className="text-gray-800 font-medium cursor-pointer hover:text-blue-600"
+                            onClick={() => navigate(`/news/${item._id}`)}
+                          >
+                            {truncateTitle(item.title)}
+                          </p>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Clock className="w-4 h-4 mr-1" />
+                            <span>{formatDate(item.dateTime)}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+              </ul>
+            </div>
           ))}
         </div>
-
-        {/* Load More Button */}
-        {visibleCount < news.length && (
-          <div className="flex justify-center mt-12">
-            <button
-              onClick={loadMore}
-              className="bg-blue-600 text-white px-8 py-3 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5"
-            >
-              Load More
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );
