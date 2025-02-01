@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export default function LatestNews({ language }) {
   const [news, setNews] = useState([]);
   const navigate = useNavigate();
-  const categories = ['business', 'sports', 'politics', 'technology'];
+  const categories = ['business', 'sports', 'politics', 'technology', 'india', 'international', 'entertainment', 'healthcare'];
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -63,10 +63,10 @@ export default function LatestNews({ language }) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {categories.map((category) => (
             <div key={category} className="bg-white p-4 rounded-lg shadow-md">
-            <h2
-  className="text-xl font-semibold text-black cursor-pointer mb-3 hover:underline italic"
-  onClick={() => navigate(`/category/${category}`)}
->
+              <h2
+                className="text-xl font-semibold text-black cursor-pointer mb-3 hover:underline italic"
+                onClick={() => navigate(`/category/${category}`)}
+              >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
               </h2>
               <ul>
