@@ -27,6 +27,13 @@ export default function FeaturedNews({ language }) {
     setCurrentSlide((prev) => (prev - 1 + latestNews.length) % latestNews.length);
   };
 
+  useEffect(() => {
+    if (latestNews.length > 1) {
+      const interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+      return () => clearInterval(interval); // Clean up the interval on component unmount or language change
+    }
+  }, [latestNews]);
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
