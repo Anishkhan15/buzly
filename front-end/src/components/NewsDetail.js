@@ -127,11 +127,13 @@ const NewsDetail = ({ language = 'en' }) => {
         </div>
 
         {/* Description */}
-        <div className="text-justify text-gray-700 font-thin md:text-xl leading-relaxed space-y-4">
+        <div className="text-justify text-gray-800 font-normal md:text-xl leading-relaxed tracking-wide space-y-4">
   {news.description.split('\n').map((paragraph, index) => (
     <p key={index}>{paragraph}</p>
   ))}
 </div>
+
+
       </div>
     </div>
   );
