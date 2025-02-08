@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import FeaturedNews from './components/FeaturedNews';
 import LatestNews from './components/LatestNews';
@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import NewsDetails from './components/NewsDetail';
 import CategoryNewsPage from './components/CategoryNewsPage';
 import Contact from './components/Contact';
+import Trending from './components/Trending';
 
 function App() {
   const [language, setLanguage] = useState('en'); // Default language is English
@@ -20,46 +21,64 @@ function App() {
 
   return (
     <Router>
-      <div className="bg-gray-50">
-        {/* Header with language selection */}
-        <Header language={language} onLanguageChange={handleLanguageChange} />
-        <div className="px-4 md:px-40">
-          <Routes>
-            {/* Home page with Featured and Latest News */}
-            <Route
-              path="/"
-              element={
-                <main>
-                  <FeaturedNews language={language} />
-                  <LatestNews language={language} />
-                </main>
-              }
-            />
-            {/* Redirect old category path */}
-            <Route
-              path="/categories/:category"
-              element={<Navigate to="/category/:category" replace />}
-            />
-            {/* Category-specific news */}
-            <Route
-              path="/category/:category"
-              element={<CategoryNewsPage language={language} />}
-            />
-            {/* About Us page */}
-            <Route path="/about" element={<AboutUs />} />
-            {/* Contact page */}
-            <Route path="/contact" element={<Contact />} />
-            {/* News details page */}
-            <Route
-              path="/news/:id"
-              element={<NewsDetails language={language} />}
-            />
-          </Routes>
-        </div>
-        {/* Footer */}
-        <Footer />
-      </div>
+      <AppContent language={language} onLanguageChange={handleLanguageChange} />
     </Router>
+  );
+}
+
+// Separate AppContent to use useLocation() inside Router
+function AppContent({ language, onLanguageChange }) {
+  const location = useLocation();
+  
+  // Hide Trending for both category pages and news details page
+  const isHiddenPage = location.pathname.startsWith('/category/') || location.pathname.startsWith('/news/');
+
+  return (
+    <div className="bg-gray-50">
+      {/* Header with language selection */}
+      <Header language={language} onLanguageChange={onLanguageChange} />
+
+      {/* Main Content with Padding */}
+      <div className="px-4 md:px-40">
+        <Routes>
+          {/* Home page with Featured and Latest News */}
+          <Route
+            path="/"
+            element={
+              <main>
+                <FeaturedNews language={language} />
+                <LatestNews language={language} />
+              </main>
+            }
+          />
+          {/* Redirect old category path */}
+          <Route
+            path="/categories/:category"
+            element={<Navigate to="/category/:category" replace />}
+          />
+          {/* Category-specific news */}
+          <Route
+            path="/category/:category"
+            element={<CategoryNewsPage language={language} />}
+          />
+          {/* About Us page */}
+          <Route path="/about" element={<AboutUs />} />
+          {/* Contact page */}
+          <Route path="/contact" element={<Contact />} />
+          {/* News details page */}
+          <Route
+            path="/news/:id"
+            element={<NewsDetails language={language} />}
+          />
+        </Routes>
+      </div>
+
+      {/* Show Trending only on the homepage */}
+      {!isHiddenPage && <Trending language={language} />}
+
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 }
 

@@ -7,9 +7,9 @@ export default function CategoryNewsPage({ language }) {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [visibleNewsCount, setVisibleNewsCount] = useState(15);
   const navigate = useNavigate();
 
-  // Log category and language to the console when they change
   useEffect(() => {
     console.log('Category:', category);
     console.log('Current Language:', language);
@@ -18,7 +18,7 @@ export default function CategoryNewsPage({ language }) {
   useEffect(() => {
     const fetchNews = async () => {
       const url = `${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/news/category/${language}/${category}`;
-      console.log('Fetching news from URL:', url);  // Log the URL for debugging
+      console.log('Fetching news from URL:', url);
 
       try {
         const response = await fetch(url);
@@ -52,7 +52,7 @@ export default function CategoryNewsPage({ language }) {
         News in {category} ({language === 'en' ? 'English' : 'Hindi'})
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {news.map((article) => (
+        {news.slice(0, visibleNewsCount).map((article) => (
           <article
             key={article._id}
             className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
@@ -80,6 +80,18 @@ export default function CategoryNewsPage({ language }) {
           </article>
         ))}
       </div>
+
+      {/* Read More Button */}
+      {visibleNewsCount < news.length && (
+        <div className="flex justify-center mt-6">
+          <button
+            className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300"
+            onClick={() => setVisibleNewsCount((prev) => prev + 15)}
+          >
+            Read More
+          </button>
+        </div>
+      )}
     </div>
   );
 }
