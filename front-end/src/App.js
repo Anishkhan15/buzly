@@ -2,6 +2,7 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 // Lazy-loaded components
 const FeaturedNews = lazy(() => import('./components/FeaturedNews'));
@@ -88,6 +89,7 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
             <Header language={language} onLanguageChange={onLanguageChange} />
             <div className="px-4 md:px-40">
               <Routes>
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/" element={<main><FeaturedNews language={language} /><LatestNews language={language} /></main>} />
                 <Route path="/categories/:category" element={<Navigate to="/category/:category" replace />} />
                 <Route path="/category/:category" element={<CategoryNewsPage language={language} />} />

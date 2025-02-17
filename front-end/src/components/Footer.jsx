@@ -59,7 +59,8 @@ function Footer() {
     {[
       { name: 'About Us', path: '/about' },
       { name: 'Contact Us', path: '/contact' },
-      { name: 'Privacy Policy', path: '/privacy-policy.pdf', isExternal: true },
+      { name: 'Privacy Policy', path: '/privacy-policy' }
+
     ].map((link) => (
       <li key={link.name}>
         {link.isExternal ? (
