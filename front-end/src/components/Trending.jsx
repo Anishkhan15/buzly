@@ -9,7 +9,9 @@ const Trending = ({ language }) => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news/latest/${language}`);
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+        const response = await fetch(`${backendUrl}/api/news/latest/${language}`);
+        
         const data = await response.json();
         setNews(data);
       } catch (error) {
