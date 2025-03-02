@@ -102,8 +102,13 @@ const NewsDetail = ({ language = 'en' }) => {
 
         {/* News Image */}
         <div className="w-full h-[300px] md:h-[500px]">
-          <img src={news.image} alt={news.title} className="w-full h-full object-cover rounded-lg shadow-md" />
-        </div>
+  <img 
+    src={news.image} 
+    alt={news.title} 
+    className="w-full h-full object-contain rounded-lg shadow-md" 
+  />
+</div>
+
 
         {/* News Description */}
         <div className="text-justify text-gray-800 font-medium md:text-xl leading-relaxed tracking-wide space-y-4">
