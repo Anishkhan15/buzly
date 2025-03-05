@@ -55,7 +55,7 @@ const NewsDetail = ({ language = 'en' }) => {
 
   const formatDateTime = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleString('en-US', {
+    return date.toLocaleString('en-GB', {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric',
@@ -64,6 +64,7 @@ const NewsDetail = ({ language = 'en' }) => {
       hour12: true,
     });
   };
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
