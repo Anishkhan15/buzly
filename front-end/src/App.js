@@ -124,7 +124,7 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
   <Route
     path="/news/:id"
     element={
-      <div className="px-4 md:px-40">
+      <div className="px-4">
         <NewsDetails language={language} />
       </div>
     }

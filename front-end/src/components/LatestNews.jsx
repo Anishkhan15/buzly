@@ -36,15 +36,18 @@ export default function LatestNews({ language }) {
     const now = new Date();
     const date = new Date(dateString);
     const diffInHours = Math.floor((now - date) / (1000 * 60 * 60));
+  
     if (diffInHours < 1) {
       return 'Just now';
     } else if (diffInHours < 24) {
       return `${diffInHours} hrs ago`;
     } else {
-      return date.toLocaleDateString();
+      return `${date.getDate().toString().padStart(2, '0')}-${(date.getMonth() + 1)
+        .toString()
+        .padStart(2, '0')}-${date.getFullYear()}`;
     }
   };
-
+  
   const truncateTitle = (title) => {
     if (title.length > 70) {
       return title.substring(0, 70) + '...';
