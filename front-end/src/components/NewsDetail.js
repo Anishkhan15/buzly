@@ -28,6 +28,9 @@ const NewsDetail = ({ language = 'en' }) => {
         setNews(data);
         setError(null);
 
+        // ✅ Set the page title dynamically
+        document.title = `${data.title} | BuzzlyNow`;
+
         if (data.category) {
           fetch(`${backendUrl}/api/news/category/${language}/${data.category}`)
             .then((res) => res.json())
@@ -42,6 +45,13 @@ const NewsDetail = ({ language = 'en' }) => {
         setError('Failed to fetch news details. Please try again later.');
       });
   }, [id, language]);
+
+  // ✅ Ensure title updates when news is set
+  useEffect(() => {
+    if (news) {
+      document.title = `${news.title} | BuzzlyNow`;
+    }
+  }, [news]);
 
   if (error) return <div className="text-red-500 text-center mt-8">{error}</div>;
   if (!news) return <div className="text-center mt-8">Loading...</div>;
