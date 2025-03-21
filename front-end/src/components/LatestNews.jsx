@@ -13,7 +13,7 @@ export default function LatestNews({ language }) {
         const response = await fetch(
           `${process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"}/api/news/latest/${language}`
         );
-        
+
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -28,7 +28,6 @@ export default function LatestNews({ language }) {
         console.error('Error fetching latest news:', error);
       }
     };
-
     fetchNews();
   }, [language]);
 
@@ -36,7 +35,7 @@ export default function LatestNews({ language }) {
     const now = new Date();
     const date = new Date(dateString);
     const diffInHours = Math.floor((now - date) / (1000 * 60 * 60));
-  
+
     if (diffInHours < 1) {
       return 'Just now';
     } else if (diffInHours < 24) {
@@ -47,7 +46,7 @@ export default function LatestNews({ language }) {
         .padStart(2, '0')}-${date.getFullYear()}`;
     }
   };
-  
+
   const truncateTitle = (title) => {
     if (title.length > 70) {
       return title.substring(0, 70) + '...';
@@ -78,7 +77,7 @@ export default function LatestNews({ language }) {
               <ul>
                 {/* Top 4 news without image */}
                 {news
-                  .filter((item) => item.category.toLowerCase() === category)
+                  .filter((item) => item.category && item.category.toLowerCase() === category)
                   .slice(0, 4)
                   .map((item) => (
                     <li key={item._id} className="mb-4">
@@ -86,7 +85,7 @@ export default function LatestNews({ language }) {
                         className="text-gray-800 font-medium cursor-pointer hover:underline hover:text-blue-400"
                         onClick={() => navigate(`/news/${item._id}`)}
                       >
-                        {truncateTitle(item.title)} {/* Truncate title to 80 characters */}
+                        {truncateTitle(item.title)}
                       </p>
                       <div className="flex items-center text-gray-500 text-sm">
                         <Clock className="w-4 h-4 mr-1" />
@@ -99,7 +98,7 @@ export default function LatestNews({ language }) {
 
                 {/* Last news with image */}
                 {news
-                  .filter((item) => item.category.toLowerCase() === category)
+                  .filter((item) => item.category && item.category.toLowerCase() === category)
                   .slice(4, 5) // This gets the next item after the top 4
                   .map((item) => (
                     <li key={item._id} className="mb-4">

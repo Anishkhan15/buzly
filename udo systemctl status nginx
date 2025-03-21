@@ -1,0 +1,14 @@
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/etc/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: activating (start) since Thu 2025-03-20 04:25:34 UTC; 1min 9s ago
+Cntrl PID: 5306 (nginx)
+      Tasks: 2 (limit: 4646)
+     Memory: 2.5M
+        CPU: 8ms
+     CGroup: /system.slice/nginx.service
+             ├─5306 "nginx: master process /usr/sbin/nginx -g daemon off;"
+             └─5308 "nginx: worker process" "" "" "" "" "" "" "" "" ""
+
+Mar 20 04:25:34 srv626346 systemd[1]: nginx.service: Deactivated successfully.
+Mar 20 04:25:34 srv626346 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+Mar 20 04:25:34 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...

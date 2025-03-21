@@ -1,0 +1,1487 @@
+Mar 19 13:39:27 srv626346 sshd[42341]: Connection closed by authenticating user root 152.67.161.153 port 46440 [preauth]
+Mar 19 13:39:31 srv626346 sshd[42343]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:39:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=581 DF PROTO=TCP SPT=41831 DPT=24869 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:39:33 srv626346 sshd[42343]: Failed password for root from 152.67.161.153 port 52270 ssh2
+Mar 19 13:39:34 srv626346 sshd[42343]: Connection closed by authenticating user root 152.67.161.153 port 52270 [preauth]
+Mar 19 13:39:41 srv626346 sshd[42345]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:39:43 srv626346 sshd[42345]: Failed password for root from 152.67.161.153 port 47218 ssh2
+Mar 19 13:39:43 srv626346 sshd[42345]: Connection closed by authenticating user root 152.67.161.153 port 47218 [preauth]
+Mar 19 13:39:51 srv626346 sshd[42347]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:39:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=38480 DF PROTO=TCP SPT=41831 DPT=9987 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:39:52 srv626346 sshd[42347]: Failed password for root from 152.67.161.153 port 47232 ssh2
+Mar 19 13:39:53 srv626346 sshd[42347]: Connection closed by authenticating user root 152.67.161.153 port 47232 [preauth]
+Mar 19 13:39:56 srv626346 sshd[42349]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:39:58 srv626346 sshd[42349]: Failed password for root from 152.67.161.153 port 47070 ssh2
+Mar 19 13:40:00 srv626346 sshd[42349]: Connection closed by authenticating user root 152.67.161.153 port 47070 [preauth]
+Mar 19 13:40:05 srv626346 sshd[42351]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:40:07 srv626346 sshd[42351]: Failed password for root from 152.67.161.153 port 47074 ssh2
+Mar 19 13:40:09 srv626346 sshd[42351]: Connection closed by authenticating user root 152.67.161.153 port 47074 [preauth]
+Mar 19 13:40:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=26202 DF PROTO=TCP SPT=41831 DPT=24876 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:40:13 srv626346 sshd[42353]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:40:15 srv626346 sshd[42353]: Failed password for root from 152.67.161.153 port 40796 ssh2
+Mar 19 13:40:21 srv626346 sshd[42353]: Connection closed by authenticating user root 152.67.161.153 port 40796 [preauth]
+Mar 19 13:40:30 srv626346 sshd[42355]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:40:32 srv626346 sshd[42355]: Failed password for root from 152.67.161.153 port 50722 ssh2
+Mar 19 13:40:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=35165 DF PROTO=TCP SPT=41831 DPT=9994 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:40:33 srv626346 sshd[42355]: Connection closed by authenticating user root 152.67.161.153 port 50722 [preauth]
+Mar 19 13:40:35 srv626346 sshd[42357]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:40:37 srv626346 sshd[42357]: Failed password for root from 152.67.161.153 port 38920 ssh2
+Mar 19 13:40:38 srv626346 sshd[42357]: Connection closed by authenticating user root 152.67.161.153 port 38920 [preauth]
+Mar 19 13:40:47 srv626346 sshd[42359]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:40:49 srv626346 sshd[42359]: Failed password for root from 152.67.161.153 port 38924 ssh2
+Mar 19 13:40:52 srv626346 sshd[42359]: Connection closed by authenticating user root 152.67.161.153 port 38924 [preauth]
+Mar 19 13:40:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=6492 DF PROTO=TCP SPT=41831 DPT=24883 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:40:55 srv626346 sshd[42361]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:40:57 srv626346 sshd[42361]: Failed password for root from 152.67.161.153 port 52644 ssh2
+Mar 19 13:40:59 srv626346 sshd[42361]: Connection closed by authenticating user root 152.67.161.153 port 52644 [preauth]
+Mar 19 13:41:05 srv626346 sshd[42364]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:41:07 srv626346 sshd[42364]: Failed password for root from 152.67.161.153 port 44924 ssh2
+Mar 19 13:41:09 srv626346 sshd[42364]: Connection closed by authenticating user root 152.67.161.153 port 44924 [preauth]
+Mar 19 13:41:11 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:0001:0332:0000:0000:0000:00d4 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=242 FLOWLBL=0 PROTO=TCP SPT=36391 DPT=135 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:41:14 srv626346 sshd[42366]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:41:14 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=52310 DF PROTO=TCP SPT=41831 DPT=10001 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:41:16 srv626346 sshd[42366]: Failed password for root from 152.67.161.153 port 44350 ssh2
+Mar 19 13:41:19 srv626346 sshd[42366]: Connection closed by authenticating user root 152.67.161.153 port 44350 [preauth]
+Mar 19 13:41:29 srv626346 sshd[42368]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:41:31 srv626346 sshd[42368]: Failed password for root from 152.67.161.153 port 58486 ssh2
+Mar 19 13:41:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=20521 DF PROTO=TCP SPT=41831 DPT=24889 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:41:34 srv626346 sshd[42368]: Connection closed by authenticating user root 152.67.161.153 port 58486 [preauth]
+Mar 19 13:41:38 srv626346 sshd[42370]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:41:40 srv626346 sshd[42370]: Failed password for root from 152.67.161.153 port 55086 ssh2
+Mar 19 13:41:42 srv626346 sshd[42370]: Connection closed by authenticating user root 152.67.161.153 port 55086 [preauth]
+Mar 19 13:41:46 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:0001:0fb5:0000:0000:0000:0058 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=244 FLOWLBL=0 PROTO=TCP SPT=57395 DPT=49669 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:41:48 srv626346 sshd[42372]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:41:50 srv626346 sshd[42372]: Failed password for root from 152.67.161.153 port 55098 ssh2
+Mar 19 13:41:51 srv626346 sshd[42372]: Connection closed by authenticating user root 152.67.161.153 port 55098 [preauth]
+Mar 19 13:41:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=41811 DF PROTO=TCP SPT=41831 DPT=10007 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:41:54 srv626346 sshd[42374]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:41:56 srv626346 sshd[42374]: Failed password for root from 152.67.161.153 port 52916 ssh2
+Mar 19 13:41:59 srv626346 sshd[42374]: Connection closed by authenticating user root 152.67.161.153 port 52916 [preauth]
+Mar 19 13:42:02 srv626346 sshd[42376]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:04 srv626346 sshd[42376]: Failed password for root from 152.67.161.153 port 58316 ssh2
+Mar 19 13:42:04 srv626346 sshd[42376]: Connection closed by authenticating user root 152.67.161.153 port 58316 [preauth]
+Mar 19 13:42:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=29446 DF PROTO=TCP SPT=41831 DPT=24896 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:42:14 srv626346 sshd[42378]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:16 srv626346 sshd[42378]: Failed password for root from 152.67.161.153 port 35362 ssh2
+Mar 19 13:42:18 srv626346 sshd[42378]: Connection closed by authenticating user root 152.67.161.153 port 35362 [preauth]
+Mar 19 13:42:19 srv626346 sshd[42380]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:21 srv626346 sshd[42380]: Failed password for root from 152.67.161.153 port 36052 ssh2
+Mar 19 13:42:23 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2a06:4880:6000:0000:0000:0000:0000:0085 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=246 FLOWLBL=575728 PROTO=TCP SPT=35710 DPT=2087 WINDOW=14600 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:42:23 srv626346 sshd[42380]: Connection closed by authenticating user root 152.67.161.153 port 36052 [preauth]
+Mar 19 13:42:28 srv626346 sshd[42382]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:30 srv626346 sshd[42382]: Failed password for root from 152.67.161.153 port 42166 ssh2
+Mar 19 13:42:31 srv626346 sshd[42382]: Connection closed by authenticating user root 152.67.161.153 port 42166 [preauth]
+Mar 19 13:42:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=64051 DF PROTO=TCP SPT=41831 DPT=39759 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:42:35 srv626346 sshd[42384]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:37 srv626346 sshd[42384]: Failed password for root from 152.67.161.153 port 42170 ssh2
+Mar 19 13:42:40 srv626346 sshd[42384]: Connection closed by authenticating user root 152.67.161.153 port 42170 [preauth]
+Mar 19 13:42:42 srv626346 sshd[42386]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:44 srv626346 sshd[42386]: Failed password for root from 152.67.161.153 port 59420 ssh2
+Mar 19 13:42:45 srv626346 sshd[42386]: Connection closed by authenticating user root 152.67.161.153 port 59420 [preauth]
+Mar 19 13:42:46 srv626346 sshd[42388]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:48 srv626346 sshd[42388]: Failed password for root from 152.67.161.153 port 46438 ssh2
+Mar 19 13:42:50 srv626346 sshd[42388]: Connection closed by authenticating user root 152.67.161.153 port 46438 [preauth]
+Mar 19 13:42:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=58959 DF PROTO=TCP SPT=41831 DPT=10018 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:42:54 srv626346 sshd[42390]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:42:56 srv626346 sshd[42390]: Failed password for root from 152.67.161.153 port 46454 ssh2
+Mar 19 13:42:59 srv626346 sshd[42390]: Connection closed by authenticating user root 152.67.161.153 port 46454 [preauth]
+Mar 19 13:43:00 srv626346 sshd[42393]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:02 srv626346 sshd[42393]: Failed password for root from 152.67.161.153 port 52140 ssh2
+Mar 19 13:43:03 srv626346 sshd[42393]: Connection closed by authenticating user root 152.67.161.153 port 52140 [preauth]
+Mar 19 13:43:04 srv626346 sshd[42395]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:06 srv626346 sshd[42395]: Failed password for root from 152.67.161.153 port 52156 ssh2
+Mar 19 13:43:06 srv626346 sshd[42395]: Connection closed by authenticating user root 152.67.161.153 port 52156 [preauth]
+Mar 19 13:43:07 srv626346 sshd[42397]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:09 srv626346 sshd[42397]: Failed password for root from 152.67.161.153 port 54572 ssh2
+Mar 19 13:43:10 srv626346 sshd[42397]: Connection closed by authenticating user root 152.67.161.153 port 54572 [preauth]
+Mar 19 13:43:13 srv626346 sshd[42399]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=30028 DF PROTO=TCP SPT=41831 DPT=24907 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:43:15 srv626346 sshd[42399]: Failed password for root from 152.67.161.153 port 54584 ssh2
+Mar 19 13:43:18 srv626346 sshd[42399]: Connection closed by authenticating user root 152.67.161.153 port 54584 [preauth]
+Mar 19 13:43:23 srv626346 sshd[42401]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:25 srv626346 sshd[42401]: Failed password for root from 152.67.161.153 port 42536 ssh2
+Mar 19 13:43:28 srv626346 sshd[42401]: Connection closed by authenticating user root 152.67.161.153 port 42536 [preauth]
+Mar 19 13:43:29 srv626346 sshd[42403]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:31 srv626346 sshd[42403]: Failed password for root from 152.67.161.153 port 60072 ssh2
+Mar 19 13:43:32 srv626346 sshd[42403]: Connection closed by authenticating user root 152.67.161.153 port 60072 [preauth]
+Mar 19 13:43:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=26202 DF PROTO=TCP SPT=40709 DPT=54644 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:43:38 srv626346 sshd[42405]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:41 srv626346 sshd[42405]: Failed password for root from 152.67.161.153 port 60086 ssh2
+Mar 19 13:43:44 srv626346 sshd[42405]: Connection closed by authenticating user root 152.67.161.153 port 60086 [preauth]
+Mar 19 13:43:48 srv626346 sshd[42407]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:43:50 srv626346 sshd[42407]: Failed password for root from 152.67.161.153 port 49526 ssh2
+Mar 19 13:43:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=63862 DF PROTO=TCP SPT=41831 DPT=10029 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:43:52 srv626346 sshd[42407]: Connection closed by authenticating user root 152.67.161.153 port 49526 [preauth]
+Mar 19 13:44:00 srv626346 sshd[42409]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:02 srv626346 sshd[42409]: Failed password for root from 152.67.161.153 port 49546 ssh2
+Mar 19 13:44:05 srv626346 sshd[42409]: Connection closed by authenticating user root 152.67.161.153 port 49546 [preauth]
+Mar 19 13:44:10 srv626346 sshd[42411]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=18493 DF PROTO=TCP SPT=41831 DPT=24918 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:44:13 srv626346 sshd[42411]: Failed password for root from 152.67.161.153 port 35412 ssh2
+Mar 19 13:44:15 srv626346 sshd[42411]: Connection closed by authenticating user root 152.67.161.153 port 35412 [preauth]
+Mar 19 13:44:16 srv626346 sshd[42413]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:18 srv626346 sshd[42413]: Failed password for root from 152.67.161.153 port 53222 ssh2
+Mar 19 13:44:20 srv626346 sshd[42413]: Connection closed by authenticating user root 152.67.161.153 port 53222 [preauth]
+Mar 19 13:44:23 srv626346 sshd[42415]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:25 srv626346 sshd[42415]: Failed password for root from 152.67.161.153 port 53228 ssh2
+Mar 19 13:44:28 srv626346 sshd[42415]: Connection closed by authenticating user root 152.67.161.153 port 53228 [preauth]
+Mar 19 13:44:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=43055 DF PROTO=TCP SPT=40709 DPT=54655 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:44:41 srv626346 sshd[42417]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:43 srv626346 sshd[42417]: Failed password for root from 152.67.161.153 port 34586 ssh2
+Mar 19 13:44:44 srv626346 sshd[42417]: Connection closed by authenticating user root 152.67.161.153 port 34586 [preauth]
+Mar 19 13:44:47 srv626346 sshd[42419]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:49 srv626346 sshd[42419]: Failed password for root from 152.67.161.153 port 47586 ssh2
+Mar 19 13:44:50 srv626346 sshd[42419]: Connection closed by authenticating user root 152.67.161.153 port 47586 [preauth]
+Mar 19 13:44:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=104.156.155.4 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=244 ID=38035 PROTO=TCP SPT=55344 DPT=8184 WINDOW=1024 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:44:57 srv626346 sshd[42421]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:44:59 srv626346 sshd[42421]: Failed password for root from 152.67.161.153 port 47592 ssh2
+Mar 19 13:45:02 srv626346 sshd[42421]: Connection closed by authenticating user root 152.67.161.153 port 47592 [preauth]
+Mar 19 13:45:04 srv626346 sshd[42423]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:06 srv626346 sshd[42423]: Failed password for root from 152.67.161.153 port 37186 ssh2
+Mar 19 13:45:07 srv626346 sshd[42423]: Connection closed by authenticating user root 152.67.161.153 port 37186 [preauth]
+Mar 19 13:45:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=60248 DF PROTO=TCP SPT=41831 DPT=10044 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:45:12 srv626346 sshd[42425]: Accepted password for root from 103.240.209.42 port 56537 ssh2
+Mar 19 13:45:12 srv626346 sshd[42425]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Mar 19 13:45:12 srv626346 systemd-logind[684]: New session 94 of user root.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 94 has been created for user root[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 94 has been created for the user root.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 42425.[0m
+Mar 19 13:45:12 srv626346 systemd[1]: Started Session 94 of User root.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-94.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-94.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 16865.[0m
+Mar 19 13:45:15 srv626346 sshd[42427]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:17 srv626346 sshd[42427]: Failed password for root from 152.67.161.153 port 34584 ssh2
+Mar 19 13:45:18 srv626346 sshd[42427]: Connection closed by authenticating user root 152.67.161.153 port 34584 [preauth]
+Mar 19 13:45:19 srv626346 sshd[42494]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:20 srv626346 sshd[42494]: Failed password for root from 152.67.161.153 port 36888 ssh2
+Mar 19 13:45:21 srv626346 sshd[42494]: Connection closed by authenticating user root 152.67.161.153 port 36888 [preauth]
+Mar 19 13:45:27 srv626346 sshd[42496]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:28 srv626346 sshd[42496]: Failed password for root from 152.67.161.153 port 36890 ssh2
+Mar 19 13:45:30 srv626346 sshd[42496]: Connection closed by authenticating user root 152.67.161.153 port 36890 [preauth]
+Mar 19 13:45:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=64061 DF PROTO=TCP SPT=41831 DPT=24933 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:45:37 srv626346 sshd[42498]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:39 srv626346 sshd[42498]: Failed password for root from 152.67.161.153 port 48956 ssh2
+Mar 19 13:45:41 srv626346 sshd[42498]: Connection closed by authenticating user root 152.67.161.153 port 48956 [preauth]
+Mar 19 13:45:44 srv626346 sshd[42500]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:47 srv626346 sshd[42500]: Failed password for root from 152.67.161.153 port 46900 ssh2
+Mar 19 13:45:51 srv626346 sshd[42500]: Connection closed by authenticating user root 152.67.161.153 port 46900 [preauth]
+Mar 19 13:45:52 srv626346 sshd[42502]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:45:53 srv626346 sshd[42502]: Failed password for root from 152.67.161.153 port 46424 ssh2
+Mar 19 13:45:54 srv626346 sshd[42502]: Connection closed by authenticating user root 152.67.161.153 port 46424 [preauth]
+Mar 19 13:45:55 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=36421 DF PROTO=TCP SPT=41831 DPT=10051 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:45:58 srv626346 sshd[42504]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:00 srv626346 sshd[42504]: Failed password for root from 152.67.161.153 port 51928 ssh2
+Mar 19 13:46:04 srv626346 sshd[42504]: Connection closed by authenticating user root 152.67.161.153 port 51928 [preauth]
+Mar 19 13:46:07 srv626346 sshd[42506]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:09 srv626346 sshd[42506]: Failed password for root from 152.67.161.153 port 47446 ssh2
+Mar 19 13:46:09 srv626346 sshd[42506]: Connection closed by authenticating user root 152.67.161.153 port 47446 [preauth]
+Mar 19 13:46:12 srv626346 sshd[42508]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=61732 DF PROTO=TCP SPT=41831 DPT=24939 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:46:13 srv626346 sshd[42508]: Failed password for root from 152.67.161.153 port 47456 ssh2
+Mar 19 13:46:15 srv626346 sshd[42508]: Connection closed by authenticating user root 152.67.161.153 port 47456 [preauth]
+Mar 19 13:46:21 srv626346 sshd[42510]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:22 srv626346 sshd[42510]: Failed password for root from 152.67.161.153 port 36928 ssh2
+Mar 19 13:46:23 srv626346 sshd[42510]: Connection closed by authenticating user root 152.67.161.153 port 36928 [preauth]
+Mar 19 13:46:32 srv626346 sshd[42512]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=18493 DF PROTO=TCP SPT=41831 DPT=39802 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:46:33 srv626346 sshd[42512]: Failed password for root from 152.67.161.153 port 40832 ssh2
+Mar 19 13:46:34 srv626346 sshd[42512]: Connection closed by authenticating user root 152.67.161.153 port 40832 [preauth]
+Mar 19 13:46:43 srv626346 sshd[42514]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:45 srv626346 sshd[42514]: Failed password for root from 152.67.161.153 port 52632 ssh2
+Mar 19 13:46:45 srv626346 sshd[42514]: Connection closed by authenticating user root 152.67.161.153 port 52632 [preauth]
+Mar 19 13:46:50 srv626346 sshd[42516]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:46:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=29813 DF PROTO=TCP SPT=41831 DPT=10061 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:46:52 srv626346 sshd[42516]: Failed password for root from 152.67.161.153 port 35970 ssh2
+Mar 19 13:46:53 srv626346 sshd[42516]: Connection closed by authenticating user root 152.67.161.153 port 35970 [preauth]
+Mar 19 13:47:01 srv626346 qemu-ga[678]: info: guest-ping called
+Mar 19 13:47:02 srv626346 qemu-ga[678]: info: guest-exec called: "sh -c free -b | grep ^Mem | tr -s ' ' | cut -d ' ' -f 3"
+Mar 19 13:47:02 srv626346 qemu-ga[678]: info: guest-ping called
+Mar 19 13:47:02 srv626346 qemu-ga[678]: info: guest-exec-status called, pid: 42520
+Mar 19 13:47:02 srv626346 qemu-ga[678]: info: guest-ping called
+Mar 19 13:47:02 srv626346 sshd[42518]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:04 srv626346 sshd[42518]: Failed password for root from 152.67.161.153 port 44774 ssh2
+Mar 19 13:47:07 srv626346 sshd[42518]: Connection closed by authenticating user root 152.67.161.153 port 44774 [preauth]
+Mar 19 13:47:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=50275 DF PROTO=TCP SPT=41831 DPT=24950 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:47:12 srv626346 sshd[42526]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:14 srv626346 sshd[42526]: Failed password for root from 152.67.161.153 port 38216 ssh2
+Mar 19 13:47:15 srv626346 sshd[42526]: Connection closed by authenticating user root 152.67.161.153 port 38216 [preauth]
+Mar 19 13:47:21 srv626346 sshd[42528]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:23 srv626346 sshd[42528]: Failed password for root from 152.67.161.153 port 56824 ssh2
+Mar 19 13:47:25 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2a06:4880:6000:0000:0000:0000:0000:0084 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=246 FLOWLBL=165197 PROTO=TCP SPT=48562 DPT=33012 WINDOW=14600 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:47:25 srv626346 sshd[42528]: Connection closed by authenticating user root 152.67.161.153 port 56824 [preauth]
+Mar 19 13:47:29 srv626346 sshd[42530]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:30 srv626346 sshd[42530]: Failed password for root from 152.67.161.153 port 37552 ssh2
+Mar 19 13:47:31 srv626346 sshd[42530]: Connection closed by authenticating user root 152.67.161.153 port 37552 [preauth]
+Mar 19 13:47:32 srv626346 sshd[42532]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=9280 DF PROTO=TCP SPT=40709 DPT=54687 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:47:34 srv626346 sshd[42532]: Failed password for root from 152.67.161.153 port 37568 ssh2
+Mar 19 13:47:34 srv626346 sshd[42532]: Connection closed by authenticating user root 152.67.161.153 port 37568 [preauth]
+Mar 19 13:47:38 srv626346 sudo[42536]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 13:47:38 srv626346 sudo[42536]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:47:38 srv626346 sudo[42536]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:47:40 srv626346 sshd[42534]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:42 srv626346 sshd[42534]: Failed password for root from 152.67.161.153 port 45104 ssh2
+Mar 19 13:47:43 srv626346 sshd[42534]: Connection closed by authenticating user root 152.67.161.153 port 45104 [preauth]
+Mar 19 13:47:51 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=64061 DF PROTO=TCP SPT=41831 DPT=39817 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:47:54 srv626346 sshd[42551]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:47:56 srv626346 sshd[42551]: Failed password for root from 152.67.161.153 port 45120 ssh2
+Mar 19 13:47:59 srv626346 sshd[42551]: Connection closed by authenticating user root 152.67.161.153 port 45120 [preauth]
+Mar 19 13:47:59 srv626346 sudo[42554]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/journalctl -xeu nginx[0m
+Mar 19 13:47:59 srv626346 sudo[42554]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:48:02 srv626346 sshd[42558]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:04 srv626346 sshd[42558]: Failed password for root from 152.67.161.153 port 33782 ssh2
+Mar 19 13:48:11 srv626346 sshd[42558]: Connection closed by authenticating user root 152.67.161.153 port 33782 [preauth]
+Mar 19 13:48:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=26189 DF PROTO=TCP SPT=41831 DPT=10076 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:48:15 srv626346 sshd[42562]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:18 srv626346 sshd[42562]: Failed password for root from 152.67.161.153 port 43322 ssh2
+Mar 19 13:48:20 srv626346 sshd[42562]: Connection closed by authenticating user root 152.67.161.153 port 43322 [preauth]
+Mar 19 13:48:21 srv626346 sshd[42564]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:24 srv626346 sshd[42564]: Failed password for root from 152.67.161.153 port 36778 ssh2
+Mar 19 13:48:26 srv626346 sudo[42554]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:48:26 srv626346 sshd[42564]: Connection closed by authenticating user root 152.67.161.153 port 36778 [preauth]
+Mar 19 13:48:26 srv626346 sudo[42568]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/netstat -tulnp[0m
+Mar 19 13:48:26 srv626346 sudo[42568]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:48:26 srv626346 sudo[42568]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:48:28 srv626346 sshd[42566]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:29 srv626346 sshd[42566]: Failed password for root from 152.67.161.153 port 36510 ssh2
+Mar 19 13:48:30 srv626346 sshd[42566]: Connection closed by authenticating user root 152.67.161.153 port 36510 [preauth]
+Mar 19 13:48:31 srv626346 sudo[42574]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/lsof -i :80[0m
+Mar 19 13:48:31 srv626346 sudo[42574]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:48:31 srv626346 sudo[42574]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:48:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=30298 DF PROTO=TCP SPT=41831 DPT=24965 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:48:35 srv626346 sshd[42572]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:36 srv626346 sudo[42577]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl stop apache2[0m
+Mar 19 13:48:36 srv626346 sudo[42577]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:48:36 srv626346 sudo[42577]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:48:37 srv626346 sshd[42572]: Failed password for root from 152.67.161.153 port 36524 ssh2
+Mar 19 13:48:38 srv626346 sshd[42572]: Connection closed by authenticating user root 152.67.161.153 port 36524 [preauth]
+Mar 19 13:48:47 srv626346 sshd[42581]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:49 srv626346 sshd[42581]: Failed password for root from 152.67.161.153 port 40126 ssh2
+Mar 19 13:48:51 srv626346 sshd[42581]: Connection closed by authenticating user root 152.67.161.153 port 40126 [preauth]
+Mar 19 13:48:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=34344 DF PROTO=TCP SPT=40709 DPT=54702 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:48:53 srv626346 sshd[42583]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:48:56 srv626346 sshd[42583]: Failed password for root from 152.67.161.153 port 37400 ssh2
+Mar 19 13:48:59 srv626346 sshd[42583]: Connection closed by authenticating user root 152.67.161.153 port 37400 [preauth]
+Mar 19 13:49:00 srv626346 sshd[42585]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:02 srv626346 sshd[42585]: Failed password for root from 152.67.161.153 port 44600 ssh2
+Mar 19 13:49:04 srv626346 sshd[42585]: Connection closed by authenticating user root 152.67.161.153 port 44600 [preauth]
+Mar 19 13:49:09 srv626346 sshd[42587]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:11 srv626346 sshd[42587]: Failed password for root from 152.67.161.153 port 40270 ssh2
+Mar 19 13:49:11 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=64593 DF PROTO=TCP SPT=41831 DPT=39832 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:49:17 srv626346 sshd[42587]: Connection closed by authenticating user root 152.67.161.153 port 40270 [preauth]
+Mar 19 13:49:19 srv626346 sshd[42589]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:22 srv626346 sshd[42589]: Failed password for root from 152.67.161.153 port 33088 ssh2
+Mar 19 13:49:24 srv626346 sshd[42589]: Connection closed by authenticating user root 152.67.161.153 port 33088 [preauth]
+Mar 19 13:49:27 srv626346 sshd[42591]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:30 srv626346 sshd[42591]: Failed password for root from 152.67.161.153 port 57448 ssh2
+Mar 19 13:49:32 srv626346 sshd[42591]: Connection closed by authenticating user root 152.67.161.153 port 57448 [preauth]
+Mar 19 13:49:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=43064 DF PROTO=TCP SPT=41831 DPT=10091 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:49:36 srv626346 sshd[42593]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:37 srv626346 sshd[42593]: Failed password for root from 152.67.161.153 port 57452 ssh2
+Mar 19 13:49:38 srv626346 sshd[42593]: Connection closed by authenticating user root 152.67.161.153 port 57452 [preauth]
+Mar 19 13:49:44 srv626346 sshd[42595]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:46 srv626346 sshd[42595]: Failed password for root from 152.67.161.153 port 51080 ssh2
+Mar 19 13:49:50 srv626346 sshd[42595]: Connection closed by authenticating user root 152.67.161.153 port 51080 [preauth]
+Mar 19 13:49:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=30820 DF PROTO=TCP SPT=41831 DPT=24980 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:49:54 srv626346 sudo[42599]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/find / -type d -name buzly[0m
+Mar 19 13:49:54 srv626346 sudo[42599]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:49:57 srv626346 sshd[42597]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:49:59 srv626346 sshd[42597]: Failed password for root from 152.67.161.153 port 38768 ssh2
+Mar 19 13:50:02 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2a06:4880:6000:0000:0000:0000:0000:0077 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=246 FLOWLBL=634370 PROTO=TCP SPT=55363 DPT=9600 WINDOW=14600 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:50:03 srv626346 sshd[42597]: Connection closed by authenticating user root 152.67.161.153 port 38768 [preauth]
+Mar 19 13:50:04 srv626346 sshd[42602]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:50:04 srv626346 sudo[42599]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:50:07 srv626346 sshd[42602]: Failed password for root from 152.67.161.153 port 59986 ssh2
+Mar 19 13:50:09 srv626346 sshd[42602]: Connection closed by authenticating user root 152.67.161.153 port 59986 [preauth]
+Mar 19 13:50:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=14372 DF PROTO=TCP SPT=40709 DPT=54717 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:50:17 srv626346 sshd[42604]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:50:19 srv626346 sshd[42604]: Failed password for root from 152.67.161.153 port 50586 ssh2
+Mar 19 13:50:19 srv626346 sshd[42604]: Connection closed by authenticating user root 152.67.161.153 port 50586 [preauth]
+Mar 19 13:50:30 srv626346 sshd[42606]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:50:32 srv626346 sshd[42606]: Failed password for root from 152.67.161.153 port 32802 ssh2
+Mar 19 13:50:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=18226 DF PROTO=TCP SPT=40709 DPT=54721 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:50:38 srv626346 sshd[42606]: Connection closed by authenticating user root 152.67.161.153 port 32802 [preauth]
+Mar 19 13:50:46 srv626346 sshd[42609]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:50:48 srv626346 sshd[42609]: Failed password for root from 152.67.161.153 port 52720 ssh2
+Mar 19 13:50:48 srv626346 sshd[42609]: Connection closed by authenticating user root 152.67.161.153 port 52720 [preauth]
+Mar 19 13:50:51 srv626346 sshd[42611]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:50:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=14903 DF PROTO=TCP SPT=41831 DPT=10106 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:50:53 srv626346 sshd[42611]: Failed password for root from 152.67.161.153 port 45700 ssh2
+Mar 19 13:50:56 srv626346 sshd[42611]: Connection closed by authenticating user root 152.67.161.153 port 45700 [preauth]
+Mar 19 13:50:58 srv626346 sshd[42613]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:00 srv626346 sshd[42613]: Failed password for root from 152.67.161.153 port 58098 ssh2
+Mar 19 13:51:00 srv626346 sudo[42615]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 19 13:51:00 srv626346 sudo[42615]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:51:00 srv626346 sudo[42615]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:51:01 srv626346 sshd[42613]: Connection closed by authenticating user root 152.67.161.153 port 58098 [preauth]
+Mar 19 13:51:05 srv626346 sudo[42621]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 19 13:51:05 srv626346 sudo[42621]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:51:05 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 16942.[0m
+Mar 19 13:51:10 srv626346 sshd[42618]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:11 srv626346 sshd[42618]: Failed password for root from 152.67.161.153 port 58106 ssh2
+Mar 19 13:51:11 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=27227 DF PROTO=TCP SPT=40709 DPT=54728 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:51:12 srv626346 sshd[42618]: Connection closed by authenticating user root 152.67.161.153 port 58106 [preauth]
+Mar 19 13:51:12 srv626346 sudo[42621]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:51:12 srv626346 sudo[42627]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 13:51:12 srv626346 sudo[42627]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:51:13 srv626346 sudo[42627]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:51:19 srv626346 sshd[42631]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:20 srv626346 sshd[42631]: Failed password for root from 152.67.161.153 port 52978 ssh2
+Mar 19 13:51:21 srv626346 sshd[42631]: Connection closed by authenticating user root 152.67.161.153 port 52978 [preauth]
+Mar 19 13:51:24 srv626346 sshd[42633]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:26 srv626346 sshd[42633]: Failed password for root from 152.67.161.153 port 48254 ssh2
+Mar 19 13:51:27 srv626346 sshd[42633]: Connection closed by authenticating user root 152.67.161.153 port 48254 [preauth]
+Mar 19 13:51:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=14899 DF PROTO=TCP SPT=40709 DPT=54732 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:51:35 srv626346 sshd[42635]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:37 srv626346 sshd[42635]: Failed password for root from 152.67.161.153 port 51206 ssh2
+Mar 19 13:51:38 srv626346 sudo[42637]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/netstat -tulnp[0m
+Mar 19 13:51:38 srv626346 sudo[42637]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:51:38 srv626346 sudo[42637]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:51:39 srv626346 sshd[42635]: Connection closed by authenticating user root 152.67.161.153 port 51206 [preauth]
+Mar 19 13:51:41 srv626346 sshd[42641]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:43 srv626346 sshd[42641]: Failed password for root from 152.67.161.153 port 34830 ssh2
+Mar 19 13:51:43 srv626346 sshd[42641]: Connection closed by authenticating user root 152.67.161.153 port 34830 [preauth]
+Mar 19 13:51:45 srv626346 sshd[42643]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:47 srv626346 sshd[42643]: Failed password for root from 152.67.161.153 port 38962 ssh2
+Mar 19 13:51:51 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=52532 DF PROTO=TCP SPT=41831 DPT=10117 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:51:52 srv626346 sshd[42643]: Connection closed by authenticating user root 152.67.161.153 port 38962 [preauth]
+Mar 19 13:51:56 srv626346 sshd[42645]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:51:58 srv626346 sshd[42645]: Failed password for root from 152.67.161.153 port 38970 ssh2
+Mar 19 13:52:00 srv626346 sshd[42645]: Connection closed by authenticating user root 152.67.161.153 port 38970 [preauth]
+Mar 19 13:52:03 srv626346 sshd[42647]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:05 srv626346 sshd[42647]: Failed password for root from 152.67.161.153 port 48012 ssh2
+Mar 19 13:52:09 srv626346 sshd[42647]: Connection closed by authenticating user root 152.67.161.153 port 48012 [preauth]
+Mar 19 13:52:12 srv626346 sudo[42651]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 13:52:12 srv626346 sudo[42651]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:52:12 srv626346 sudo[42651]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:52:13 srv626346 sshd[42649]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=7241 DF PROTO=TCP SPT=41831 DPT=10121 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:52:15 srv626346 sshd[42649]: Failed password for root from 152.67.161.153 port 47748 ssh2
+Mar 19 13:52:16 srv626346 sshd[42649]: Connection closed by authenticating user root 152.67.161.153 port 47748 [preauth]
+Mar 19 13:52:17 srv626346 sshd[42655]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:18 srv626346 sshd[42655]: Failed password for root from 152.67.161.153 port 57800 ssh2
+Mar 19 13:52:19 srv626346 sshd[42655]: Connection closed by authenticating user root 152.67.161.153 port 57800 [preauth]
+Mar 19 13:52:21 srv626346 sshd[42657]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:24 srv626346 sshd[42657]: Failed password for root from 152.67.161.153 port 57808 ssh2
+Mar 19 13:52:26 srv626346 sshd[42657]: Connection closed by authenticating user root 152.67.161.153 port 57808 [preauth]
+Mar 19 13:52:27 srv626346 sshd[42659]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:29 srv626346 sshd[42659]: Failed password for root from 152.67.161.153 port 33714 ssh2
+Mar 19 13:52:31 srv626346 sshd[42659]: Connection closed by authenticating user root 152.67.161.153 port 33714 [preauth]
+Mar 19 13:52:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=64606 DF PROTO=TCP SPT=40709 DPT=54743 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:52:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:0001:0fb5:0000:0000:0000:020f DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=242 FLOWLBL=0 PROTO=TCP SPT=36797 DPT=212 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:52:33 srv626346 sudo[42663]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/lsof -i :80[0m
+Mar 19 13:52:33 srv626346 sudo[42663]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:52:33 srv626346 sudo[42663]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:52:34 srv626346 sshd[42661]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:36 srv626346 sshd[42661]: Failed password for root from 152.67.161.153 port 33718 ssh2
+Mar 19 13:52:39 srv626346 sshd[42661]: Connection closed by authenticating user root 152.67.161.153 port 33718 [preauth]
+Mar 19 13:52:45 srv626346 sshd[42666]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:47 srv626346 sshd[42666]: Failed password for root from 152.67.161.153 port 35174 ssh2
+Mar 19 13:52:47 srv626346 sshd[42666]: Connection closed by authenticating user root 152.67.161.153 port 35174 [preauth]
+Mar 19 13:52:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=35925 DF PROTO=TCP SPT=40709 DPT=54747 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:52:54 srv626346 sshd[42668]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:52:56 srv626346 sshd[42668]: Failed password for root from 152.67.161.153 port 32994 ssh2
+Mar 19 13:52:57 srv626346 sshd[42668]: Connection closed by authenticating user root 152.67.161.153 port 32994 [preauth]
+Mar 19 13:52:59 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:0001:0fb5:0000:0000:0000:00b5 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=244 FLOWLBL=0 PROTO=TCP SPT=42838 DPT=636 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:52:59 srv626346 sshd[42671]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:01 srv626346 sshd[42671]: Failed password for root from 152.67.161.153 port 34844 ssh2
+Mar 19 13:53:02 srv626346 sshd[42671]: Connection closed by authenticating user root 152.67.161.153 port 34844 [preauth]
+Mar 19 13:53:06 srv626346 sudo[42675]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/journalctl -xeu nginx[0m
+Mar 19 13:53:06 srv626346 sudo[42675]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:53:06 srv626346 sudo[42675]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:53:08 srv626346 sshd[42673]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:10 srv626346 sshd[42673]: Failed password for root from 152.67.161.153 port 34856 ssh2
+Mar 19 13:53:11 srv626346 sshd[42673]: Connection closed by authenticating user root 152.67.161.153 port 34856 [preauth]
+Mar 19 13:53:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=16187 DF PROTO=TCP SPT=41831 DPT=10132 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:53:14 srv626346 sshd[42679]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:16 srv626346 sshd[42679]: Failed password for root from 152.67.161.153 port 41936 ssh2
+Mar 19 13:53:17 srv626346 sshd[42679]: Connection closed by authenticating user root 152.67.161.153 port 41936 [preauth]
+Mar 19 13:53:21 srv626346 sshd[42681]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:23 srv626346 sshd[42681]: Failed password for root from 152.67.161.153 port 41946 ssh2
+Mar 19 13:53:25 srv626346 sshd[42681]: Connection closed by authenticating user root 152.67.161.153 port 41946 [preauth]
+Mar 19 13:53:30 srv626346 sshd[42683]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:32 srv626346 sshd[42683]: Failed password for root from 152.67.161.153 port 57890 ssh2
+Mar 19 13:53:33 srv626346 sshd[42683]: Connection closed by authenticating user root 152.67.161.153 port 57890 [preauth]
+Mar 19 13:53:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=20078 DF PROTO=TCP SPT=41831 DPT=10136 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:53:37 srv626346 sshd[42685]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:38 srv626346 sudo[42687]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl stop nginx[0m
+Mar 19 13:53:38 srv626346 sudo[42687]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:53:38 srv626346 systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Mar 19 13:53:38 srv626346 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17015 and the job result is done.[0m
+Mar 19 13:53:38 srv626346 sudo[42687]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:53:39 srv626346 sshd[42685]: Failed password for root from 152.67.161.153 port 57900 ssh2
+Mar 19 13:53:41 srv626346 sshd[42685]: Connection closed by authenticating user root 152.67.161.153 port 57900 [preauth]
+Mar 19 13:53:45 srv626346 sudo[42693]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 19 13:53:45 srv626346 sudo[42693]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:53:45 srv626346 sudo[42693]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:53:48 srv626346 sshd[42692]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:49 srv626346 sudo[42697]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 19 13:53:49 srv626346 sudo[42697]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:53:49 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17016.[0m
+Mar 19 13:53:50 srv626346 sshd[42692]: Failed password for root from 152.67.161.153 port 51960 ssh2
+Mar 19 13:53:51 srv626346 sshd[42692]: Connection closed by authenticating user root 152.67.161.153 port 51960 [preauth]
+Mar 19 13:53:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=56949 DF PROTO=TCP SPT=40709 DPT=54758 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:53:53 srv626346 sshd[42703]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:53:55 srv626346 sshd[42703]: Failed password for root from 152.67.161.153 port 42452 ssh2
+Mar 19 13:53:56 srv626346 sshd[42703]: Connection closed by authenticating user root 152.67.161.153 port 42452 [preauth]
+Mar 19 13:53:57 srv626346 sudo[42697]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:53:58 srv626346 sudo[42706]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 13:53:58 srv626346 sudo[42706]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:53:58 srv626346 sudo[42706]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:54:09 srv626346 sshd[42705]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:09 srv626346 sudo[42711]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl stop apache2[0m
+Mar 19 13:54:09 srv626346 sudo[42711]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:54:09 srv626346 sudo[42711]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:54:10 srv626346 sshd[42705]: Failed password for root from 152.67.161.153 port 60340 ssh2
+Mar 19 13:54:11 srv626346 sshd[42705]: Connection closed by authenticating user root 152.67.161.153 port 60340 [preauth]
+Mar 19 13:54:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=11787 DF PROTO=TCP SPT=40709 DPT=54762 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:54:13 srv626346 sshd[42715]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:16 srv626346 sshd[42715]: Failed password for root from 152.67.161.153 port 58534 ssh2
+Mar 19 13:54:19 srv626346 sshd[42715]: Connection closed by authenticating user root 152.67.161.153 port 58534 [preauth]
+Mar 19 13:54:21 srv626346 sshd[42717]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:23 srv626346 sshd[42717]: Failed password for root from 152.67.161.153 port 42128 ssh2
+Mar 19 13:54:23 srv626346 sshd[42717]: Connection closed by authenticating user root 152.67.161.153 port 42128 [preauth]
+Mar 19 13:54:26 srv626346 sshd[42719]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:27 srv626346 sudo[42721]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/lsof -i :80[0m
+Mar 19 13:54:27 srv626346 sudo[42721]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:54:27 srv626346 sudo[42721]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:54:29 srv626346 sshd[42719]: Failed password for root from 152.67.161.153 port 34966 ssh2
+Mar 19 13:54:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=104.156.155.4 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=244 ID=22323 PROTO=TCP SPT=55344 DPT=4117 WINDOW=1024 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:54:32 srv626346 sshd[42719]: Connection closed by authenticating user root 152.67.161.153 port 34966 [preauth]
+Mar 19 13:54:35 srv626346 sshd[42724]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:37 srv626346 sshd[42724]: Failed password for root from 152.67.161.153 port 34976 ssh2
+Mar 19 13:54:38 srv626346 sshd[42724]: Connection closed by authenticating user root 152.67.161.153 port 34976 [preauth]
+Mar 19 13:54:45 srv626346 sshd[42726]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:48 srv626346 sshd[42726]: Failed password for root from 152.67.161.153 port 48718 ssh2
+Mar 19 13:54:51 srv626346 sshd[42726]: Connection closed by authenticating user root 152.67.161.153 port 48718 [preauth]
+Mar 19 13:54:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=53286 DF PROTO=TCP SPT=41831 DPT=10151 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:54:53 srv626346 sshd[42730]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:54:55 srv626346 sshd[42730]: Failed password for root from 152.67.161.153 port 52834 ssh2
+Mar 19 13:54:59 srv626346 sshd[42730]: Connection closed by authenticating user root 152.67.161.153 port 52834 [preauth]
+Mar 19 13:55:10 srv626346 sshd[42732]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:55:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=4128 DF PROTO=TCP SPT=40709 DPT=54773 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:55:12 srv626346 sshd[42732]: Failed password for root from 152.67.161.153 port 43288 ssh2
+Mar 19 13:55:13 srv626346 sshd[42732]: Connection closed by authenticating user root 152.67.161.153 port 43288 [preauth]
+Mar 19 13:55:21 srv626346 sshd[42734]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:55:24 srv626346 sshd[42734]: Failed password for root from 152.67.161.153 port 43700 ssh2
+Mar 19 13:55:25 srv626346 sudo[42736]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 13:55:25 srv626346 sudo[42736]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:55:25 srv626346 sudo[42736]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:55:28 srv626346 sshd[42734]: Connection closed by authenticating user root 152.67.161.153 port 43700 [preauth]
+Mar 19 13:55:30 srv626346 sshd[42740]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:55:31 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=167.94.146.67 DST=62.72.59.160 LEN=60 TOS=0x00 PREC=0x00 TTL=54 ID=28211 PROTO=TCP SPT=58127 DPT=5410 WINDOW=42340 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:55:32 srv626346 sshd[42740]: Failed password for root from 152.67.161.153 port 53686 ssh2
+Mar 19 13:55:32 srv626346 sshd[42740]: Connection closed by authenticating user root 152.67.161.153 port 53686 [preauth]
+Mar 19 13:55:34 srv626346 sshd[42742]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:55:36 srv626346 sshd[42742]: Failed password for root from 152.67.161.153 port 53700 ssh2
+Mar 19 13:55:38 srv626346 sshd[42742]: Connection closed by authenticating user root 152.67.161.153 port 53700 [preauth]
+Mar 19 13:55:44 srv626346 sshd[42744]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:55:47 srv626346 sshd[42744]: Failed password for root from 152.67.161.153 port 38338 ssh2
+Mar 19 13:55:49 srv626346 sshd[42744]: Connection closed by authenticating user root 152.67.161.153 port 38338 [preauth]
+Mar 19 13:55:51 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=4866 DF PROTO=TCP SPT=41831 DPT=10162 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:55:56 srv626346 sudo[42748]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/journalctl -xeu nginx[0m
+Mar 19 13:55:56 srv626346 sudo[42748]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:55:56 srv626346 sudo[42748]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:55:58 srv626346 sshd[42746]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:00 srv626346 sshd[42746]: Failed password for root from 152.67.161.153 port 44432 ssh2
+Mar 19 13:56:01 srv626346 sshd[42746]: Connection closed by authenticating user root 152.67.161.153 port 44432 [preauth]
+Mar 19 13:56:06 srv626346 sudo[42754]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/pkill -f nginx[0m
+Mar 19 13:56:06 srv626346 sudo[42754]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:56:06 srv626346 sudo[42754]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:56:06 srv626346 systemd[1]: nginx.service: Can't open PID file /run/nginx.pid (yet?) after start: Operation not permitted
+Mar 19 13:56:06 srv626346 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'protocol'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has entered the 'failed' state with result 'protocol'.[0m
+Mar 19 13:56:06 srv626346 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17016 and the job result is failed.[0m
+Mar 19 13:56:10 srv626346 sshd[42752]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:12 srv626346 sshd[42752]: Failed password for root from 152.67.161.153 port 50972 ssh2
+Mar 19 13:56:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=41586 DF PROTO=TCP SPT=41831 DPT=10166 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:56:14 srv626346 sshd[42752]: Connection closed by authenticating user root 152.67.161.153 port 50972 [preauth]
+Mar 19 13:56:19 srv626346 sshd[42758]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:21 srv626346 sshd[42758]: Failed password for root from 152.67.161.153 port 56392 ssh2
+Mar 19 13:56:23 srv626346 sshd[42758]: Connection closed by authenticating user root 152.67.161.153 port 56392 [preauth]
+Mar 19 13:56:26 srv626346 sshd[42760]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:28 srv626346 sshd[42760]: Failed password for root from 152.67.161.153 port 56398 ssh2
+Mar 19 13:56:30 srv626346 sshd[42760]: Connection closed by authenticating user root 152.67.161.153 port 56398 [preauth]
+Mar 19 13:56:31 srv626346 sshd[42762]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=37469 DF PROTO=TCP SPT=40709 DPT=54788 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:56:33 srv626346 sshd[42762]: Failed password for root from 152.67.161.153 port 41860 ssh2
+Mar 19 13:56:33 srv626346 sshd[42762]: Connection closed by authenticating user root 152.67.161.153 port 41860 [preauth]
+Mar 19 13:56:38 srv626346 sshd[42764]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:41 srv626346 sshd[42764]: Failed password for root from 152.67.161.153 port 52150 ssh2
+Mar 19 13:56:44 srv626346 sshd[42764]: Connection closed by authenticating user root 152.67.161.153 port 52150 [preauth]
+Mar 19 13:56:47 srv626346 sshd[42766]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:49 srv626346 sshd[42766]: Failed password for root from 152.67.161.153 port 45886 ssh2
+Mar 19 13:56:50 srv626346 sshd[42766]: Connection closed by authenticating user root 152.67.161.153 port 45886 [preauth]
+Mar 19 13:56:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=25136 DF PROTO=TCP SPT=40709 DPT=54792 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:56:54 srv626346 sshd[42768]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:56:55 srv626346 sshd[42768]: Failed password for root from 152.67.161.153 port 45890 ssh2
+Mar 19 13:56:57 srv626346 sshd[42768]: Connection closed by authenticating user root 152.67.161.153 port 45890 [preauth]
+Mar 19 13:57:02 srv626346 sshd[42770]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:57:05 srv626346 sshd[42770]: Failed password for root from 152.67.161.153 port 59306 ssh2
+Mar 19 13:57:07 srv626346 sshd[42770]: Connection closed by authenticating user root 152.67.161.153 port 59306 [preauth]
+Mar 19 13:57:11 srv626346 sshd[42772]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:57:12 srv626346 sshd[42772]: Failed password for root from 152.67.161.153 port 60598 ssh2
+Mar 19 13:57:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=30018 DF PROTO=TCP SPT=41831 DPT=10177 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:57:14 srv626346 sshd[42772]: Connection closed by authenticating user root 152.67.161.153 port 60598 [preauth]
+Mar 19 13:57:17 srv626346 sudo[42776]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/nano /etc/mongod.conf[0m
+Mar 19 13:57:17 srv626346 sudo[42776]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:57:17 srv626346 sshd[42774]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:57:19 srv626346 sshd[42774]: Failed password for root from 152.67.161.153 port 41278 ssh2
+Mar 19 13:57:25 srv626346 sshd[42774]: Connection closed by authenticating user root 152.67.161.153 port 41278 [preauth]
+Mar 19 13:57:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=54545 DF PROTO=TCP SPT=40709 DPT=54799 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:57:34 srv626346 sshd[42779]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:57:35 srv626346 sshd[42779]: Failed password for root from 152.67.161.153 port 50590 ssh2
+Mar 19 13:57:38 srv626346 sshd[42779]: Connection closed by authenticating user root 152.67.161.153 port 50590 [preauth]
+Mar 19 13:57:39 srv626346 sshd[42781]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:57:42 srv626346 sshd[42781]: Failed password for root from 152.67.161.153 port 49106 ssh2
+Mar 19 13:57:44 srv626346 sshd[42781]: Connection closed by authenticating user root 152.67.161.153 port 49106 [preauth]
+Mar 19 13:57:51 srv626346 sshd[42783]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:57:53 srv626346 sshd[42783]: Failed password for root from 152.67.161.153 port 58686 ssh2
+Mar 19 13:57:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=25646 DF PROTO=TCP SPT=40709 DPT=54803 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:57:56 srv626346 sshd[42783]: Connection closed by authenticating user root 152.67.161.153 port 58686 [preauth]
+Mar 19 13:58:02 srv626346 sshd[42785]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:05 srv626346 sshd[42785]: Failed password for root from 152.67.161.153 port 47700 ssh2
+Mar 19 13:58:08 srv626346 sshd[42785]: Connection closed by authenticating user root 152.67.161.153 port 47700 [preauth]
+Mar 19 13:58:11 srv626346 sudo[42776]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:58:11 srv626346 sudo[42790]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/netstat -tulnp[0m
+Mar 19 13:58:11 srv626346 sudo[42790]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:58:11 srv626346 sudo[42790]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:58:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=5949 DF PROTO=TCP SPT=41831 DPT=10188 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:58:16 srv626346 sudo[42794]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 19 13:58:16 srv626346 sudo[42794]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:58:16 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17089.[0m
+Mar 19 13:58:16 srv626346 sshd[42788]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:18 srv626346 sshd[42788]: Failed password for root from 152.67.161.153 port 48098 ssh2
+Mar 19 13:58:19 srv626346 sshd[42788]: Connection closed by authenticating user root 152.67.161.153 port 48098 [preauth]
+Mar 19 13:58:20 srv626346 sshd[42800]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:22 srv626346 sshd[42800]: Failed password for root from 152.67.161.153 port 35932 ssh2
+Mar 19 13:58:25 srv626346 sshd[42800]: Connection closed by authenticating user root 152.67.161.153 port 35932 [preauth]
+Mar 19 13:58:27 srv626346 sshd[42802]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:29 srv626346 sshd[42802]: Failed password for root from 152.67.161.153 port 33832 ssh2
+Mar 19 13:58:30 srv626346 sshd[42802]: Connection closed by authenticating user root 152.67.161.153 port 33832 [preauth]
+Mar 19 13:58:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=10006 DF PROTO=TCP SPT=41831 DPT=10192 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:58:36 srv626346 sshd[42804]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:37 srv626346 sshd[42804]: Failed password for root from 152.67.161.153 port 33842 ssh2
+Mar 19 13:58:38 srv626346 sshd[42804]: Connection closed by authenticating user root 152.67.161.153 port 33842 [preauth]
+Mar 19 13:58:46 srv626346 sshd[42806]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:48 srv626346 sshd[42806]: Failed password for root from 152.67.161.153 port 54062 ssh2
+Mar 19 13:58:49 srv626346 sshd[42806]: Connection closed by authenticating user root 152.67.161.153 port 54062 [preauth]
+Mar 19 13:58:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=14167 DF PROTO=TCP SPT=40709 DPT=54814 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:58:57 srv626346 sshd[42808]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:58:59 srv626346 sshd[42808]: Failed password for root from 152.67.161.153 port 47178 ssh2
+Mar 19 13:59:00 srv626346 sshd[42808]: Connection closed by authenticating user root 152.67.161.153 port 47178 [preauth]
+Mar 19 13:59:00 srv626346 sudo[42794]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:59:03 srv626346 sshd[42810]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:05 srv626346 sshd[42810]: Failed password for root from 152.67.161.153 port 59142 ssh2
+Mar 19 13:59:07 srv626346 sshd[42810]: Connection closed by authenticating user root 152.67.161.153 port 59142 [preauth]
+Mar 19 13:59:12 srv626346 sshd[42812]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=34322 DF PROTO=TCP SPT=40709 DPT=54818 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:59:14 srv626346 sshd[42812]: Failed password for root from 152.67.161.153 port 55000 ssh2
+Mar 19 13:59:15 srv626346 sshd[42812]: Connection closed by authenticating user root 152.67.161.153 port 55000 [preauth]
+Mar 19 13:59:16 srv626346 sshd[42814]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:17 srv626346 sshd[42814]: Failed password for root from 152.67.161.153 port 41212 ssh2
+Mar 19 13:59:18 srv626346 sshd[42814]: Connection closed by authenticating user root 152.67.161.153 port 41212 [preauth]
+Mar 19 13:59:22 srv626346 sudo[42818]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/journalctl -xeu nginx[0m
+Mar 19 13:59:22 srv626346 sudo[42818]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:59:22 srv626346 sudo[42818]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:59:25 srv626346 sshd[42816]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:27 srv626346 sshd[42816]: Failed password for root from 152.67.161.153 port 41218 ssh2
+Mar 19 13:59:28 srv626346 sshd[42816]: Connection closed by authenticating user root 152.67.161.153 port 41218 [preauth]
+Mar 19 13:59:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=22789 DF PROTO=TCP SPT=41831 DPT=10203 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:59:32 srv626346 sshd[42822]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:34 srv626346 sshd[42822]: Failed password for root from 152.67.161.153 port 36416 ssh2
+Mar 19 13:59:35 srv626346 sshd[42822]: Connection closed by authenticating user root 152.67.161.153 port 36416 [preauth]
+Mar 19 13:59:36 srv626346 sshd[42824]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:38 srv626346 sshd[42824]: Failed password for root from 152.67.161.153 port 33600 ssh2
+Mar 19 13:59:42 srv626346 sshd[42824]: Connection closed by authenticating user root 152.67.161.153 port 33600 [preauth]
+Mar 19 13:59:43 srv626346 sshd[42826]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:45 srv626346 sshd[42826]: Failed password for root from 152.67.161.153 port 33610 ssh2
+Mar 19 13:59:45 srv626346 sudo[42828]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/rm -f /run/nginx.pid[0m
+Mar 19 13:59:45 srv626346 sudo[42828]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 13:59:45 srv626346 sudo[42828]: pam_unix(sudo:session): session closed for user root
+Mar 19 13:59:46 srv626346 sshd[42826]: Connection closed by authenticating user root 152.67.161.153 port 33610 [preauth]
+Mar 19 13:59:48 srv626346 sshd[42842]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:50 srv626346 sshd[42842]: Failed password for root from 152.67.161.153 port 48572 ssh2
+Mar 19 13:59:52 srv626346 sshd[42842]: Connection closed by authenticating user root 152.67.161.153 port 48572 [preauth]
+Mar 19 13:59:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=10621 DF PROTO=TCP SPT=41831 DPT=10207 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 13:59:54 srv626346 sshd[42844]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 13:59:56 srv626346 sshd[42844]: Failed password for root from 152.67.161.153 port 48576 ssh2
+Mar 19 13:59:56 srv626346 sshd[42844]: Connection closed by authenticating user root 152.67.161.153 port 48576 [preauth]
+Mar 19 14:00:01 srv626346 sudo[42847]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/rm -f /run/nginx.pid[0m
+Mar 19 14:00:01 srv626346 sudo[42847]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:00:01 srv626346 sudo[42847]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:00:05 srv626346 sshd[42846]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:00:06 srv626346 sshd[42846]: Failed password for root from 152.67.161.153 port 58578 ssh2
+Mar 19 14:00:07 srv626346 sshd[42846]: Connection closed by authenticating user root 152.67.161.153 port 58578 [preauth]
+Mar 19 14:00:07 srv626346 sshd[42862]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:00:09 srv626346 sshd[42862]: Failed password for root from 152.67.161.153 port 38884 ssh2
+Mar 19 14:00:12 srv626346 sshd[42862]: Connection closed by authenticating user root 152.67.161.153 port 38884 [preauth]
+Mar 19 14:00:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=59695 DF PROTO=TCP SPT=40709 DPT=54829 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:00:20 srv626346 sshd[42864]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:00:22 srv626346 sshd[42864]: Failed password for root from 152.67.161.153 port 38886 ssh2
+Mar 19 14:00:24 srv626346 sshd[42864]: Connection closed by authenticating user root 152.67.161.153 port 38886 [preauth]
+Mar 19 14:00:28 srv626346 sudo[42868]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/rm -f /run/nginx.pid[0m
+Mar 19 14:00:28 srv626346 sudo[42868]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:00:28 srv626346 sudo[42868]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:00:32 srv626346 sshd[42866]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:00:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=63497 DF PROTO=TCP SPT=40709 DPT=54833 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:00:34 srv626346 sshd[42866]: Failed password for root from 152.67.161.153 port 53344 ssh2
+Mar 19 14:00:34 srv626346 sudo[42871]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 19 14:00:34 srv626346 sudo[42871]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:00:34 srv626346 systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Mar 19 14:00:34 srv626346 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17089 and the job result is done.[0m
+Mar 19 14:00:34 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17089.[0m
+Mar 19 14:00:40 srv626346 sshd[42866]: Connection closed by authenticating user root 152.67.161.153 port 53344 [preauth]
+Mar 19 14:00:41 srv626346 sudo[42871]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:00:42 srv626346 sudo[42879]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 14:00:42 srv626346 sudo[42879]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:00:42 srv626346 sudo[42879]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:00:48 srv626346 sshd[42877]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:00:49 srv626346 sshd[42877]: Failed password for root from 152.67.161.153 port 52490 ssh2
+Mar 19 14:00:50 srv626346 sshd[42877]: Connection closed by authenticating user root 152.67.161.153 port 52490 [preauth]
+Mar 19 14:00:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=60256 DF PROTO=TCP SPT=41831 DPT=10218 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:00:54 srv626346 sshd[42883]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:00:57 srv626346 sshd[42883]: Failed password for root from 152.67.161.153 port 33274 ssh2
+Mar 19 14:00:59 srv626346 sshd[42883]: Connection closed by authenticating user root 152.67.161.153 port 33274 [preauth]
+Mar 19 14:01:08 srv626346 sshd[42885]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:01:08 srv626346 sudo[42888]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 19 14:01:08 srv626346 sudo[42888]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:01:08 srv626346 sudo[42888]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:01:09 srv626346 sshd[42885]: Failed password for root from 152.67.161.153 port 56760 ssh2
+Mar 19 14:01:10 srv626346 sshd[42885]: Connection closed by authenticating user root 152.67.161.153 port 56760 [preauth]
+Mar 19 14:01:11 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=31607 DF PROTO=TCP SPT=41831 DPT=25107 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:01:17 srv626346 sshd[42891]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:01:19 srv626346 sshd[42891]: Failed password for root from 152.67.161.153 port 48698 ssh2
+Mar 19 14:01:24 srv626346 sshd[42891]: Connection closed by authenticating user root 152.67.161.153 port 48698 [preauth]
+Mar 19 14:01:30 srv626346 sshd[42893]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:01:32 srv626346 sshd[42893]: Failed password for root from 152.67.161.153 port 40608 ssh2
+Mar 19 14:01:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=104.156.155.4 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=244 ID=38807 PROTO=TCP SPT=55344 DPT=2320 WINDOW=1024 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:01:34 srv626346 sshd[42893]: Connection closed by authenticating user root 152.67.161.153 port 40608 [preauth]
+Mar 19 14:01:40 srv626346 sshd[42895]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:01:43 srv626346 sshd[42895]: Failed password for root from 152.67.161.153 port 33800 ssh2
+Mar 19 14:01:46 srv626346 sshd[42895]: Connection closed by authenticating user root 152.67.161.153 port 33800 [preauth]
+Mar 19 14:01:48 srv626346 sudo[42899]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/netstat -tulnp[0m
+Mar 19 14:01:48 srv626346 sudo[42899]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:01:48 srv626346 sudo[42899]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:01:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=32367 DF PROTO=TCP SPT=41831 DPT=10229 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:01:54 srv626346 sshd[42897]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:01:56 srv626346 sshd[42897]: Failed password for root from 152.67.161.153 port 58344 ssh2
+Mar 19 14:01:58 srv626346 sshd[42897]: Connection closed by authenticating user root 152.67.161.153 port 58344 [preauth]
+Mar 19 14:01:59 srv626346 sudo[42904]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/lsof -i -P -n[0m
+Mar 19 14:01:59 srv626346 sudo[42904]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:01:59 srv626346 sudo[42904]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:02:02 srv626346 sshd[42903]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:04 srv626346 sshd[42903]: Failed password for root from 152.67.161.153 port 47952 ssh2
+Mar 19 14:02:06 srv626346 sshd[42903]: Connection closed by authenticating user root 152.67.161.153 port 47952 [preauth]
+Mar 19 14:02:12 srv626346 sshd[42909]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=52559 DF PROTO=TCP SPT=41831 DPT=10233 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:02:14 srv626346 sshd[42909]: Failed password for root from 152.67.161.153 port 49066 ssh2
+Mar 19 14:02:15 srv626346 sshd[42909]: Connection closed by authenticating user root 152.67.161.153 port 49066 [preauth]
+Mar 19 14:02:17 srv626346 sshd[42911]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:19 srv626346 sshd[42911]: Failed password for root from 152.67.161.153 port 60690 ssh2
+Mar 19 14:02:20 srv626346 sshd[42911]: Connection closed by authenticating user root 152.67.161.153 port 60690 [preauth]
+Mar 19 14:02:23 srv626346 sudo[42913]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/journalctl -xeu nginx[0m
+Mar 19 14:02:23 srv626346 sudo[42913]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:02:23 srv626346 sudo[42913]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:02:27 srv626346 sshd[42917]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:29 srv626346 sshd[42917]: Failed password for root from 152.67.161.153 port 60700 ssh2
+Mar 19 14:02:31 srv626346 sshd[42917]: Connection closed by authenticating user root 152.67.161.153 port 60700 [preauth]
+Mar 19 14:02:31 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=44632 DF PROTO=TCP SPT=40709 DPT=54855 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:02:32 srv626346 sshd[42919]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:34 srv626346 sshd[42919]: Failed password for root from 152.67.161.153 port 54050 ssh2
+Mar 19 14:02:36 srv626346 sudo[42921]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/cat /var/log/nginx/error.log[0m
+Mar 19 14:02:36 srv626346 sudo[42921]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:02:36 srv626346 sudo[42921]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:02:37 srv626346 sshd[42919]: Connection closed by authenticating user root 152.67.161.153 port 54050 [preauth]
+Mar 19 14:02:41 srv626346 sshd[42924]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:43 srv626346 sshd[42924]: Failed password for root from 152.67.161.153 port 40722 ssh2
+Mar 19 14:02:43 srv626346 sshd[42924]: Connection closed by authenticating user root 152.67.161.153 port 40722 [preauth]
+Mar 19 14:02:48 srv626346 sshd[42926]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:02:50 srv626346 sshd[42926]: Failed password for root from 152.67.161.153 port 57964 ssh2
+Mar 19 14:02:50 srv626346 sshd[42926]: Connection closed by authenticating user root 152.67.161.153 port 57964 [preauth]
+Mar 19 14:02:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=15643 DF PROTO=TCP SPT=40709 DPT=54859 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:02:58 srv626346 sshd[42928]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:00 srv626346 sshd[42928]: Failed password for root from 152.67.161.153 port 57972 ssh2
+Mar 19 14:03:02 srv626346 sshd[42928]: Connection closed by authenticating user root 152.67.161.153 port 57972 [preauth]
+Mar 19 14:03:06 srv626346 sshd[42931]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:08 srv626346 sshd[42931]: Failed password for root from 152.67.161.153 port 46572 ssh2
+Mar 19 14:03:09 srv626346 sshd[42931]: Connection closed by authenticating user root 152.67.161.153 port 46572 [preauth]
+Mar 19 14:03:11 srv626346 sshd[42933]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=61522 DF PROTO=TCP SPT=41831 DPT=10244 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:03:13 srv626346 sshd[42933]: Failed password for root from 152.67.161.153 port 49238 ssh2
+Mar 19 14:03:14 srv626346 sshd[42933]: Connection closed by authenticating user root 152.67.161.153 port 49238 [preauth]
+Mar 19 14:03:23 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2402:d400:0005:0001:0000:0000:0000:0091 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=80 TC=0 HOPLIMIT=55 FLOWLBL=7259 PROTO=TCP SPT=34602 DPT=8443 WINDOW=33120 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:03:24 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2402:d400:0005:0001:0000:0000:0000:0091 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=80 TC=0 HOPLIMIT=55 FLOWLBL=212413 PROTO=TCP SPT=34602 DPT=8443 WINDOW=33120 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:03:24 srv626346 sshd[42935]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:26 srv626346 sshd[42935]: Failed password for root from 152.67.161.153 port 40170 ssh2
+Mar 19 14:03:26 srv626346 sshd[42935]: Connection closed by authenticating user root 152.67.161.153 port 40170 [preauth]
+Mar 19 14:03:27 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:02cc:0001:0000:0000:0000:00af DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=244 FLOWLBL=0 PROTO=TCP SPT=56436 DPT=49667 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:03:31 srv626346 sshd[42937]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=65361 DF PROTO=TCP SPT=41831 DPT=10248 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:03:34 srv626346 sshd[42937]: Failed password for root from 152.67.161.153 port 38884 ssh2
+Mar 19 14:03:36 srv626346 sshd[42937]: Connection closed by authenticating user root 152.67.161.153 port 38884 [preauth]
+Mar 19 14:03:37 srv626346 sudo[42941]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/lsof -i :80[0m
+Mar 19 14:03:37 srv626346 sudo[42941]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:03:37 srv626346 sudo[42941]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:03:37 srv626346 sshd[42939]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:39 srv626346 sshd[42939]: Failed password for root from 152.67.161.153 port 33284 ssh2
+Mar 19 14:03:40 srv626346 sshd[42939]: Connection closed by authenticating user root 152.67.161.153 port 33284 [preauth]
+Mar 19 14:03:46 srv626346 sshd[42944]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:48 srv626346 sshd[42944]: Failed password for root from 152.67.161.153 port 33288 ssh2
+Mar 19 14:03:50 srv626346 sshd[42944]: Connection closed by authenticating user root 152.67.161.153 port 33288 [preauth]
+Mar 19 14:03:52 srv626346 sshd[42946]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:03:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=36940 DF PROTO=TCP SPT=40709 DPT=54870 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:03:54 srv626346 sshd[42946]: Failed password for root from 152.67.161.153 port 50826 ssh2
+Mar 19 14:03:56 srv626346 sshd[42946]: Connection closed by authenticating user root 152.67.161.153 port 50826 [preauth]
+Mar 19 14:04:08 srv626346 sshd[42948]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:04:10 srv626346 sshd[42948]: Failed password for root from 152.67.161.153 port 48044 ssh2
+Mar 19 14:04:11 srv626346 sshd[42948]: Connection closed by authenticating user root 152.67.161.153 port 48044 [preauth]
+Mar 19 14:04:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=58112 DF PROTO=TCP SPT=41831 DPT=10255 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:04:16 srv626346 sshd[42950]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:04:17 srv626346 sshd[39675]: pam_unix(sshd:session): session closed for user root
+Mar 19 14:04:17 srv626346 systemd-logind[684]: Session 88 logged out. Waiting for processes to exit.
+Mar 19 14:04:17 srv626346 systemd[1]: session-88.scope: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-88.scope has successfully entered the 'dead' state.[0m
+Mar 19 14:04:17 srv626346 systemd[1]: session-88.scope: Consumed 1.735s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-88.scope completed and consumed the indicated resources.[0m
+Mar 19 14:04:17 srv626346 systemd-logind[684]: Removed session 88.
+[0;38;5;245m░░ [0m[0;32mSubject: Session 88 has been terminated[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA session with the ID 88 has been terminated.[0m
+Mar 19 14:04:18 srv626346 sshd[42950]: Failed password for root from 152.67.161.153 port 48906 ssh2
+Mar 19 14:04:19 srv626346 sudo[42952]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 14:04:19 srv626346 sudo[42952]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:04:19 srv626346 sudo[42952]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:04:20 srv626346 sshd[42950]: Connection closed by authenticating user root 152.67.161.153 port 48906 [preauth]
+Mar 19 14:04:25 srv626346 sudo[42958]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 19 14:04:25 srv626346 sudo[42958]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:04:25 srv626346 systemd[1]: nginx.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has successfully entered the 'dead' state.[0m
+Mar 19 14:04:25 srv626346 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit nginx.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit nginx.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17089 and the job result is done.[0m
+Mar 19 14:04:25 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17089.[0m
+Mar 19 14:04:26 srv626346 sshd[42956]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:04:29 srv626346 sshd[42956]: Failed password for root from 152.67.161.153 port 35598 ssh2
+Mar 19 14:04:32 srv626346 sshd[42956]: Connection closed by authenticating user root 152.67.161.153 port 35598 [preauth]
+Mar 19 14:04:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=41810 DF PROTO=TCP SPT=40709 DPT=54877 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:04:38 srv626346 sudo[42958]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:04:38 srv626346 sudo[42967]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/cat /etc/nginx/sites-enabled/default[0m
+Mar 19 14:04:38 srv626346 sudo[42967]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:04:38 srv626346 sudo[42967]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:04:38 srv626346 sshd[42965]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:04:41 srv626346 sshd[42965]: Failed password for root from 152.67.161.153 port 48366 ssh2
+Mar 19 14:04:43 srv626346 sshd[42965]: Connection closed by authenticating user root 152.67.161.153 port 48366 [preauth]
+Mar 19 14:04:46 srv626346 sshd[42970]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:04:48 srv626346 sshd[42970]: Failed password for root from 152.67.161.153 port 34026 ssh2
+Mar 19 14:04:48 srv626346 sshd[42970]: Connection closed by authenticating user root 152.67.161.153 port 34026 [preauth]
+Mar 19 14:04:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=45608 DF PROTO=TCP SPT=40709 DPT=54881 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:04:58 srv626346 sshd[42972]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:00 srv626346 sshd[42972]: Failed password for root from 152.67.161.153 port 44670 ssh2
+Mar 19 14:05:01 srv626346 sshd[42972]: Connection closed by authenticating user root 152.67.161.153 port 44670 [preauth]
+Mar 19 14:05:06 srv626346 sshd[42974]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:07 srv626346 sshd[42974]: Failed password for root from 152.67.161.153 port 59250 ssh2
+Mar 19 14:05:10 srv626346 sshd[42974]: Connection closed by authenticating user root 152.67.161.153 port 59250 [preauth]
+Mar 19 14:05:11 srv626346 sshd[42976]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=42329 DF PROTO=TCP SPT=41831 DPT=10266 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:05:12 srv626346 sshd[42976]: Failed password for root from 152.67.161.153 port 48650 ssh2
+Mar 19 14:05:14 srv626346 sshd[42976]: Connection closed by authenticating user root 152.67.161.153 port 48650 [preauth]
+Mar 19 14:05:18 srv626346 sudo[42980]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/sbin/nginx -T[0m
+Mar 19 14:05:18 srv626346 sudo[42980]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:05:18 srv626346 sudo[42980]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:05:25 srv626346 sshd[42978]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:27 srv626346 sshd[42978]: Failed password for root from 152.67.161.153 port 47416 ssh2
+Mar 19 14:05:28 srv626346 sshd[42978]: Connection closed by authenticating user root 152.67.161.153 port 47416 [preauth]
+Mar 19 14:05:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=13676 DF PROTO=TCP SPT=41831 DPT=10270 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:05:34 srv626346 sshd[42984]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:36 srv626346 sshd[42984]: Failed password for root from 152.67.161.153 port 32850 ssh2
+Mar 19 14:05:39 srv626346 sshd[42984]: Connection closed by authenticating user root 152.67.161.153 port 32850 [preauth]
+Mar 19 14:05:40 srv626346 sshd[42986]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:42 srv626346 sshd[42986]: Failed password for root from 152.67.161.153 port 34404 ssh2
+Mar 19 14:05:42 srv626346 sshd[42986]: Connection closed by authenticating user root 152.67.161.153 port 34404 [preauth]
+Mar 19 14:05:44 srv626346 sshd[42988]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:45 srv626346 sshd[42988]: Failed password for root from 152.67.161.153 port 34418 ssh2
+Mar 19 14:05:50 srv626346 sshd[42988]: Connection closed by authenticating user root 152.67.161.153 port 34418 [preauth]
+Mar 19 14:05:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=50259 DF PROTO=TCP SPT=41831 DPT=25159 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:05:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:0001:0c84:0000:0000:0000:0106 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=242 FLOWLBL=0 PROTO=TCP SPT=49159 DPT=49152 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:05:54 srv626346 sshd[42990]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:05:56 srv626346 sshd[42990]: Failed password for root from 152.67.161.153 port 48876 ssh2
+Mar 19 14:05:58 srv626346 sshd[42990]: Connection closed by authenticating user root 152.67.161.153 port 48876 [preauth]
+Mar 19 14:06:01 srv626346 sshd[42992]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:03 srv626346 sshd[42992]: Failed password for root from 152.67.161.153 port 59734 ssh2
+Mar 19 14:06:04 srv626346 sshd[42992]: Connection closed by authenticating user root 152.67.161.153 port 59734 [preauth]
+Mar 19 14:06:08 srv626346 sshd[42994]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:10 srv626346 sshd[42994]: Failed password for root from 152.67.161.153 port 45496 ssh2
+Mar 19 14:06:11 srv626346 sshd[42994]: Connection closed by authenticating user root 152.67.161.153 port 45496 [preauth]
+Mar 19 14:06:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=21264 DF PROTO=TCP SPT=41831 DPT=25163 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:06:14 srv626346 sshd[42996]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:16 srv626346 sshd[42996]: Failed password for root from 152.67.161.153 port 45498 ssh2
+Mar 19 14:06:16 srv626346 sshd[42996]: Connection closed by authenticating user root 152.67.161.153 port 45498 [preauth]
+Mar 19 14:06:20 srv626346 sshd[42998]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:22 srv626346 sshd[42998]: Failed password for root from 152.67.161.153 port 57788 ssh2
+Mar 19 14:06:22 srv626346 sshd[42998]: Connection closed by authenticating user root 152.67.161.153 port 57788 [preauth]
+Mar 19 14:06:28 srv626346 sshd[43000]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:31 srv626346 sshd[43000]: Failed password for root from 152.67.161.153 port 57796 ssh2
+Mar 19 14:06:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=34617 DF PROTO=TCP SPT=41831 DPT=10281 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:06:33 srv626346 sshd[43000]: Connection closed by authenticating user root 152.67.161.153 port 57796 [preauth]
+Mar 19 14:06:42 srv626346 sshd[43002]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:44 srv626346 sshd[43002]: Failed password for root from 152.67.161.153 port 41758 ssh2
+Mar 19 14:06:45 srv626346 sshd[43002]: Connection closed by authenticating user root 152.67.161.153 port 41758 [preauth]
+Mar 19 14:06:50 srv626346 sshd[43004]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:52 srv626346 sshd[43004]: Failed password for root from 152.67.161.153 port 42710 ssh2
+Mar 19 14:06:52 srv626346 sshd[43004]: Connection closed by authenticating user root 152.67.161.153 port 42710 [preauth]
+Mar 19 14:06:53 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=55146 DF PROTO=TCP SPT=41831 DPT=10285 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:06:56 srv626346 sshd[43006]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:06:59 srv626346 sshd[43006]: Failed password for root from 152.67.161.153 port 42726 ssh2
+Mar 19 14:07:03 srv626346 sshd[43006]: Connection closed by authenticating user root 152.67.161.153 port 42726 [preauth]
+Mar 19 14:07:05 srv626346 sshd[43008]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:07 srv626346 sshd[43008]: Failed password for root from 152.67.161.153 port 36622 ssh2
+Mar 19 14:07:08 srv626346 sshd[43008]: Connection closed by authenticating user root 152.67.161.153 port 36622 [preauth]
+Mar 19 14:07:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=9841 DF PROTO=TCP SPT=41831 DPT=25174 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:07:13 srv626346 sshd[43010]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:14 srv626346 sshd[43010]: Failed password for root from 152.67.161.153 port 36626 ssh2
+Mar 19 14:07:15 srv626346 sshd[43010]: Connection closed by authenticating user root 152.67.161.153 port 36626 [preauth]
+Mar 19 14:07:19 srv626346 sshd[43012]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:21 srv626346 sshd[43012]: Failed password for root from 152.67.161.153 port 38470 ssh2
+Mar 19 14:07:21 srv626346 sshd[43012]: Connection closed by authenticating user root 152.67.161.153 port 38470 [preauth]
+Mar 19 14:07:25 srv626346 sshd[43014]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:27 srv626346 sshd[43014]: Failed password for root from 152.67.161.153 port 38472 ssh2
+Mar 19 14:07:29 srv626346 sshd[43014]: Connection closed by authenticating user root 152.67.161.153 port 38472 [preauth]
+Mar 19 14:07:31 srv626346 sshd[43016]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:33 srv626346 sshd[43016]: Failed password for root from 152.67.161.153 port 38538 ssh2
+Mar 19 14:07:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=30028 DF PROTO=TCP SPT=41831 DPT=25178 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:07:36 srv626346 sshd[43016]: Connection closed by authenticating user root 152.67.161.153 port 38538 [preauth]
+Mar 19 14:07:41 srv626346 sshd[43018]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:43 srv626346 sshd[43018]: Failed password for root from 152.67.161.153 port 51726 ssh2
+Mar 19 14:07:44 srv626346 sshd[43018]: Connection closed by authenticating user root 152.67.161.153 port 51726 [preauth]
+Mar 19 14:07:49 srv626346 sshd[43020]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:07:51 srv626346 sshd[43020]: Failed password for root from 152.67.161.153 port 59744 ssh2
+Mar 19 14:07:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=47404 DF PROTO=TCP SPT=41831 DPT=10296 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:07:53 srv626346 sshd[42425]: Received disconnect from 103.240.209.42 port 56537:11: disconnected by user
+Mar 19 14:07:53 srv626346 sshd[42425]: Disconnected from user root 103.240.209.42 port 56537
+Mar 19 14:07:53 srv626346 sshd[42425]: pam_unix(sshd:session): session closed for user root
+Mar 19 14:07:53 srv626346 systemd[1]: session-94.scope: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-94.scope has successfully entered the 'dead' state.[0m
+Mar 19 14:07:53 srv626346 systemd[1]: session-94.scope: Consumed 11.698s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit session-94.scope completed and consumed the indicated resources.[0m
+Mar 19 14:07:53 srv626346 systemd-logind[684]: Session 94 logged out. Waiting for processes to exit.
+Mar 19 14:07:53 srv626346 systemd-logind[684]: Removed session 94.
+[0;38;5;245m░░ [0m[0;32mSubject: Session 94 has been terminated[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA session with the ID 94 has been terminated.[0m
+Mar 19 14:07:54 srv626346 sshd[43020]: Connection closed by authenticating user root 152.67.161.153 port 59744 [preauth]
+Mar 19 14:07:59 srv626346 sshd[43022]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:00 srv626346 sshd[43022]: Failed password for root from 152.67.161.153 port 56304 ssh2
+Mar 19 14:08:01 srv626346 sshd[43022]: Connection closed by authenticating user root 152.67.161.153 port 56304 [preauth]
+Mar 19 14:08:03 srv626346 systemd[1]: Stopping User Manager for UID 0...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit user@0.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit user@0.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17308.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Stopped target Main User Target.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 24 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Stopped target Basic System.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 27 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Stopped target Paths.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 38 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Stopped target Sockets.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 22 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Stopped target Timers.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 39 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed D-Bus User Message Bus Socket.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 35 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed GnuPG network certificate management daemon.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 25 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 32 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 34 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 36 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed GnuPG cryptographic agent and passphrase cache.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 37 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed debconf communication socket.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 31 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Closed REST API socket for snapd user session agent.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 33 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Removed slice User Application Slice.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit UNIT has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit UNIT has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 30 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Reached target Shutdown.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Finished Exit the Session.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 18.[0m
+Mar 19 14:08:03 srv626346 systemd[39053]: Reached target Exit the Session.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: user@0.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit user@0.service has successfully entered the 'dead' state.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: Stopped User Manager for UID 0.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit user@0.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit user@0.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17308 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: Stopping User Runtime Directory /run/user/0...
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit user-runtime-dir@0.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit user-runtime-dir@0.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17309.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: run-user-0.mount: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit run-user-0.mount has successfully entered the 'dead' state.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: user-runtime-dir@0.service: Deactivated successfully.
+[0;38;5;245m░░ [0m[0;32mSubject: Unit succeeded[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit user-runtime-dir@0.service has successfully entered the 'dead' state.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: Stopped User Runtime Directory /run/user/0.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit user-runtime-dir@0.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit user-runtime-dir@0.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17309 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: Removed slice User Slice of UID 0.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit user-0.slice has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit user-0.slice has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17311 and the job result is done.[0m
+Mar 19 14:08:03 srv626346 systemd[1]: user-0.slice: Consumed 21.029s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit user-0.slice completed and consumed the indicated resources.[0m
+Mar 19 14:08:07 srv626346 sshd[43024]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:09 srv626346 sshd[43024]: Failed password for root from 152.67.161.153 port 56308 ssh2
+Mar 19 14:08:10 srv626346 sshd[43028]: Accepted password for root from 103.240.209.42 port 56773 ssh2
+Mar 19 14:08:10 srv626346 sshd[43028]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Mar 19 14:08:10 srv626346 systemd[1]: Created slice User Slice of UID 0.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit user-0.slice has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit user-0.slice has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17386.[0m
+Mar 19 14:08:10 srv626346 systemd[1]: Starting User Runtime Directory /run/user/0...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit user-runtime-dir@0.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit user-runtime-dir@0.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17313.[0m
+Mar 19 14:08:10 srv626346 systemd-logind[684]: New session 95 of user root.
+[0;38;5;245m░░ [0m[0;32mSubject: A new session 95 has been created for user root[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32mDocumentation: sd-login(3)[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA new session with the ID 95 has been created for the user root.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe leading process of the session is 43028.[0m
+Mar 19 14:08:10 srv626346 systemd[1]: Finished User Runtime Directory /run/user/0.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit user-runtime-dir@0.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit user-runtime-dir@0.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17313.[0m
+Mar 19 14:08:10 srv626346 systemd[1]: Starting User Manager for UID 0...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit user@0.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit user@0.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17312.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Mar 19 14:08:10 srv626346 systemd[43031]: Queued start job for default target Main User Target.
+Mar 19 14:08:10 srv626346 systemd[43031]: Created slice User Application Slice.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 7.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Reached target Paths.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 3.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Reached target Timers.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 16.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Starting D-Bus User Message Bus Socket...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 6.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on GnuPG network certificate management daemon.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 9.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 15.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 14.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 13.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on GnuPG cryptographic agent and passphrase cache.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 11.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on debconf communication socket.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 12.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on REST API socket for snapd user session agent.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 10.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Listening on D-Bus User Message Bus Socket.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 6.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Reached target Sockets.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 5.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Reached target Basic System.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 2.[0m
+Mar 19 14:08:10 srv626346 systemd[1]: Started User Manager for UID 0.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit user@0.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit user@0.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17312.[0m
+Mar 19 14:08:10 srv626346 systemd[1]: Started Session 95 of User root.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit session-95.scope has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit session-95.scope has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17388.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Reached target Main User Target.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit UNIT has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit UNIT has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 1.[0m
+Mar 19 14:08:10 srv626346 systemd[43031]: Startup finished in 79ms.
+[0;38;5;245m░░ [0m[0;32mSubject: User manager start-up is now complete[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe user manager instance for user 0 has been started. All services queued[0m
+[0;38;5;245m░░[0m [0;32mfor starting have been started. Note that other services might still be starting[0m
+[0;38;5;245m░░[0m [0;32mup or be started at any later time.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mStartup of the manager took 79310 microseconds.[0m
+Mar 19 14:08:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=51580 DF PROTO=TCP SPT=41831 DPT=10300 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:08:13 srv626346 sshd[43024]: Connection closed by authenticating user root 152.67.161.153 port 56308 [preauth]
+Mar 19 14:08:16 srv626346 sshd[43125]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:19 srv626346 sshd[43125]: Failed password for root from 152.67.161.153 port 45908 ssh2
+Mar 19 14:08:22 srv626346 sshd[43125]: Connection closed by authenticating user root 152.67.161.153 port 45908 [preauth]
+Mar 19 14:08:24 srv626346 sudo[43129]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/nano /etc/nginx/sites-available/default[0m
+Mar 19 14:08:24 srv626346 sudo[43129]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:08:27 srv626346 sudo[43129]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:08:32 srv626346 sshd[43127]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=55329 DF PROTO=TCP SPT=41831 DPT=25189 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:08:34 srv626346 sshd[43127]: Failed password for root from 152.67.161.153 port 45922 ssh2
+Mar 19 14:08:37 srv626346 sshd[43127]: Connection closed by authenticating user root 152.67.161.153 port 45922 [preauth]
+Mar 19 14:08:39 srv626346 sshd[43132]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:42 srv626346 sshd[43132]: Failed password for root from 152.67.161.153 port 37672 ssh2
+Mar 19 14:08:47 srv626346 sshd[43132]: Connection closed by authenticating user root 152.67.161.153 port 37672 [preauth]
+Mar 19 14:08:49 srv626346 sshd[43134]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:52 srv626346 sshd[43134]: Failed password for root from 152.67.161.153 port 59344 ssh2
+Mar 19 14:08:52 srv626346 sshd[43134]: Connection closed by authenticating user root 152.67.161.153 port 59344 [preauth]
+Mar 19 14:08:54 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=59163 DF PROTO=TCP SPT=41831 DPT=25193 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:08:55 srv626346 sshd[43136]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:08:55 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2a06:4880:6000:0000:0000:0000:0000:007c DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=242 FLOWLBL=857710 PROTO=TCP SPT=38191 DPT=135 WINDOW=14600 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:08:58 srv626346 sshd[43136]: Failed password for root from 152.67.161.153 port 59360 ssh2
+Mar 19 14:09:00 srv626346 sshd[43136]: Connection closed by authenticating user root 152.67.161.153 port 59360 [preauth]
+Mar 19 14:09:03 srv626346 sshd[43138]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:09:05 srv626346 sshd[43138]: Failed password for root from 152.67.161.153 port 56570 ssh2
+Mar 19 14:09:05 srv626346 sshd[43138]: Connection closed by authenticating user root 152.67.161.153 port 56570 [preauth]
+Mar 19 14:09:09 srv626346 sshd[43140]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:09:11 srv626346 sshd[43140]: Failed password for root from 152.67.161.153 port 41370 ssh2
+Mar 19 14:09:13 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=15155 DF PROTO=TCP SPT=41831 DPT=10311 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:09:13 srv626346 sshd[43140]: Connection closed by authenticating user root 152.67.161.153 port 41370 [preauth]
+Mar 19 14:09:18 srv626346 sshd[43142]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:09:20 srv626346 sshd[43142]: Failed password for root from 152.67.161.153 port 39186 ssh2
+Mar 19 14:09:22 srv626346 sshd[43142]: Connection closed by authenticating user root 152.67.161.153 port 39186 [preauth]
+Mar 19 14:09:25 srv626346 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: start operation timed out. Terminating.[0m
+Mar 19 14:09:25 srv626346 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'timeout'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit nginx.service has entered the 'failed' state with result 'timeout'.[0m
+Mar 19 14:09:25 srv626346 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17089 and the job result is failed.[0m
+Mar 19 14:09:28 srv626346 sshd[43144]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:09:29 srv626346 sshd[43144]: Failed password for root from 152.67.161.153 port 39200 ssh2
+Mar 19 14:09:30 srv626346 sshd[43144]: Connection closed by authenticating user root 152.67.161.153 port 39200 [preauth]
+Mar 19 14:09:32 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=2850 DF PROTO=TCP SPT=41831 DPT=25200 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:09:37 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2a06:4880:6000:0000:0000:0000:0000:008f DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=246 FLOWLBL=28484 PROTO=TCP SPT=53443 DPT=57400 WINDOW=14600 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:09:41 srv626346 sshd[43147]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:09:43 srv626346 sshd[43147]: Failed password for root from 152.67.161.153 port 52280 ssh2
+Mar 19 14:09:43 srv626346 sshd[43147]: Connection closed by authenticating user root 152.67.161.153 port 52280 [preauth]
+Mar 19 14:09:48 srv626346 sshd[43149]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:09:50 srv626346 sshd[43149]: Failed password for root from 152.67.161.153 port 49528 ssh2
+Mar 19 14:09:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=104.156.155.4 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=244 ID=63985 PROTO=TCP SPT=55344 DPT=8002 WINDOW=1024 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:09:53 srv626346 sshd[43149]: Connection closed by authenticating user root 152.67.161.153 port 49528 [preauth]
+Mar 19 14:09:58 srv626346 sshd[43151]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:00 srv626346 sshd[43151]: Failed password for root from 152.67.161.153 port 51262 ssh2
+Mar 19 14:10:02 srv626346 sshd[43151]: Connection closed by authenticating user root 152.67.161.153 port 51262 [preauth]
+Mar 19 14:10:08 srv626346 sshd[43153]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:09 srv626346 sudo[43155]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/nano /etc/nginx/sites-available/default[0m
+Mar 19 14:10:09 srv626346 sudo[43155]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:10:10 srv626346 sshd[43153]: Failed password for root from 152.67.161.153 port 51272 ssh2
+Mar 19 14:10:12 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=32276 DF PROTO=TCP SPT=41831 DPT=10322 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:10:13 srv626346 sshd[43153]: Connection closed by authenticating user root 152.67.161.153 port 51272 [preauth]
+Mar 19 14:10:16 srv626346 sudo[43155]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:10:19 srv626346 sshd[43158]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:22 srv626346 sshd[43158]: Failed password for root from 152.67.161.153 port 39312 ssh2
+Mar 19 14:10:24 srv626346 sudo[43160]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/nano /etc/nginx/sites-available/default[0m
+Mar 19 14:10:24 srv626346 sudo[43160]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:10:25 srv626346 sshd[43158]: Connection closed by authenticating user root 152.67.161.153 port 39312 [preauth]
+Mar 19 14:10:26 srv626346 sshd[43163]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:27 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:86:dd SRC=2001:0470:0001:0332:0000:0000:0000:0158 DST=2a02:4780:0012:1470:0000:0000:0000:0001 LEN=60 TC=0 HOPLIMIT=242 FLOWLBL=0 PROTO=TCP SPT=49358 DPT=427 WINDOW=65535 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:10:27 srv626346 sshd[43163]: Failed password for root from 152.67.161.153 port 53792 ssh2
+Mar 19 14:10:28 srv626346 sshd[43163]: Connection closed by authenticating user root 152.67.161.153 port 53792 [preauth]
+Mar 19 14:10:28 srv626346 sshd[43165]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:30 srv626346 sshd[43165]: Failed password for root from 152.67.161.153 port 53806 ssh2
+Mar 19 14:10:31 srv626346 sudo[43160]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:10:31 srv626346 sshd[43165]: Connection closed by authenticating user root 152.67.161.153 port 53806 [preauth]
+Mar 19 14:10:33 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=3405 DF PROTO=TCP SPT=41831 DPT=10326 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:10:35 srv626346 sudo[43169]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 19 14:10:35 srv626346 sudo[43169]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:10:35 srv626346 systemd[1]: Starting A high performance web server and a reverse proxy server...
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit nginx.service has begun execution[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit nginx.service has begun execution.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 17465.[0m
+Mar 19 14:10:35 srv626346 sshd[43167]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:37 srv626346 sshd[43167]: Failed password for root from 152.67.161.153 port 57048 ssh2
+Mar 19 14:10:40 srv626346 sshd[43167]: Connection closed by authenticating user root 152.67.161.153 port 57048 [preauth]
+Mar 19 14:10:41 srv626346 sudo[43169]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:10:41 srv626346 sudo[43177]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/systemctl status nginx[0m
+Mar 19 14:10:41 srv626346 sudo[43177]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+Mar 19 14:10:41 srv626346 sudo[43177]: pam_unix(sudo:session): session closed for user root
+Mar 19 14:10:46 srv626346 sshd[43175]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:47 srv626346 sshd[43175]: Failed password for root from 152.67.161.153 port 57056 ssh2
+Mar 19 14:10:48 srv626346 sshd[43175]: Connection closed by authenticating user root 152.67.161.153 port 57056 [preauth]
+Mar 19 14:10:52 srv626346 kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m[UFW BLOCK] IN=eth0 OUT= MAC=bc:24:11:1d:94:ae:44:38:39:ff:ff:41:08:00 SRC=103.138.108.203 DST=62.72.59.160 LEN=40 TOS=0x00 PREC=0x00 TTL=242 ID=40282 DF PROTO=TCP SPT=41831 DPT=25215 WINDOW=512 RES=0x00 SYN URGP=0 [0m
+Mar 19 14:10:53 srv626346 sshd[43181]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=152.67.161.153  user=root[0m
+Mar 19 14:10:54 srv626346 sudo[43183]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/var/www/html/buzly ; USER=root ; COMMAND=/usr/bin/journalctl -xe[0m
+Mar 19 14:10:54 srv626346 sudo[43183]: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
