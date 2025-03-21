@@ -85,55 +85,53 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
         {!isLoading && (
           <>
             <Header language={language} onLanguageChange={onLanguageChange} />
-            <div className=" ">
-            <Routes>
-  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-  <Route
-    path="/"
-    element={
-      <main>
-        <div className="px-4 md:px-40">
-          <FeaturedNews language={language} />
-        </div>
+            <div>
+              <Routes>
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route
+                  path="/"
+                  element={
+                    <main>
+                      <div className="px-4 md:px-40">
+                        <FeaturedNews language={language} />
+                      </div>
 
-        {/* ✅ AutoAndCryptoNews without padding */}
-        <AutoAndCryptoNews language={language} />
+                      <div className="px-4 md:px-40">
+                        <LatestNews language={language} />
+                      </div>
 
-        <div className="px-4 md:px-40">
-          <LatestNews language={language} />
-        </div>
-      </main>
-    }
-  />
-  <Route path="/categories/:category" element={<Navigate to="/category/:category" replace />} />
-  
-  {/* ✅ Apply px-4 and md:px-40 to CategoryNewsPage */}
-  <Route
-    path="/category/:category"
-    element={
-      <div className="px-4 md:px-40">
-        <CategoryNewsPage language={language} />
-      </div>
-    }
-  />
-  
-  <Route path="/about" element={<AboutUs />} />
-  <Route path="/contact" element={<Contact />} />
+                      {!isHiddenPage && <Trending language={language} />}
+                    </main>
+                  }
+                />
+                <Route path="/categories/:category" element={<Navigate to="/category/:category" replace />} />
 
-  {/* ✅ Apply px-4 and md:px-40 to NewsDetails */}
-  <Route
-    path="/news/:id"
-    element={
-      <div className="px-4">
-        <NewsDetails language={language} />
-      </div>
-    }
-  />
-</Routes>
+                <Route
+                  path="/category/:category"
+                  element={
+                    <div className="px-4 md:px-40">
+                      <CategoryNewsPage language={language} />
+                    </div>
+                  }
+                />
 
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/contact" element={<Contact />} />
 
+                <Route
+                  path="/news/:id"
+                  element={
+                    <div className="px-4">
+                      <NewsDetails language={language} />
+                    </div>
+                  }
+                />
+              </Routes>
             </div>
-            {!isHiddenPage && <Trending language={language} />}
+
+            {/* ✅ Move AutoAndCryptoNews BELOW all other content and above Footer */}
+            <AutoAndCryptoNews language={language} />
+
             <Footer />
           </>
         )}

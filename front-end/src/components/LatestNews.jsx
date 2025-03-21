@@ -5,7 +5,16 @@ import { useNavigate } from 'react-router-dom';
 export default function LatestNews({ language }) {
   const [news, setNews] = useState([]);
   const navigate = useNavigate();
-  const categories = ['business', 'sports', 'politics', 'technology', 'india', 'international', 'entertainment', 'healthcare'];
+  const categories = [
+    'business',
+    'sports',
+    'politics',
+    'technology',
+    'india',
+    'international',
+    'entertainment',
+    'healthcare',
+  ];
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -17,6 +26,7 @@ export default function LatestNews({ language }) {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
         const contentType = response.headers.get('Content-Type');
         if (contentType && contentType.includes('application/json')) {
           const data = await response.json();
@@ -48,10 +58,7 @@ export default function LatestNews({ language }) {
   };
 
   const truncateTitle = (title) => {
-    if (title.length > 70) {
-      return title.substring(0, 70) + '...';
-    }
-    return title;
+    return title.length > 70 ? title.substring(0, 70) + '...' : title;
   };
 
   return (
