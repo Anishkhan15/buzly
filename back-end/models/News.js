@@ -1,11 +1,16 @@
 const mongoose = require('mongoose');
+const slugify = require('slugify');
 
 // Define the news schema
 const newsSchema = new mongoose.Schema({
   title: { 
     type: String, 
     required: true,
-    maxlength: 200 // Optional: Limit the title length
+    maxlength: 200 // Optional: Limit title length
+  },
+  slug: { 
+    type: String, 
+    required: true 
   },
   image: { 
     type: String, 
@@ -13,12 +18,12 @@ const newsSchema = new mongoose.Schema({
   },
   description: { 
     type: String, 
-    required: true,
+    required: true
   },
   category: { 
     type: String, 
     required: true,
-    enum: ['Technology', 'Business', 'Health', 'Sports', 'Entertainment', 'Politics','Auto'], // Optional: Restrict categories
+    enum: ['Technology', 'Business', 'Health', 'Sports', 'Entertainment', 'Politics', 'Auto'], // Restrict categories
   },
   dateTime: { 
     type: Date, 
@@ -32,17 +37,25 @@ const newsSchema = new mongoose.Schema({
     type: String, 
     required: true, 
     enum: ['en', 'hi'] // Only English and Hindi allowed
-  },
+  }
 });
 
-// Indexing for optimization (optional)
+// ✅ **Slug Auto-Generation Before Saving**
+newsSchema.pre('save', function (next) {
+  if (!this.slug) {
+    this.slug = slugify(this.title, { lower: true, strict: true });
+  }
+  next();
+});
+
+// ✅ **Indexes for Optimization**
 newsSchema.index({ language: 1, category: 1 });
 newsSchema.index({ isFeatured: 1 });
+newsSchema.index({ language: 1, slug: 1 }, { unique: true }); // Unique slug per language
 
-// Function to dynamically choose the collection based on the language
-newsSchema.statics.getCollectionName = function(language) {
-  return language === 'hi' ? 'buzzlynowhi' : 'buzzlynow'; // Select collection based on language
-};
+// ✅ **Dynamic Collection Selection (Fixing getCollectionName)**
+function getCollectionName(language) {
+  return language === 'hi' ? 'buzzlynowhi' : 'buzzlynow';
+}
 
-// Create and export the model
-module.exports = mongoose.model('News', newsSchema);
+module.exports = mongoose.model('News', newsSchema, getCollectionName);

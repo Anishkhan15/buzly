@@ -91,7 +91,7 @@ export default function LatestNews({ language }) {
                     <li key={item._id} className="mb-4">
                       <p
                         className="text-gray-800 font-medium cursor-pointer hover:underline hover:text-blue-400"
-                        onClick={() => navigate(`/news/${item._id}`)}
+                        onClick={() => navigate(`/news/${category}/${item.slug || item._id}`)} // ✅ Navigate using category & slug
                       >
                         {truncateTitle(item.title)}
                       </p>
@@ -122,7 +122,7 @@ export default function LatestNews({ language }) {
                         <div className="w-full pt-4">
                           <p
                             className="text-gray-800 font-medium cursor-pointer hover:text-blue-600"
-                            onClick={() => navigate(`/news/${item._id}`)}
+                            onClick={() => navigate(`/news/${category}/${item.slug || item._id}`)} // ✅ Navigate using category & slug
                           >
                             {truncateTitle(item.title)}
                           </p>

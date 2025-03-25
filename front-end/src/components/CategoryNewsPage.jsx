@@ -71,7 +71,7 @@ export default function CategoryNewsPage({ language }) {
           <article
             key={article._id}
             className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-105"
-            onClick={() => navigate(`/news/${article._id}`)}
+            onClick={() => navigate(`/news/${article.category}/${article.slug}`)}
           >
             <img
               src={article.image || 'https://via.placeholder.com/300x200'}
@@ -98,7 +98,7 @@ export default function CategoryNewsPage({ language }) {
         ))}
       </div>
 
-      {/* Read More Button */}
+      {/* Load More Button */}
       {visibleNewsCount < news.length && (
         <div className="flex justify-center mt-8">
           <button

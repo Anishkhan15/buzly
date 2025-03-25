@@ -118,8 +118,9 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<Contact />} />
 
+                {/* ✅ Updated route for two-level dynamic news URL */}
                 <Route
-                  path="/news/:id"
+                  path="/news/:category/:slug"
                   element={
                     <div className="px-4">
                       <NewsDetails language={language} />
