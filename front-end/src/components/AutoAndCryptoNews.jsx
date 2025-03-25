@@ -52,7 +52,7 @@ const AutoAndCryptoNews = ({ language }) => {
     }
 
     return (
-        <div className=" bg-black text-white py-6 px-4 pb-10 relative">
+        <div className="bg-black text-white py-6 px-4 pb-10 relative">
             <h2 className="text-xl font-semibold font-serif border-b border-gray-600 pb-2">
                 Automobile and Crypto News
             </h2>
@@ -75,7 +75,7 @@ const AutoAndCryptoNews = ({ language }) => {
                     {newsData.slice(0, 6).map((news) => (
                         <div
                             key={news._id}
-                            onClick={() => navigate(`/news/${news._id}`)}
+                            onClick={() => navigate(`/news/${news.category}/${news.slug}`)}
                             className="w-full sm:w-72 bg-gray-900 p-4 rounded-lg flex-shrink-0 cursor-pointer hover:bg-gray-800 transition snap-center"
                         >
                             <img

@@ -42,7 +42,10 @@ export default function FeaturedNews({ language }) {
         {/* Left: Featured News Slider */}
         <div className="relative h-[500px] w-full overflow-hidden rounded-xl shadow-lg">
           {latestNews.length > 0 ? (
-            <Link to={`/news/${latestNews[currentSlide]?._id || ""}`} className="block h-full">
+            <Link 
+              to={`/news/${latestNews[currentSlide]?.category}/${latestNews[currentSlide]?.slug}`} 
+              className="block h-full"
+            >
               <img
                 src={latestNews[currentSlide]?.image || "https://via.placeholder.com/500"}
                 alt={latestNews[currentSlide]?.title || "No Title"}
@@ -83,7 +86,7 @@ export default function FeaturedNews({ language }) {
             latestNews.slice(0, 4).map((news) => (
               <Link
                 key={news._id}
-                to={`/news/${news._id}`}
+                to={`/news/${news.category}/${news.slug}`}
                 className="relative h-[200px] md:h-[240px] rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105"
               >
                 <img

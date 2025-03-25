@@ -7,7 +7,7 @@ const getCollectionName = (lang) => (lang === 'hi' ? 'buzzlynowhi' : 'buzzlynow'
 const getNewsModel = (collectionName) =>
   mongoose.models[collectionName] || mongoose.model('News', News.schema, collectionName);
 
-// Fetch featured news
+// ✅ Fetch featured news
 router.get('/featured/:lang', async (req, res) => {
   const { lang } = req.params;
   if (!['en', 'hi'].includes(lang)) {
@@ -24,7 +24,7 @@ router.get('/featured/:lang', async (req, res) => {
   }
 });
 
-// Fetch latest news
+// ✅ Fetch latest news
 router.get('/latest/:lang', async (req, res) => {
   const { lang } = req.params;
   if (!['en', 'hi'].includes(lang)) {
@@ -33,7 +33,7 @@ router.get('/latest/:lang', async (req, res) => {
   try {
     const collectionName = getCollectionName(lang);
     const newsModel = getNewsModel(collectionName);
-    const latestNews = await newsModel.find({ language: lang }).sort({ dateTime: -1 }).limit(90000000);
+    const latestNews = await newsModel.find({ language: lang }).sort({ dateTime: -1 }).limit(50);
     res.json(latestNews);
   } catch (error) {
     console.error(`Error fetching latest news for language ${lang}:`, error);
@@ -41,33 +41,56 @@ router.get('/latest/:lang', async (req, res) => {
   }
 });
 
-// Fetch news by category
-// Fetch news by category
+// ✅ Fetch news by category
 router.get('/category/:lang/:category', async (req, res) => {
-    const { lang, category } = req.params;
-    if (!['en', 'hi'].includes(lang)) {
-      return res.status(400).json({ error: 'Invalid language parameter' });
+  const { lang, category } = req.params;
+  if (!['en', 'hi'].includes(lang)) {
+    return res.status(400).json({ error: 'Invalid language parameter' });
+  }
+  if (!category) {
+    return res.status(400).json({ error: 'Category parameter is required' });
+  }
+  try {
+    const collectionName = getCollectionName(lang);
+    const newsModel = getNewsModel(collectionName);
+    const news = await newsModel.find({ category, language: lang }).sort({ dateTime: -1 });
+    if (news.length === 0) {
+      return res.status(404).json({ error: `No news found for category ${category} and language ${lang}` });
     }
-    if (!category) {
-      return res.status(400).json({ error: 'Category parameter is required' });
-    }
-    try {
-      const collectionName = getCollectionName(lang);
-      const newsModel = getNewsModel(collectionName);
-      const news = await newsModel.find({ category, language: lang }).sort({ dateTime: -1 });
-      if (news.length === 0) {
-        return res.status(404).json({ error: `No news found for category ${category} and language ${lang}` });
-      }
-      res.json(news);
-    } catch (error) {
-      console.error(`Error fetching news for category ${category} and language ${lang}:`, error);
-      res.status(500).json({ error: 'Failed to fetch news by category' });
-    }
-  });
-  
+    res.json(news);
+  } catch (error) {
+    console.error(`Error fetching news for category ${category} and language ${lang}:`, error);
+    res.status(500).json({ error: 'Failed to fetch news by category' });
+  }
+});
 
-// Fetch news by ID
-router.get('/:lang/:id', async (req, res) => {
+// ✅ Fetch news by category and slug
+router.get('/category/:lang/:category/:slug', async (req, res) => {
+  const { lang, category, slug } = req.params;
+  if (!['en', 'hi'].includes(lang)) {
+    return res.status(400).json({ error: 'Invalid language parameter' });
+  }
+  if (!category || !slug) {
+    return res.status(400).json({ error: 'Category and Slug parameters are required' });
+  }
+  try {
+    const collectionName = getCollectionName(lang);
+    const newsModel = getNewsModel(collectionName);
+    const newsItem = await newsModel.findOne({ category, slug, language: lang });
+
+    if (!newsItem) {
+      return res.status(404).json({ error: `No news found for category ${category} and slug ${slug} in language ${lang}` });
+    }
+
+    res.json(newsItem);
+  } catch (error) {
+    console.error(`Error fetching news for category ${category}, slug ${slug}, and language ${lang}:`, error);
+    res.status(500).json({ error: 'Failed to fetch news item' });
+  }
+});
+
+// ✅ Fetch news by ID
+router.get('/:lang/id/:id', async (req, res) => {
   const { lang, id } = req.params;
   if (!['en', 'hi'].includes(lang)) {
     return res.status(400).json({ error: 'Invalid language parameter' });
@@ -89,7 +112,25 @@ router.get('/:lang/:id', async (req, res) => {
   }
 });
 
+// ✅ Fetch news by Slug
+router.get('/:lang/slug/:slug', async (req, res) => {
+  const { lang, slug } = req.params;
+  if (!['en', 'hi'].includes(lang)) {
+    return res.status(400).json({ error: 'Invalid language parameter' });
+  }
+  try {
+    const collectionName = getCollectionName(lang);
+    const newsModel = getNewsModel(collectionName);
+    const newsItem = await newsModel.findOne({ slug, language: lang });
 
-
+    if (!newsItem) {
+      return res.status(404).json({ error: 'News not found' });
+    }
+    res.json(newsItem);
+  } catch (error) {
+    console.error(`Error fetching news item for language ${lang} and Slug ${slug}:`, error);
+    res.status(500).json({ error: 'Failed to fetch news item' });
+  }
+});
 
 module.exports = router;

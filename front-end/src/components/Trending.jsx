@@ -75,7 +75,7 @@ const Trending = ({ language }) => {
           {news.map((article) => (
             <div
               key={article._id}
-              onClick={() => navigate(`/news/${article._id}`)}
+              onClick={() => navigate(`/news/${article.category}/${article.slug}`)}
               className="w-full sm:w-72 bg-gray-900 p-4 rounded-lg flex-shrink-0 cursor-pointer hover:bg-gray-800 transition snap-center"
             >
               <img src={article.image} alt={article.title} className="w-full h-40 object-cover rounded-md" />
