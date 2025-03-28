@@ -31,7 +31,7 @@ export default function FeaturedNews({ language }) {
 
   useEffect(() => {
     if (latestNews.length > 1) {
-      const interval = setInterval(nextSlide, 5000);
+      const interval = setInterval(nextSlide, 10000); // Changed to 10 seconds
       return () => clearInterval(interval);
     }
   }, [latestNews]);

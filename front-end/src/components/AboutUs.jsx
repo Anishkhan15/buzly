@@ -14,20 +14,14 @@ export default function AboutUs() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-          {[
-            { icon: Globe, stat: '150+', label: 'Countries Covered' },
-            { icon: Users, stat: '2M+', label: 'Monthly Readers' },
-            { icon: Clock, stat: '24/7', label: 'News Coverage' },
-            { icon: Award, stat: '50+', label: 'Awards Won' },
-          ].map((item, index) => (
-            <div key={index} className="text-center p-6 bg-gray-50 rounded-lg">
-              <item.icon className="w-8 h-8 text-red-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.stat}</h3>
-              <p className="text-gray-600">{item.label}</p>
-            </div>
-          ))}
-        </div>
+        <div className="flex justify-center items-center mb-16">
+  <div className="text-center p-6 bg-gray-50 rounded-lg">
+    <Clock className="w-8 h-8 text-red-600 mx-auto mb-4" />
+    <h3 className="text-2xl font-bold text-gray-900 mb-2">24/7</h3>
+    <p className="text-gray-600">News Coverage</p>
+  </div>
+</div>
+
 
         {/* Mission Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
