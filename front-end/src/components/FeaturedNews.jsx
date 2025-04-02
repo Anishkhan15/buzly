@@ -31,25 +31,25 @@ export default function FeaturedNews({ language }) {
 
   useEffect(() => {
     if (latestNews.length > 1) {
-      const interval = setInterval(nextSlide, 10000); // Changed to 10 seconds
+      const interval = setInterval(nextSlide, 10000);
       return () => clearInterval(interval);
     }
   }, [latestNews]);
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="flex flex-col lg:flex-row gap-6 items-stretch">
         {/* Left: Featured News Slider */}
-        <div className="relative h-[500px] w-full overflow-hidden rounded-xl shadow-lg">
+        <div className="relative lg:h-[530px] w-full lg:w-2/3 overflow-hidden rounded-xl shadow-lg flex">
           {latestNews.length > 0 ? (
-            <Link 
-              to={`/news/${latestNews[currentSlide]?.category}/${latestNews[currentSlide]?.slug}`} 
-              className="block h-full"
+            <Link
+              to={`/news/${latestNews[currentSlide]?.category}/${latestNews[currentSlide]?.slug}`}
+              className="block w-full h-full"
             >
               <img
                 src={latestNews[currentSlide]?.image || "https://via.placeholder.com/500"}
                 alt={latestNews[currentSlide]?.title || "No Title"}
-                className="w-full h-full object-cover transition-transform duration-500"
+                className="w-full h-full object-cover transition-transform duration-500 rounded-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex items-end text-white">
                 <h2 className="text-xl md:text-2xl font-semibold">
@@ -80,28 +80,28 @@ export default function FeaturedNews({ language }) {
           )}
         </div>
 
-        {/* Right: Latest News Grid (Smaller Text Below Image) */}
-        <div className="grid grid-cols-2 gap-4">
+        {/* Right: Latest News Grid */}
+        <div className="lg:w-1/3 w-full flex flex-col gap-4">
           {latestNews.length > 1 ? (
             latestNews.slice(0, 4).map((news) => (
               <Link
                 key={news._id}
                 to={`/news/${news.category}/${news.slug}`}
-                className="relative h-[200px] md:h-[240px] rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105"
+                className="rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105 bg-white flex items-center gap-3 p-4 h-[120px] hover:bg-gray-50"
               >
                 <img
                   src={news.image || "https://via.placeholder.com/240"}
                   alt={news.title || "No Title"}
-                  className="w-full h-full object-cover"
+                  className="w-24 h-24 object-cover rounded-md flex-shrink-0"
                 />
-                {/* Title Below Image */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-sm font-medium text-center py-2 px-3">
-                  {news.title || "No title available"}
+                <div className="flex-1">
+                  <h3 className="text-sm font-semibold text-gray-800">{news.title || "No title available"}</h3>
+                  <p className="text-xs text-gray-600">{news.category}</p>
                 </div>
               </Link>
             ))
           ) : (
-            <p className="text-center text-gray-500 col-span-2">Loading latest news...</p>
+            <p className="text-center text-gray-500">Loading latest news...</p>
           )}
         </div>
       </div>
