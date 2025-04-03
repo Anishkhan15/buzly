@@ -39,8 +39,8 @@ export default function FeaturedNews({ language }) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col lg:flex-row gap-6 items-stretch">
-        {/* Left: Featured News Slider */}
-        <div className="relative lg:h-[530px] w-full lg:w-2/3 overflow-hidden rounded-xl shadow-lg flex">
+        {/* Left: Featured News (Full Screen on Mobile) */}
+        <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[530px] overflow-hidden rounded-xl shadow-lg">
           {latestNews.length > 0 ? (
             <Link
               to={`/news/${latestNews[currentSlide]?.category}/${latestNews[currentSlide]?.slug}`}
@@ -80,8 +80,8 @@ export default function FeaturedNews({ language }) {
           )}
         </div>
 
-        {/* Right: Latest News Grid */}
-        <div className="lg:w-1/3 w-full flex flex-col gap-4">
+        {/* Right: Latest News Grid (Below Featured News in Mobile) */}
+        <div className="w-full lg:w-1/3 flex flex-col gap-4 mt-6 lg:mt-0">
           {latestNews.length > 1 ? (
             latestNews.slice(0, 4).map((news) => (
               <Link

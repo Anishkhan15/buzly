@@ -67,69 +67,61 @@ export default function LatestNews({ language }) {
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-gray-900">Latest News</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900">Latest News</h1>
         </div>
       </header>
 
       <div className="container mx-auto px-4 py-8">
-        {/* Categories Row */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((category) => {
-            const categoryNews = news.filter(
-              (item) => item.category && item.category.toLowerCase() === category
-            ).slice(0, 5); // Select exactly 5 news articles
+            // Filter news for the category and take exactly 4 articles
+            const categoryNews = news
+              .filter(
+                (item) =>
+                  item.category &&
+                  item.category.toLowerCase() === category.toLowerCase()
+              )
+              .slice(0, 4);
 
             return (
               <div key={category} className="bg-white p-4 rounded-lg shadow-md">
                 <h2
-                  className="text-xl font-semibold text-black cursor-pointer mb-3 hover:underline italic"
+                  className="text-lg md:text-xl font-semibold text-black cursor-pointer mb-4 hover:underline italic"
                   onClick={() => navigate(`/category/${category}`)}
                 >
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </h2>
-                <ul>
-                  {categoryNews.map((item, index) => (
-                    <li key={item._id} className="mb-4">
-                      {index < 4 ? (
-                        <>
-                          <p
-                            className="text-gray-800 font-medium cursor-pointer hover:underline hover:text-blue-400"
-                            onClick={() => navigate(`/news/${category}/${item.slug || item._id}`)}
-                          >
-                            {truncateTitle(item.title)}
-                          </p>
-                          <div className="flex items-center text-gray-500 text-sm">
-                            <Clock className="w-4 h-4 mr-1" />
-                            <span>{formatDate(item.dateTime)}</span>
-                          </div>
-                          <div className="border-t-2 border-gray-300 mt-4"></div>
-                        </>
-                      ) : (
-                        <div className="flex flex-col">
-                          <div className="w-full h-48 bg-gray-200 overflow-hidden rounded-lg">
-                            <img
-                              src={item.image}
-                              alt={item.title}
-                              className="object-cover w-full h-full"
-                            />
-                          </div>
-                          <div className="w-full pt-4">
-                            <p
-                              className="text-gray-800 font-medium cursor-pointer hover:text-blue-600"
-                              onClick={() => navigate(`/news/${category}/${item.slug || item._id}`)}
-                            >
-                              {truncateTitle(item.title)}
-                            </p>
-                            <div className="flex items-center text-gray-500 text-sm">
-                              <Clock className="w-4 h-4 mr-1" />
-                              <span>{formatDate(item.dateTime)}</span>
-                            </div>
-                          </div>
+                <div className="space-y-6">
+                  {categoryNews.map((item) => (
+                    <div
+                      key={item._id}
+                      className="bg-gray-100 rounded-lg overflow-hidden shadow-sm transition hover:shadow-lg"
+                    >
+                      <div className="w-full h-40 md:h-48 overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                      <div className="p-3">
+                        <h3
+                          className="text-sm md:text-base lg:text-lg font-medium text-gray-800 cursor-pointer hover:text-blue-600"
+                          onClick={() =>
+                            navigate(`/news/${category}/${item.slug || item._id}`)
+                          }
+                        >
+                          {truncateTitle(item.title)}
+                        </h3>
+                        <div className="flex items-center text-gray-500 text-xs md:text-sm mt-2">
+                          <Clock className="w-4 h-4 mr-1" />
+                          <span>{formatDate(item.dateTime)}</span>
                         </div>
-                      )}
-                    </li>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             );
           })}
