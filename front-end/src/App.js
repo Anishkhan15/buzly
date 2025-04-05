@@ -96,7 +96,7 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
                         <FeaturedNews language={language} />
                       </div>
 
-                      <div className="px-4 md:px-40">
+                      <div className="px-4 md:px-10">
                         <LatestNews language={language} />
                       </div>
 
