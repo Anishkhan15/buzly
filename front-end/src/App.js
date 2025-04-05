@@ -92,7 +92,7 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
                   path="/"
                   element={
                     <main>
-                      <div className="px-4 md:px-40">
+                      <div className="px-4 md:px-10">
                         <FeaturedNews language={language} />
                       </div>
 
