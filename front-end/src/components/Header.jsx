@@ -1,23 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Newspaper, Facebook, Instagram, Twitter, Globe } from 'lucide-react';
+import {
+  Menu,
+  X,
+  Newspaper,
+  Facebook,
+  Instagram,
+  Twitter,
+  Globe,
+  Flag,
+  Users,
+  Monitor,
+  Trophy,
+  Briefcase,
+  Landmark,
+  Clapperboard,
+  HeartPulse,
+} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Header({ onLanguageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
   const [language, setLanguage] = useState('en');
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const navigate = useNavigate();
 
   const categories = [
-    { key: 'india', label: 'India' },
-    { key: 'international', label: 'International' },
-    { key: 'technology', label: 'Technology' },
-    { key: 'sports', label: 'Sports' },
-    { key: 'business', label: 'Business' },
-    { key: 'politics', label: 'Politics' },
-    { key: 'entertainment', label: 'Entertainment' },
-    { key: 'healthcare', label: 'Healthcare' },
+    { key: 'india', label: 'India', icon: <Flag className="w-5 h-5" /> },
+    { key: 'international', label: 'International', icon: <Globe className="w-5 h-5" /> },
+    { key: 'technology', label: 'Technology', icon: <Monitor className="w-5 h-5" /> },
+    { key: 'sports', label: 'Sports', icon: <Trophy className="w-5 h-5" /> },
+    { key: 'business', label: 'Business', icon: <Briefcase className="w-5 h-5" /> },
+    { key: 'politics', label: 'Politics', icon: <Landmark className="w-5 h-5" /> },
+    { key: 'entertainment', label: 'Entertainment', icon: <Clapperboard className="w-5 h-5" /> },
+    { key: 'healthcare', label: 'Healthcare', icon: <HeartPulse className="w-5 h-5" /> },
   ];
 
   useEffect(() => {
@@ -34,7 +51,6 @@ export default function Header({ onLanguageChange }) {
     }
   }, [onLanguageChange]);
 
-  // Prevent scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
     return () => (document.body.style.overflow = 'auto');
@@ -46,7 +62,7 @@ export default function Header({ onLanguageChange }) {
     setLanguage(lang);
     localStorage.setItem('preferredLanguage', lang);
     onLanguageChange(lang);
-    setIsMenuOpen(false); // Close menu after switching language
+    setIsMenuOpen(false);
     navigate(`/?lang=${lang}`);
   };
 
@@ -58,6 +74,7 @@ export default function Header({ onLanguageChange }) {
   const handleCategorySelect = (categoryKey) => {
     navigate(`/category/${categoryKey}?lang=${language}`);
     setIsMenuOpen(false);
+    setIsCategoryOpen(false);
   };
 
   return (
@@ -102,30 +119,40 @@ export default function Header({ onLanguageChange }) {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8">
-            <button onClick={handleHomeClick} className="text-gray-700 font-bold hover:text-red-600">Home</button>
-            <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
-            <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
-            <div className="relative group">
-              <button className="text-gray-700 font-bold hover:text-red-600">Categories</button>
-              <motion.ul
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="absolute bg-white shadow-md mt-2 rounded-md w-48 hidden group-hover:block"
-              >
-                {categories.map((cat) => (
-                  <li
-                    key={cat.key}
-                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    onClick={() => handleCategorySelect(cat.key)}
+          <nav className="hidden md:flex space-x-8 items-center font-bold text-gray-700">
+            <button onClick={handleHomeClick} className="hover:text-red-600">Home</button>
+            <a href="/about" className="hover:text-red-600">About Us</a>
+
+            <div
+              className="relative"
+              onMouseEnter={() => setIsCategoryOpen(true)}
+              onMouseLeave={() => setIsCategoryOpen(false)}
+            >
+              <button className="hover:text-red-600">Categories</button>
+              <AnimatePresence>
+                {isCategoryOpen && (
+                  <motion.ul
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute bg-white shadow-md mt-2 rounded-md w-48 z-50"
                   >
-                    {cat.label}
-                  </li>
-                ))}
-              </motion.ul>
+                    {categories.map((cat) => (
+                      <li
+                        key={cat.key}
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => handleCategorySelect(cat.key)}
+                      >
+                        {cat.label}
+                      </li>
+                    ))}
+                  </motion.ul>
+                )}
+              </AnimatePresence>
             </div>
+
+            <a href="/contact" className="hover:text-red-600">Contact Us</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -134,7 +161,7 @@ export default function Header({ onLanguageChange }) {
           </button>
         </div>
 
-        {/* Fullscreen Mobile Menu */}
+        {/* Mobile Fullscreen Menu */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
@@ -154,28 +181,28 @@ export default function Header({ onLanguageChange }) {
                 </button>
               </div>
 
-              {/* Main Menu Links Row */}
+              {/* Mobile Nav Links */}
               <div className="flex justify-around items-center text-lg font-semibold text-gray-700 py-6 border-b">
                 <button onClick={handleHomeClick} className="hover:text-red-600">Home</button>
                 <a href="/about" className="hover:text-red-600">About</a>
                 <a href="/contact" className="hover:text-red-600">Contact</a>
               </div>
 
-              {/* Categories List */}
-              <div className="flex flex-col items-center justify-start flex-grow space-y-4 py-6">
+              {/* Mobile Categories */}
+              <div className="grid grid-cols-2 gap-4 px-6 py-6 flex-grow">
                 {categories.map((cat) => (
                   <button
                     key={cat.key}
                     onClick={() => handleCategorySelect(cat.key)}
-                    className="flex items-center space-x-2 text-gray-700 hover:text-red-600 text-base"
+                    className="flex flex-col items-center justify-center text-gray-700 hover:text-red-600 text-sm font-medium"
                   >
-                    <Globe className="w-5 h-5" />
+                    {cat.icon}
                     <span>{cat.label}</span>
                   </button>
                 ))}
               </div>
 
-              {/* Footer with Social + Language */}
+              {/* Mobile Footer */}
               <div className="flex justify-center items-center p-4 space-x-3 border-t">
                 <Facebook className="w-5 h-5 text-gray-700 hover:text-red-600" />
                 <Instagram className="w-5 h-5 text-gray-700 hover:text-red-600" />
