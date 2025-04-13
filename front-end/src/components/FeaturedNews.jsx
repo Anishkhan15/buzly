@@ -36,14 +36,6 @@ export default function FeaturedNews({ language }) {
     }
   }, [latestNews]);
 
-  // Truncate title to 15-16 words
-  const truncateTitle = (title, wordLimit = 15) => {
-    const words = title?.split(" ") || [];
-    return words.length > wordLimit
-      ? words.slice(0, wordLimit).join(" ") + "..."
-      : title;
-  };
-
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col lg:flex-row gap-6 items-stretch">
@@ -69,7 +61,6 @@ export default function FeaturedNews({ language }) {
             <p className="text-center text-gray-500">Loading news...</p>
           )}
 
-          {/* Arrows */}
           {latestNews.length > 1 && (
             <>
               <button
@@ -89,13 +80,13 @@ export default function FeaturedNews({ language }) {
         </div>
 
         {/* Right: Latest News Cards */}
-        <div className="w-full lg:w-1/3 flex flex-col gap-4 mt-6 lg:mt-0">
+        <div className="w-full lg:max-w-sm h-full lg:h-[530px] flex flex-col gap-4 mt-6 lg:mt-0 overflow-hidden">
           {latestNews.length > 1 ? (
             latestNews.slice(0, 4).map((news) => (
               <Link
                 key={news._id}
                 to={`/news/${news.category}/${news.slug}`}
-                className="rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105 bg-white flex items-center gap-3 p-4 h-[120px] hover:bg-gray-50"
+                className="rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105 bg-white flex gap-3 p-4 hover:bg-gray-50"
               >
                 <img
                   src={news.image || "https://via.placeholder.com/240"}
@@ -103,14 +94,11 @@ export default function FeaturedNews({ language }) {
                   className="w-24 h-24 object-cover rounded-md flex-shrink-0"
                 />
                 <div className="flex-1">
-                  {/* Full title for mobile */}
                   <h3 className="block lg:hidden text-sm font-semibold text-gray-800">
                     {news.title || "No title available"}
                   </h3>
-
-                  {/* Truncated title for laptop */}
-                  <h3 className="hidden lg:block text-sm font-semibold text-gray-800">
-                    {truncateTitle(news.title, 16)}
+                  <h3 className="hidden lg:block text-sm font-semibold text-gray-800 line-clamp-3">
+                    {news.title || "No title available"}
                   </h3>
                 </div>
               </Link>

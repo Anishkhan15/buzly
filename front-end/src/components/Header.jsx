@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Newspaper, Facebook, Instagram, Twitter, ChevronDown } from 'lucide-react';
+import { Menu, X, Newspaper, Facebook, Instagram, Twitter, Globe } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Header({ onLanguageChange }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
   const [language, setLanguage] = useState('en');
   const navigate = useNavigate();
@@ -35,22 +34,29 @@ export default function Header({ onLanguageChange }) {
     }
   }, [onLanguageChange]);
 
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
+    return () => (document.body.style.overflow = 'auto');
+  }, [isMenuOpen]);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const toggleCategory = () => setIsCategoryOpen(!isCategoryOpen);
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     localStorage.setItem('preferredLanguage', lang);
     onLanguageChange(lang);
+    setIsMenuOpen(false); // Close menu after switching language
+    navigate(`/?lang=${lang}`);
   };
 
   const handleHomeClick = () => {
     navigate(`/?lang=${language}`);
+    setIsMenuOpen(false);
   };
 
   const handleCategorySelect = (categoryKey) => {
     navigate(`/category/${categoryKey}?lang=${language}`);
-    setIsCategoryOpen(false);
     setIsMenuOpen(false);
   };
 
@@ -95,45 +101,31 @@ export default function Header({ onLanguageChange }) {
             <h1 className="text-2xl font-bold text-red-600">Buzzlynow</h1>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-8">
-            <button onClick={handleHomeClick} className="text-gray-700 font-bold hover:text-red-600">
-              Home
-            </button>
+            <button onClick={handleHomeClick} className="text-gray-700 font-bold hover:text-red-600">Home</button>
             <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
-            <div
-              className="relative group"
-              onMouseEnter={() => setIsCategoryOpen(true)}
-              onMouseLeave={() => setIsCategoryOpen(false)}
-            >
-              <button className="text-gray-700 font-bold hover:text-red-600 flex items-center">
-                Categories <ChevronDown className="ml-1 w-4 h-4" />
-              </button>
-              <AnimatePresence>
-                {isCategoryOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3 }}
-                    className="absolute bg-white shadow-md mt-2 rounded-md w-48"
-                  >
-                    <ul className="py-2">
-                      {categories.map((category) => (
-                        <li
-                          key={category.key}
-                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                          onClick={() => handleCategorySelect(category.key)}
-                        >
-                          {category.label}
-                        </li>
-                      ))}
-                    </ul>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
             <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
+            <div className="relative group">
+              <button className="text-gray-700 font-bold hover:text-red-600">Categories</button>
+              <motion.ul
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.3 }}
+                className="absolute bg-white shadow-md mt-2 rounded-md w-48 hidden group-hover:block"
+              >
+                {categories.map((cat) => (
+                  <li
+                    key={cat.key}
+                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handleCategorySelect(cat.key)}
+                  >
+                    {cat.label}
+                  </li>
+                ))}
+              </motion.ul>
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -142,46 +134,65 @@ export default function Header({ onLanguageChange }) {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Fullscreen Mobile Menu */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden bg-white shadow-md"
+              className="fixed inset-0 bg-white z-40 flex flex-col"
             >
-              <nav className="flex flex-col space-y-4 p-4">
-                <button onClick={handleHomeClick} className="text-gray-700 font-bold hover:text-red-600">
-                  Home
+              <div className="flex justify-between items-center p-4 border-b">
+                <div className="flex items-center space-x-2" onClick={handleHomeClick}>
+                  <Newspaper className="w-7 h-7 text-red-600" />
+                  <h1 className="text-xl font-bold text-red-600">Buzzlynow</h1>
+                </div>
+                <button onClick={toggleMenu} className="text-gray-700">
+                  <X className="w-6 h-6" />
                 </button>
-                <a href="/about" className="text-gray-700 font-bold hover:text-red-600">About Us</a>
+              </div>
+
+              {/* Main Menu Links Row */}
+              <div className="flex justify-around items-center text-lg font-semibold text-gray-700 py-6 border-b">
+                <button onClick={handleHomeClick} className="hover:text-red-600">Home</button>
+                <a href="/about" className="hover:text-red-600">About</a>
+                <a href="/contact" className="hover:text-red-600">Contact</a>
+              </div>
+
+              {/* Categories List */}
+              <div className="flex flex-col items-center justify-start flex-grow space-y-4 py-6">
+                {categories.map((cat) => (
+                  <button
+                    key={cat.key}
+                    onClick={() => handleCategorySelect(cat.key)}
+                    className="flex items-center space-x-2 text-gray-700 hover:text-red-600 text-base"
+                  >
+                    <Globe className="w-5 h-5" />
+                    <span>{cat.label}</span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Footer with Social + Language */}
+              <div className="flex justify-center items-center p-4 space-x-3 border-t">
+                <Facebook className="w-5 h-5 text-gray-700 hover:text-red-600" />
+                <Instagram className="w-5 h-5 text-gray-700 hover:text-red-600" />
+                <Twitter className="w-5 h-5 text-gray-700 hover:text-red-600" />
                 <button
-                  onClick={toggleCategory}
-                  className="text-gray-700 font-bold hover:text-red-600 flex items-center"
+                  onClick={() => handleLanguageChange('en')}
+                  className={`px-3 py-1 rounded-full text-sm ${language === 'en' ? 'bg-blue-600 text-white' : 'bg-gray-600 text-white'}`}
                 >
-                  Categories <ChevronDown className="ml-1 w-4 h-4" />
+                  EN
                 </button>
-                <AnimatePresence>
-                  {isCategoryOpen && (
-                    <motion.div className="bg-white shadow-md rounded-md">
-                      <ul className="py-2">
-                        {categories.map((category) => (
-                          <li
-                            key={category.key}
-                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                            onClick={() => handleCategorySelect(category.key)}
-                          >
-                            {category.label}
-                          </li>
-                        ))}
-                      </ul>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-                <a href="/contact" className="text-gray-700 font-bold hover:text-red-600">Contact Us</a>
-              </nav>
+                <button
+                  onClick={() => handleLanguageChange('hi')}
+                  className={`px-3 py-1 rounded-full text-sm ${language === 'hi' ? 'bg-blue-600 text-white' : 'bg-gray-600 text-white'}`}
+                >
+                  HI
+                </button>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
