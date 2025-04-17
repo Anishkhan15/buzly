@@ -64,8 +64,26 @@ const NewsDetail = ({ language = 'en' }) => {
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`, '_blank');
         break;
       case 'copy':
-        navigator.clipboard.writeText(pageUrl);
-        alert('Link copied to clipboard!');
+        const htmlContent = `
+          <div>
+            <img src="${news.image}" alt="${news.title}" style="max-width:100%;height:auto;" />
+            <h3>${news.title}</h3>
+            <p>Read more: <a href="${pageUrl}">${pageUrl}</a></p>
+          </div>
+        `;
+        
+        // Copy HTML to clipboard
+        navigator.clipboard.write([
+          new ClipboardItem({
+            'text/html': new Blob([htmlContent], { type: 'text/html' }),
+            'text/plain': new Blob([`${news.title}\n\n${pageUrl}`], { type: 'text/plain' })
+          })
+        ])
+        .then(() => alert('Image, title, and link copied!'))
+        .catch((err) => {
+          console.error('Copy failed:', err);
+          alert('Copy failed. Please try again.');
+        });
         break;
       default:
         break;
