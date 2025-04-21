@@ -94,19 +94,24 @@ const NewsDetail = ({ language = 'en' }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{news.title} | BuzzlyNow</title>
-        <meta name="description" content={news.description?.slice(0, 150)} />
-        <meta property="og:title" content={news.title} />
-        <meta property="og:description" content={news.description?.slice(0, 150)} />
-        <meta property="og:image" content={fullImageUrl} />
-        <meta property="og:url" content={pageUrl} />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={news.title} />
-        <meta name="twitter:description" content={news.description?.slice(0, 150)} />
-        <meta name="twitter:image" content={fullImageUrl} />
-      </Helmet>
+     <Helmet>
+  <title>{news.title} | BuzzlyNow</title>
+  <meta name="description" content={news.description?.slice(0, 150)} />
+  
+  {/* Open Graph Meta Tags for dynamic content */}
+  <meta property="og:title" content={news.title} />
+  <meta property="og:description" content={news.description} />
+  <meta property="og:image" content={news.image} />
+  <meta property="og:url" content={pageUrl} />
+
+  {/* Twitter Card Meta Tags for dynamic content */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={news.title} />
+  <meta name="twitter:description" content={news.description} />
+  <meta name="twitter:image" content={news.image} />
+  <meta name="twitter:url" content={pageUrl} />
+</Helmet>
+
 
       {/* Main content of your NewsDetail component */}
       <div className="flex justify-center px-4 py-8">
