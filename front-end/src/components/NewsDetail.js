@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF, FaCopy } from 'react-icons/fa';
 import { Helmet } from 'react-helmet-async';
 
-
 const NewsDetail = ({ language = 'en' }) => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -91,21 +90,28 @@ const NewsDetail = ({ language = 'en' }) => {
   if (error) return <div className="text-red-500 text-center mt-8">{error}</div>;
   if (!news) return <div className="text-center mt-8">Loading...</div>;
 
+  const fullImageUrl = news.image.startsWith('http') ? news.image : `${window.location.origin}${news.image}`;
+
   return (
     <>
-      <Helmet>
-        <title>{news.title} | BuzzlyNow</title>
-        <meta name="description" content={news.description?.slice(0, 150)} />
-        <meta property="og:title" content={news.title} />
-        <meta property="og:description" content={news.description?.slice(0, 150)} />
-        <meta property="og:image" content={news.image} />
-        <meta property="og:url" content={pageUrl} />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={news.title} />
-        <meta name="twitter:description" content={news.description?.slice(0, 150)} />
-        <meta name="twitter:image" content={news.image} />
-      </Helmet>
+     <Helmet>
+  <title>{news.title} | BuzzlyNow</title>
+  <meta name="description" content={news.description?.slice(0, 150)} />
+  
+  {/* Open Graph Meta Tags for dynamic content */}
+  <meta property="og:title" content={news.title} />
+  <meta property="og:description" content={news.description} />
+  <meta property="og:image" content={news.image} />
+  <meta property="og:url" content={pageUrl} />
+
+  {/* Twitter Card Meta Tags for dynamic content */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={news.title} />
+  <meta name="twitter:description" content={news.description} />
+  <meta name="twitter:image" content={news.image} />
+  <meta name="twitter:url" content={pageUrl} />
+</Helmet>
+
 
       {/* Main content of your NewsDetail component */}
       <div className="flex justify-center px-4 py-8">
