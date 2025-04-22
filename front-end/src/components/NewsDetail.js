@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FaWhatsapp, FaFacebookF, FaCopy } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebookF, FaShareAlt } from 'react-icons/fa'; // Changed to FaShareAlt for a share icon
 import { Helmet } from 'react-helmet-async';
 
 const NewsDetail = ({ language = 'en' }) => {
@@ -41,22 +41,19 @@ const NewsDetail = ({ language = 'en' }) => {
       case 'facebook':
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`, '_blank');
         break;
-      case 'copy':
-        const htmlContent = `
-          <div>
-            <img src="${news.image}" alt="${news.title}" style="max-width:100%;height:auto;" />
-            <h3>${news.title}</h3>
-            <p>Read more: <a href="${pageUrl}">${pageUrl}</a></p>
-          </div>
-        `;
-        navigator.clipboard.write([
-          new ClipboardItem({
-            'text/html': new Blob([htmlContent], { type: 'text/html' }),
-            'text/plain': new Blob([`${news.title}\n\n${pageUrl}`], { type: 'text/plain' })
+      case 'share': // Native share functionality
+        if (navigator.share) {
+          navigator.share({
+            title: news.title,
+            text: news.description,
+            url: pageUrl,
           })
-        ])
-        .then(() => alert('Image, title, and link copied!'))
-        .catch(() => alert('Copy failed. Please try again.'));
+          .catch(() => alert('Sharing failed. Please try again.'));
+        } else {
+          alert('Share feature is not supported on this device.');
+        }
+        break;
+      default:
         break;
     }
   };
@@ -94,24 +91,23 @@ const NewsDetail = ({ language = 'en' }) => {
 
   return (
     <>
-     <Helmet>
-  <title>{news.title} | BuzzlyNow</title>
-  <meta name="description" content={news.description?.slice(0, 150)} />
-  
-  {/* Open Graph Meta Tags for dynamic content */}
-  <meta property="og:title" content={news.title} />
-  <meta property="og:description" content={news.description} />
-  <meta property="og:image" content={news.image} />
-  <meta property="og:url" content={pageUrl} />
+      <Helmet>
+        <title>{news.title} | BuzzlyNow</title>
+        <meta name="description" content={news.description?.slice(0, 150)} />
+        
+        {/* Open Graph Meta Tags for dynamic content */}
+        <meta property="og:title" content={news.title} />
+        <meta property="og:description" content={news.description} />
+        <meta property="og:image" content={news.image} />
+        <meta property="og:url" content={pageUrl} />
 
-  {/* Twitter Card Meta Tags for dynamic content */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={news.title} />
-  <meta name="twitter:description" content={news.description} />
-  <meta name="twitter:image" content={news.image} />
-  <meta name="twitter:url" content={pageUrl} />
-</Helmet>
-
+        {/* Twitter Card Meta Tags for dynamic content */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={news.title} />
+        <meta name="twitter:description" content={news.description} />
+        <meta name="twitter:image" content={news.image} />
+        <meta name="twitter:url" content={pageUrl} />
+      </Helmet>
 
       {/* Main content of your NewsDetail component */}
       <div className="flex justify-center px-4 py-8">
@@ -127,8 +123,8 @@ const NewsDetail = ({ language = 'en' }) => {
               <button onClick={() => handleShare('facebook')} className="text-blue-600 hover:text-blue-800">
                 <FaFacebookF size={18} />
               </button>
-              <button onClick={() => handleShare('copy')} className="text-gray-600 hover:text-gray-800">
-                <FaCopy size={18} />
+              <button onClick={() => handleShare('share')} className="text-gray-600 hover:text-gray-800">
+                <FaShareAlt size={18} />
               </button>
             </div>
           </div>
