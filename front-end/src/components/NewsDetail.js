@@ -93,7 +93,7 @@ const NewsDetail = ({ language = 'en' }) => {
     <>
       <Helmet>
         <title>{news.title} | BuzzlyNow</title>
-        <meta name="description" content={news.description?.slice(0, 150)} />
+        <meta name="description" content={news.description?.slice(0, 50)} />
         
         {/* Open Graph Meta Tags for dynamic content */}
         <meta property="og:title" content={news.title} />
