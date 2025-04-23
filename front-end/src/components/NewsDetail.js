@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FaWhatsapp, FaFacebookF, FaShareAlt } from 'react-icons/fa'; // Changed to FaShareAlt for a share icon
+import { FaWhatsapp, FaFacebookF } from 'react-icons/fa';
+import { IoShareOutline } from 'react-icons/io5';
+// Changed to FaShareAlt for a share icon
 import { Helmet } from 'react-helmet-async';
 
 const NewsDetail = ({ language = 'en' }) => {
@@ -45,7 +47,6 @@ const NewsDetail = ({ language = 'en' }) => {
         if (navigator.share) {
           navigator.share({
             title: news.title,
-            text: news.description,
             url: pageUrl,
           })
           .catch(() => alert('Sharing failed. Please try again.'));
@@ -124,7 +125,7 @@ const NewsDetail = ({ language = 'en' }) => {
                 <FaFacebookF size={18} />
               </button>
               <button onClick={() => handleShare('share')} className="text-gray-600 hover:text-gray-800">
-                <FaShareAlt size={18} />
+                <IoShareOutline size={18} />
               </button>
             </div>
           </div>
