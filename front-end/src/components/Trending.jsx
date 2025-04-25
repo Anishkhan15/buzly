@@ -11,7 +11,7 @@ const Trending = ({ language }) => {
       try {
         const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
         const response = await fetch(`${backendUrl}/api/news/latest/${language}`);
-        
+
         const data = await response.json();
         setNews(data);
       } catch (error) {
@@ -27,7 +27,6 @@ const Trending = ({ language }) => {
     const interval = setInterval(() => {
       if (scrollContainerRef.current) {
         scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
-
         // If reached the end, scroll back to start
         if (
           scrollContainerRef.current.scrollLeft + scrollContainerRef.current.clientWidth >=
@@ -55,13 +54,15 @@ const Trending = ({ language }) => {
 
   return (
     <div className="bg-black text-white py-6 px-4 pb-10 relative">
-      <h2 className="text-xl font-semibold font-serif border-b border-gray-600 pb-2">Discover More from Buzzlynow</h2>
+      <h2 className="text-xl font-semibold font-serif border-b border-gray-600 pb-2">
+        Discover More from Buzzlynow
+      </h2>
 
       <div className="relative mt-4">
-        {/* Left Arrow Button (Smaller on Mobile) */}
+        {/* Left Arrow Button */}
         <button
           onClick={scrollLeft}
-          className="absolute -left-3 sm:left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 p-1.5 sm:p-3 rounded-full z-10 text-white text-sm sm:text-lg"
+          className="absolute -left-3 sm:left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 p-1.5 sm:p-3 rounded-full z-10 text-white text-sm"
         >
           ◀
         </button>
@@ -75,20 +76,26 @@ const Trending = ({ language }) => {
           {news.map((article) => (
             <div
               key={article._id}
-              onClick={() => navigate(`/news/${article.category}/${article.slug}`)}
+              onClick={() =>
+                navigate(`/news/${language}/${article.category}/${article.slug || article._id}`)
+              }
               className="w-full sm:w-72 bg-gray-900 p-4 rounded-lg flex-shrink-0 cursor-pointer hover:bg-gray-800 transition snap-center"
             >
-              <img src={article.image} alt={article.title} className="w-full h-40 object-cover rounded-md" />
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full h-40 object-cover rounded-md"
+              />
               <h3 className="text-lg font-bold mt-2">{article.title}</h3>
               <p className="text-sm text-gray-400">{article.description.slice(0, 100)}...</p>
             </div>
           ))}
         </div>
 
-        {/* Right Arrow Button (Smaller on Mobile) */}
+        {/* Right Arrow Button */}
         <button
           onClick={scrollRight}
-          className="absolute -right-3 sm:right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 p-1.5 sm:p-3 rounded-full z-10 text-white text-sm sm:text-lg"
+          className="absolute -right-3 sm:right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 p-1.5 sm:p-3 rounded-full z-10 text-white text-sm"
         >
           ▶
         </button>

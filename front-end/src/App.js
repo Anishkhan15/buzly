@@ -15,10 +15,9 @@ const Contact = lazy(() => import('./components/Contact'));
 const Trending = lazy(() => import('./components/Trending'));
 
 function App() {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(localStorage.getItem('preferredLanguage') || 'en');
   const [isLoading, setIsLoading] = useState(false);
 
-  // Function to handle language change
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     localStorage.setItem('preferredLanguage', lang);
@@ -36,7 +35,6 @@ function App() {
   );
 }
 
-// ✅ Full-Screen Red Background Loader
 function FullScreenLoader() {
   return (
     <div className="flex items-center justify-center h-screen bg-red-600 text-white relative">
@@ -64,17 +62,14 @@ function FullScreenLoader() {
   );
 }
 
-// ✅ Main App Content with Conditional API Loader
 function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
   const location = useLocation();
   const isHiddenPage = location.pathname.startsWith('/category/') || location.pathname.startsWith('/news/');
 
   useEffect(() => {
-    if (location.pathname.startsWith('/news/') || location.pathname.startsWith('/category/')) {
+    if (isHiddenPage) {
       setIsLoading(true);
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000); // Simulating API response time
+      setTimeout(() => setIsLoading(false), 2000);
     }
   }, [location.pathname]);
 
@@ -95,44 +90,32 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
                       <div className="px-4 md:px-10">
                         <FeaturedNews language={language} />
                       </div>
-
                       <div className="px-4 md:px-10">
                         <LatestNews language={language} />
                       </div>
-
                       {!isHiddenPage && <Trending language={language} />}
                     </main>
-                  }
-                />
-                <Route path="/categories/:category" element={<Navigate to="/category/:category" replace />} />
-
-                <Route
-                  path="/category/:category"
-                  element={
-                    <div className="px-4 md:px-40">
-                      <CategoryNewsPage language={language} />
-                    </div>
                   }
                 />
 
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<Contact />} />
-
-                {/* ✅ Updated route for two-level dynamic news URL */}
                 <Route
-                  path="/news/:category/:slug"
-                  element={
-                    <div className="px-4">
-                      <NewsDetails language={language} />
-                    </div>
-                  }
+                  path="/category/:lang/:category"
+                  element={<div className="px-4 md:px-40"><CategoryNewsPage /></div>}
                 />
+
+                <Route
+                  path="/news/:lang/:category/:slug"
+                  element={<div className="px-4"><NewsDetails /></div>}
+                />
+
+                <Route path="/news/:category/:slug" element={<Navigate to={`/news/${language}/:category/:slug`} replace />} />
+                <Route path="/category/:category" element={<Navigate to={`/category/${language}/:category`} replace />} />
               </Routes>
             </div>
 
-            {/* ✅ Move AutoAndCryptoNews BELOW all other content and above Footer */}
             <AutoAndCryptoNews language={language} />
-
             <Footer />
           </>
         )}

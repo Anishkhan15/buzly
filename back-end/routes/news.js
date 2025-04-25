@@ -1,3 +1,4 @@
+// ✅ Updated newsRoutes.js to match route /news/en/:category/:slug
 const express = require('express');
 const mongoose = require('mongoose');
 const News = require('../models/News');
@@ -64,8 +65,8 @@ router.get('/category/:lang/:category', async (req, res) => {
   }
 });
 
-// ✅ Fetch news by category and slug
-router.get('/category/:lang/:category/:slug', async (req, res) => {
+// ✅ Fetch news by lang + category + slug (important route)
+router.get('/:lang/:category/:slug', async (req, res) => {
   const { lang, category, slug } = req.params;
   if (!['en', 'hi'].includes(lang)) {
     return res.status(400).json({ error: 'Invalid language parameter' });
@@ -108,27 +109,6 @@ router.get('/:lang/id/:id', async (req, res) => {
     res.json(newsItem);
   } catch (error) {
     console.error(`Error fetching news item for language ${lang} and ID ${id}:`, error);
-    res.status(500).json({ error: 'Failed to fetch news item' });
-  }
-});
-
-// ✅ Fetch news by Slug
-router.get('/:lang/slug/:slug', async (req, res) => {
-  const { lang, slug } = req.params;
-  if (!['en', 'hi'].includes(lang)) {
-    return res.status(400).json({ error: 'Invalid language parameter' });
-  }
-  try {
-    const collectionName = getCollectionName(lang);
-    const newsModel = getNewsModel(collectionName);
-    const newsItem = await newsModel.findOne({ slug, language: lang });
-
-    if (!newsItem) {
-      return res.status(404).json({ error: 'News not found' });
-    }
-    res.json(newsItem);
-  } catch (error) {
-    console.error(`Error fetching news item for language ${lang} and Slug ${slug}:`, error);
     res.status(500).json({ error: 'Failed to fetch news item' });
   }
 });

@@ -72,7 +72,7 @@ export default function Header({ onLanguageChange }) {
   };
 
   const handleCategorySelect = (categoryKey) => {
-    navigate(`/category/${categoryKey}?lang=${language}`);
+    navigate(`/category/${language}/${categoryKey}`);
     setIsMenuOpen(false);
     setIsCategoryOpen(false);
   };
@@ -122,7 +122,6 @@ export default function Header({ onLanguageChange }) {
           <nav className="hidden md:flex space-x-8 items-center font-bold text-gray-700">
             <button onClick={handleHomeClick} className="hover:text-red-600">Home</button>
             <a href="/about" className="hover:text-red-600">About Us</a>
-
             <div
               className="relative"
               onMouseEnter={() => setIsCategoryOpen(true)}
@@ -151,7 +150,6 @@ export default function Header({ onLanguageChange }) {
                 )}
               </AnimatePresence>
             </div>
-
             <a href="/contact" className="hover:text-red-600">Contact Us</a>
           </nav>
 
