@@ -29,8 +29,12 @@ const NewsDetail = ({ language = 'en' }) => {
       .then((data) => {
         setNews(data);
         document.title = `${data.title} | BuzzlyNow`;
+<<<<<<< HEAD
 
         if (data.category) {
+=======
+    if (data.category) {
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
           fetch(`${backendUrl}/api/news/category/${lang}/${data.category}`)
             .then((res) => res.json())
             .then((relatedData) => {
@@ -58,7 +62,7 @@ const NewsDetail = ({ language = 'en' }) => {
             title: news.title,
             url: pageUrl,
           })
-          .catch(() => alert('Sharing failed. Please try again.'));
+    .catch(() => alert('Sharing failed. Please try again.'));
         } else {
           alert('Share feature is not supported on this device.');
         }
@@ -93,7 +97,6 @@ const NewsDetail = ({ language = 'en' }) => {
       </p>
     ));
   };
-
   if (error) return <div className="text-red-500 text-center mt-8">{error}</div>;
   if (!news) return <div className="text-center mt-8">Loading...</div>;
 
@@ -129,7 +132,7 @@ const NewsDetail = ({ language = 'en' }) => {
               <button onClick={() => handleShare('whatsapp')} className="text-green-500 hover:text-green-700">
                 <FaWhatsapp size={18} />
               </button>
-              <button onClick={() => handleShare('facebook')} className="text-blue-600 hover:text-blue-800">
+      <button onClick={() => handleShare('facebook')} className="text-blue-600 hover:text-blue-800">
                 <FaFacebookF size={18} />
               </button>
               <button onClick={() => handleShare('share')} className="text-gray-600 hover:text-gray-800">
@@ -159,7 +162,7 @@ const NewsDetail = ({ language = 'en' }) => {
               ))}
             </div>
           </div>
-        </div>
+   </div>
       </div>
     </>
   );

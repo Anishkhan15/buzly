@@ -66,8 +66,7 @@ const Trending = ({ language }) => {
         >
           ◀
         </button>
-
-        {/* Scrollable News Container */}
+       {/* Scrollable News Container */}
         <div
           ref={scrollContainerRef}
           className="flex gap-4 overflow-x-scroll scrollbar-hide scroll-smooth snap-x snap-mandatory"

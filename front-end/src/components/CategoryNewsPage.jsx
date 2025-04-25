@@ -5,7 +5,11 @@ import { Clock } from 'lucide-react';
 export default function CategoryNewsPage() {
   // Get parameters from URL
   const { lang, category } = useParams();
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -32,7 +36,10 @@ export default function CategoryNewsPage() {
 
     fetchNews();
   }, [category, lang]); // Re-fetch data when category or lang changes
+<<<<<<< HEAD
 
+=======
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
   if (loading) {
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
@@ -64,7 +71,6 @@ export default function CategoryNewsPage() {
       </div>
     );
   }
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8 capitalize text-center">
@@ -101,7 +107,7 @@ export default function CategoryNewsPage() {
                     month: '2-digit',
                     year: 'numeric',
                   })}
-                </span>
+       </span>
               </div>
             </div>
           </article>

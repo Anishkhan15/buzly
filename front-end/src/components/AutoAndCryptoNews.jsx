@@ -34,6 +34,7 @@ const AutoAndCryptoNews = ({ language }) => {
         setNewsData([]);
       });
   }, [language]);
+<<<<<<< HEAD
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -51,6 +52,24 @@ const AutoAndCryptoNews = ({ language }) => {
     return <p className="text-center text-gray-500">No Auto or Crypto news available.</p>;
   }
 
+=======
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
+
+  if (newsData.length === 0) {
+    return <p className="text-center text-gray-500">No Auto or Crypto news available.</p>;
+  }
+
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
   return (
     <div className="bg-black text-white py-6 px-4 pb-10 relative">
       <h2 className="text-xl font-semibold font-serif border-b border-gray-600 pb-2">
@@ -64,7 +83,10 @@ const AutoAndCryptoNews = ({ language }) => {
         >
           ◀
         </button>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
         {/* Scrollable News Container */}
         <div
           ref={scrollContainerRef}

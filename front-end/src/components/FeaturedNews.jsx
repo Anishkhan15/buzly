@@ -60,8 +60,7 @@ export default function FeaturedNews({ language }) {
           ) : (
             <p className="text-center text-gray-500">Loading news...</p>
           )}
-
-          {latestNews.length > 1 && (
+     {latestNews.length > 1 && (
             <>
               <button
                 onClick={prevSlide}

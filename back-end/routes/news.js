@@ -24,7 +24,6 @@ router.get('/featured/:lang', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch featured news' });
   }
 });
-
 // ✅ Fetch latest news
 router.get('/latest/:lang', async (req, res) => {
   const { lang } = req.params;
@@ -41,7 +40,6 @@ router.get('/latest/:lang', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch latest news' });
   }
 });
-
 // ✅ Fetch news by category
 router.get('/category/:lang/:category', async (req, res) => {
   const { lang, category } = req.params;
@@ -64,7 +62,10 @@ router.get('/category/:lang/:category', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch news by category' });
   }
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
 // ✅ Fetch news by lang + category + slug (important route)
 router.get('/:lang/:category/:slug', async (req, res) => {
   const { lang, category, slug } = req.params;
@@ -89,7 +90,6 @@ router.get('/:lang/:category/:slug', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch news item' });
   }
 });
-
 // ✅ Fetch news by ID
 router.get('/:lang/id/:id', async (req, res) => {
   const { lang, id } = req.params;
@@ -113,4 +113,8 @@ router.get('/:lang/id/:id', async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 module.exports = router;
+=======
+module.exports = router;
+>>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
