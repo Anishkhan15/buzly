@@ -43,7 +43,7 @@ export default function FeaturedNews({ language }) {
         <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[530px] overflow-hidden rounded-xl shadow-lg">
           {latestNews.length > 0 ? (
             <Link
-              to={`/news/${latestNews[currentSlide]?.category}/${latestNews[currentSlide]?.slug}`}
+              to={`/news/${language}/${latestNews[currentSlide]?.category}/${latestNews[currentSlide]?.slug}`}
               className="block w-full h-full"
             >
               <img
@@ -60,8 +60,7 @@ export default function FeaturedNews({ language }) {
           ) : (
             <p className="text-center text-gray-500">Loading news...</p>
           )}
-
-          {latestNews.length > 1 && (
+     {latestNews.length > 1 && (
             <>
               <button
                 onClick={prevSlide}
@@ -85,8 +84,8 @@ export default function FeaturedNews({ language }) {
             latestNews.slice(0, 4).map((news) => (
               <Link
                 key={news._id}
-                to={`/news/${news.category}/${news.slug}`}
-                className="rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105 bg-white flex gap-3 p-4 hover:bg-gray-50"
+                to={`/news/${language}/${news.category}/${news.slug}`}
+                className="rounded-xl overflow-hidden shadow-md transition-transform transform hover:scale-105 bg-white flex gap-3 p-4 hover:bg-gray-100"
               >
                 <img
                   src={news.image || "https://via.placeholder.com/240"}

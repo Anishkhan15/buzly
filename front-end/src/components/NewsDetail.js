@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaWhatsapp, FaFacebookF } from 'react-icons/fa';
 import { IoShareOutline } from 'react-icons/io5';
-// Changed to FaShareAlt for a share icon
 import { Helmet } from 'react-helmet-async';
 
 const NewsDetail = ({ language = 'en' }) => {
-  const { slug } = useParams();
+  const { lang, category, slug } = useParams();  // Capture lang, category, and slug from the URL
   const navigate = useNavigate();
   const [news, setNews] = useState(null);
   const [relatedNews, setRelatedNews] = useState([]);
@@ -16,24 +15,33 @@ const NewsDetail = ({ language = 'en' }) => {
   useEffect(() => {
     const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
-    fetch(`${backendUrl}/api/news/${language}/slug/${slug}`)
-      .then((res) => res.json())
+    // Log the full URL to verify the API endpoint
+    const newsUrl = `${backendUrl}/api/news/${lang}/${category}/${slug}`;
+    console.log('Fetching news from:', newsUrl); // Debugging log
+
+    fetch(newsUrl)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('News not found');
+        }
+        return res.json();
+      })
       .then((data) => {
         setNews(data);
         document.title = `${data.title} | BuzzlyNow`;
-
-        if (data.category) {
-          fetch(`${backendUrl}/api/news/category/${language}/${data.category}`)
+    if (data.category) {
+          fetch(`${backendUrl}/api/news/category/${lang}/${data.category}`)
             .then((res) => res.json())
             .then((relatedData) => {
               setRelatedNews(relatedData.filter((item) => item.slug !== slug));
             });
         }
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error('Error fetching news:', err); // Log the error for debugging
         setError('Failed to fetch news details. Please try again later.');
       });
-  }, [slug, language]);
+  }, [lang, category, slug]); // Depend on lang, category, and slug to update data
 
   const handleShare = (platform) => {
     switch (platform) {
@@ -49,7 +57,7 @@ const NewsDetail = ({ language = 'en' }) => {
             title: news.title,
             url: pageUrl,
           })
-          .catch(() => alert('Sharing failed. Please try again.'));
+    .catch(() => alert('Sharing failed. Please try again.'));
         } else {
           alert('Share feature is not supported on this device.');
         }
@@ -84,7 +92,6 @@ const NewsDetail = ({ language = 'en' }) => {
       </p>
     ));
   };
-
   if (error) return <div className="text-red-500 text-center mt-8">{error}</div>;
   if (!news) return <div className="text-center mt-8">Loading...</div>;
 
@@ -95,7 +102,7 @@ const NewsDetail = ({ language = 'en' }) => {
       <Helmet>
         <title>{news.title} | BuzzlyNow</title>
         <meta name="description" content={news.description?.slice(0, 50)} />
-        
+
         {/* Open Graph Meta Tags for dynamic content */}
         <meta property="og:title" content={news.title} />
         <meta property="og:description" content={news.description} />
@@ -109,7 +116,6 @@ const NewsDetail = ({ language = 'en' }) => {
         <meta name="twitter:image" content={news.image} />
         <meta name="twitter:url" content={pageUrl} />
       </Helmet>
-
       {/* Main content of your NewsDetail component */}
       <div className="flex justify-center px-4 py-8">
         <div className="max-w-4xl w-full space-y-6">
@@ -121,7 +127,7 @@ const NewsDetail = ({ language = 'en' }) => {
               <button onClick={() => handleShare('whatsapp')} className="text-green-500 hover:text-green-700">
                 <FaWhatsapp size={18} />
               </button>
-              <button onClick={() => handleShare('facebook')} className="text-blue-600 hover:text-blue-800">
+      <button onClick={() => handleShare('facebook')} className="text-blue-600 hover:text-blue-800">
                 <FaFacebookF size={18} />
               </button>
               <button onClick={() => handleShare('share')} className="text-gray-600 hover:text-gray-800">
@@ -134,16 +140,16 @@ const NewsDetail = ({ language = 'en' }) => {
 
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-2/3">
-              <div className="bg-white shadow-md p-6 rounded-lg text-justify text-gray-800 font-medium md:text-xl leading-relaxed tracking-wide space-y-4">
+              <div className="bg-white shadow-md p-6 rounded-lg text-justify text-gray-800 font-medium md:text-xl leading-relaxed tracking-wide">
                 {processDescription(news.description)}
               </div>
             </div>
             <div className="md:w-1/3 space-y-4">
               {relatedNews.slice(0, 3).map((item) => (
-                <div 
-                  key={item.slug} 
+                <div
+                  key={item.slug}
                   className="cursor-pointer shadow-md rounded-lg overflow-hidden"
-                  onClick={() => navigate(`/news/${language}/${item.slug}`)}
+                  onClick={() => navigate(`/news/${lang}/${category}/${item.slug}`)}
                 >
                   <img src={item.image} alt={item.title} className="w-full h-28 object-cover" />
                   <h3 className="p-2 text-sm font-semibold">{item.title}</h3>
@@ -151,7 +157,7 @@ const NewsDetail = ({ language = 'en' }) => {
               ))}
             </div>
           </div>
-        </div>
+   </div>
       </div>
     </>
   );

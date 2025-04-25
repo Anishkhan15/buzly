@@ -65,14 +65,13 @@ export default function Header({ onLanguageChange }) {
     setIsMenuOpen(false);
     navigate(`/?lang=${lang}`);
   };
-
   const handleHomeClick = () => {
     navigate(`/?lang=${language}`);
     setIsMenuOpen(false);
   };
 
   const handleCategorySelect = (categoryKey) => {
-    navigate(`/category/${categoryKey}?lang=${language}`);
+    navigate(`/category/${language}/${categoryKey}`);
     setIsMenuOpen(false);
     setIsCategoryOpen(false);
   };
@@ -99,7 +98,7 @@ export default function Header({ onLanguageChange }) {
             >
               EN
             </button>
-            <button
+    <button
               onClick={() => handleLanguageChange('hi')}
               className={`px-3 py-1 rounded-full text-sm ${language === 'hi' ? 'bg-blue-600' : 'bg-gray-600'}`}
             >
@@ -122,14 +121,13 @@ export default function Header({ onLanguageChange }) {
           <nav className="hidden md:flex space-x-8 items-center font-bold text-gray-700">
             <button onClick={handleHomeClick} className="hover:text-red-600">Home</button>
             <a href="/about" className="hover:text-red-600">About Us</a>
-
             <div
               className="relative"
               onMouseEnter={() => setIsCategoryOpen(true)}
               onMouseLeave={() => setIsCategoryOpen(false)}
             >
               <button className="hover:text-red-600">Categories</button>
-              <AnimatePresence>
+       <AnimatePresence>
                 {isCategoryOpen && (
                   <motion.ul
                     initial={{ opacity: 0, y: -10 }}
@@ -151,11 +149,9 @@ export default function Header({ onLanguageChange }) {
                 )}
               </AnimatePresence>
             </div>
-
             <a href="/contact" className="hover:text-red-600">Contact Us</a>
           </nav>
-
-          {/* Mobile Menu Button */}
+         {/* Mobile Menu Button */}
           <button onClick={toggleMenu} className="md:hidden p-2 text-gray-600 hover:text-red-600">
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -180,8 +176,7 @@ export default function Header({ onLanguageChange }) {
                   <X className="w-6 h-6" />
                 </button>
               </div>
-
-              {/* Mobile Nav Links */}
+          {/* Mobile Nav Links */}
               <div className="flex justify-around items-center text-lg font-semibold text-gray-700 py-6 border-b">
                 <button onClick={handleHomeClick} className="hover:text-red-600">Home</button>
                 <a href="/about" className="hover:text-red-600">About</a>

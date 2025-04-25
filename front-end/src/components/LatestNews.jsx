@@ -35,10 +35,9 @@ export default function LatestNews({ language }) {
           throw new Error("Expected JSON response, but got HTML");
         }
       } catch (error) {
-        console.error("Error fetching latest news:", error);
+      console.error("Error fetching latest news:", error);
       }
     };
-
     fetchNews();
   }, [language]);
 
@@ -70,9 +69,8 @@ export default function LatestNews({ language }) {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900">Latest News</h1>
         </div>
       </header>
-
       <div className="container mx-auto px-4 py-8">
-        {/* Categories Grid */}
+   {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((category) => {
             // Filter news for the category and take exactly 4 articles
@@ -88,7 +86,7 @@ export default function LatestNews({ language }) {
               <div key={category} className="bg-white p-4 rounded-lg shadow-md">
                 <h2
                   className="text-lg md:text-xl font-semibold text-black cursor-pointer mb-4 hover:underline italic"
-                  onClick={() => navigate(`/category/${category}`)}
+                  onClick={() => navigate(`/category/${category}`)} // Correct URL for category
                 >
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </h2>
@@ -106,10 +104,10 @@ export default function LatestNews({ language }) {
                         />
                       </div>
                       <div className="p-3">
-                        <h3
+   <h3
                           className="text-sm md:text-base lg:text-lg font-medium text-gray-800 cursor-pointer hover:text-blue-600"
                           onClick={() =>
-                            navigate(`/news/${category}/${item.slug || item._id}`)
+                            navigate(`/news/${language}/${category}/${item.slug || item._id}`) // Correct URL for news item
                           }
                         >
                           {truncateTitle(item.title)}

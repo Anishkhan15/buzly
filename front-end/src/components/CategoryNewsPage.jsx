@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Clock } from 'lucide-react';
 
-export default function CategoryNewsPage({ language }) {
-  const { category } = useParams();
+export default function CategoryNewsPage() {
+  // Get parameters from URL
+  const { lang, category } = useParams();
+
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,7 +14,9 @@ export default function CategoryNewsPage({ language }) {
 
   useEffect(() => {
     const fetchNews = async () => {
-      const url = `${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/news/category/${language}/${category}`;
+      const url = `${process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'}/api/news/category/${lang}/${category}`;
+      console.log('Fetching data from URL:', url); // Debugging step: check if the URL is correct
+
       try {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
@@ -27,16 +31,12 @@ export default function CategoryNewsPage({ language }) {
     };
 
     fetchNews();
-  }, [category, language]);
-
+  }, [category, lang]); // Re-fetch data when category or lang changes
   if (loading) {
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
         {[...Array(6)].map((_, i) => (
-          <div
-            key={i}
-            className="animate-pulse bg-white border border-gray-200 rounded-2xl shadow-sm"
-          >
+          <div key={i} className="animate-pulse bg-white border border-gray-200 rounded-2xl shadow-sm">
             <div className="h-48 bg-gray-200 rounded-t-2xl" />
             <div className="p-4 space-y-2">
               <div className="h-4 bg-gray-300 rounded w-3/4" />
@@ -63,19 +63,18 @@ export default function CategoryNewsPage({ language }) {
       </div>
     );
   }
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8 capitalize text-center">
-        {category} News ({language === 'en' ? 'English' : 'Hindi'})
+        {category} News ({lang === 'en' ? 'English' : 'Hindi'})
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {news.slice(0, visibleNewsCount).map((article) => (
           <article
             key={article._id}
-            className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 cursor-pointer flex flex-col"
-            onClick={() => navigate(`/news/${article.category}/${article.slug}`)}
+            className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 cursor-pointer"
+            onClick={() => navigate(`/news/${lang}/${article.category}/${article.slug}`)}
           >
             <div className="overflow-hidden">
               <img
@@ -90,7 +89,7 @@ export default function CategoryNewsPage({ language }) {
                 {article.title}
               </h3>
               <p className="text-gray-700 text-sm mb-3 line-clamp-3">
-                {article.description}
+                {article.description?.replace(/[*#]/g, '')}
               </p>
               <div className="flex items-center text-gray-500 text-xs mt-auto">
                 <Clock className="w-4 h-4 mr-1" />
@@ -100,7 +99,7 @@ export default function CategoryNewsPage({ language }) {
                     month: '2-digit',
                     year: 'numeric',
                   })}
-                </span>
+       </span>
               </div>
             </div>
           </article>
