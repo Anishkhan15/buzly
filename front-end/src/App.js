@@ -34,10 +34,6 @@ function App() {
     </Router>
   );
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
 function FullScreenLoader() {
   return (
     <div className="flex items-center justify-center h-screen bg-red-600 text-white relative">
@@ -64,10 +60,6 @@ function FullScreenLoader() {
     </div>
   );
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
 function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
   const location = useLocation();
   const isHiddenPage = location.pathname.startsWith('/category/') || location.pathname.startsWith('/news/');
@@ -103,12 +95,7 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
                     </main>
                   }
                 />
-<<<<<<< HEAD
-
-                <Route path="/about" element={<AboutUs />} />
-=======
        <Route path="/about" element={<AboutUs />} />
->>>>>>> b57e4d16cdf555911647a66de29dc388982f38a1
                 <Route path="/contact" element={<Contact />} />
                 <Route
                   path="/category/:lang/:category"
