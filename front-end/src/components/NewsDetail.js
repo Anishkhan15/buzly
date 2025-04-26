@@ -10,12 +10,12 @@ const NewsDetail = ({ language = 'en' }) => {
   const [news, setNews] = useState(null);
   const [relatedNews, setRelatedNews] = useState([]);
   const [error, setError] = useState(null);
+  const [isSharing, setIsSharing] = useState(false); // <--- NEW
   const pageUrl = window.location.href;
 
   useEffect(() => {
     const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
     const newsUrl = `${backendUrl}/api/news/${lang}/${category}/${slug}`;
-    console.log('Fetching news from:', newsUrl);
 
     fetch(newsUrl)
       .then((res) => {
@@ -25,7 +25,8 @@ const NewsDetail = ({ language = 'en' }) => {
       .then((data) => {
         setNews(data);
         document.title = `${data.title} | BuzzlyNow`;
-    if (data.category) {
+
+        if (data.category) {
           fetch(`${backendUrl}/api/news/category/${lang}/${data.category}`)
             .then((res) => res.json())
             .then((relatedData) => {
@@ -39,7 +40,7 @@ const NewsDetail = ({ language = 'en' }) => {
       });
   }, [lang, category, slug]);
 
-  const handleShare = (platform) => {
+  const handleShare = async (platform) => {
     const text = `${news.title}\n\n${pageUrl}`;
 
     switch (platform) {
@@ -53,14 +54,33 @@ const NewsDetail = ({ language = 'en' }) => {
         );
         break;
       case 'share':
-        if (navigator.share) {
-          navigator.share({
-            title: news.title,
-            text: news.description,
-            url: pageUrl,
-          }).catch(() => alert('Sharing failed. Please try again.'));
-        } else {
-          alert('Share feature is not supported on this device.');
+        try {
+          setIsSharing(true); // <-- START SPINNER
+          if (navigator.canShare && navigator.canShare({ files: [] })) {
+            const response = await fetch(news.image);
+            const blob = await response.blob();
+            const file = new File([blob], 'image.jpg', { type: blob.type });
+
+            await navigator.share({
+              title: news.title,
+              text: news.description,
+              files: [file],
+              url: pageUrl,
+            });
+          } else if (navigator.share) {
+            await navigator.share({
+              title: news.title,
+              text: `${news.title}\n\n${pageUrl}`,
+              url: pageUrl,
+            });
+          } else {
+            alert('Sharing not supported on this device.');
+          }
+        } catch (error) {
+          console.error('Sharing failed:', error);
+          alert('Sharing failed. Please try again.');
+        } finally {
+          setIsSharing(false); // <-- STOP SPINNER
         }
         break;
       default:
@@ -122,8 +142,12 @@ const NewsDetail = ({ language = 'en' }) => {
               <button onClick={() => handleShare('facebook')} className="text-blue-600 hover:text-blue-800">
                 <FaFacebookF size={18} />
               </button>
-              <button onClick={() => handleShare('share')} className="text-gray-600 hover:text-gray-800">
-                <IoShareOutline size={18} />
+              <button onClick={() => handleShare('share')} className="text-gray-600 hover:text-gray-800 relative">
+                {isSharing ? (
+                  <div className="w-5 h-5 border-2 border-gray-600 border-t-transparent rounded-full animate-spin"></div>
+                ) : (
+                  <IoShareOutline size={20} />
+                )}
               </button>
             </div>
           </div>
