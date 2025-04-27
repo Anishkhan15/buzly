@@ -47,7 +47,7 @@ const AutoAndCryptoNews = ({ language }) => {
   };
 
   if (newsData.length === 0) {
-    return <p className="text-center text-gray-500">No Auto or Crypto news available.</p>;
+    return <p className="text-center text-gray-500">No Auto news is currently available. Please check back later.</p>;
   }
 
   return (

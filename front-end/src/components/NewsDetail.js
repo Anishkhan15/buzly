@@ -36,8 +36,9 @@ const NewsDetail = ({ language = 'en' }) => {
       })
       .catch((err) => {
         console.error('Error fetching news:', err);
-        setError('Failed to fetch news details. Please try again later.');
+        setError('We encountered an issue while fetching the news details. Please try again later.');
       });
+      
   }, [lang, category, slug]);
 
   const handleShare = async (platform) => {
