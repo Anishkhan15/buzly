@@ -10,7 +10,7 @@ const NewsDetail = ({ language = 'en' }) => {
   const [news, setNews] = useState(null);
   const [relatedNews, setRelatedNews] = useState([]);
   const [error, setError] = useState(null);
-  const [isSharing, setIsSharing] = useState(false); // <--- NEW
+  const [isSharing, setIsSharing] = useState(false);
   const pageUrl = window.location.href;
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const NewsDetail = ({ language = 'en' }) => {
         console.error('Error fetching news:', err);
         setError('We encountered an issue while fetching the news details. Please try again later.');
       });
-      
+
   }, [lang, category, slug]);
 
   const handleShare = async (platform) => {
@@ -56,7 +56,7 @@ const NewsDetail = ({ language = 'en' }) => {
         break;
       case 'share':
         try {
-          setIsSharing(true); // <-- START SPINNER
+          setIsSharing(true);
           if (navigator.canShare && navigator.canShare({ files: [] })) {
             const response = await fetch(news.image);
             const blob = await response.blob();
@@ -81,7 +81,7 @@ const NewsDetail = ({ language = 'en' }) => {
           console.error('Sharing failed:', error);
           alert('Sharing failed. Please try again.');
         } finally {
-          setIsSharing(false); // <-- STOP SPINNER
+          setIsSharing(false);
         }
         break;
       default:
@@ -102,11 +102,40 @@ const NewsDetail = ({ language = 'en' }) => {
   };
 
   const processDescription = (text) => {
-    return text.split('\n').map((paragraph, index) => (
-      <p key={index} className="font-serif text-lg md:text-xl leading-8">
-        {paragraph}
-      </p>
-    ));
+    const boldRegex = /\\b(.*?)\\b/g;
+
+    return text.split('\n').map((paragraph, index) => {
+      const parts = [];
+      let lastIndex = 0;
+
+      for (const match of paragraph.matchAll(boldRegex)) {
+        const [fullMatch, boldText] = match;
+        const start = match.index;
+        const end = start + fullMatch.length;
+
+        if (start > lastIndex) {
+          parts.push(paragraph.slice(lastIndex, start));
+        }
+
+        parts.push(
+          <span key={`bold-${index}-${start}`} className="font-bold text-red-600">
+            {boldText}
+          </span>
+        );
+
+        lastIndex = end;
+      }
+
+      if (lastIndex < paragraph.length) {
+        parts.push(paragraph.slice(lastIndex));
+      }
+
+      return (
+        <p key={index} className="text-base md:text-lg text-justify leading-relaxed mb-4 font-normal text-gray-800">
+          {parts}
+        </p>
+      );
+    });
   };
 
   if (error) return <div className="text-red-500 text-center mt-8">{error}</div>;
@@ -161,7 +190,7 @@ const NewsDetail = ({ language = 'en' }) => {
 
           <div className="flex flex-col md:flex-row gap-6">
             <div className="md:w-2/3">
-              <div className="bg-white shadow-md p-6 rounded-lg text-justify text-gray-800 font-medium md:text-xl leading-relaxed tracking-wide">
+              <div className="bg-white shadow-md p-6 rounded-lg text-justify text-gray-800">
                 {processDescription(news.description)}
               </div>
             </div>
