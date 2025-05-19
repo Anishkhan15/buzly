@@ -30,7 +30,7 @@ export default function AboutUs() {
               At Buzzlynow, our mission is to make reliable news accessible to everyone. We focus on publishing factual, well-researched stories that matter.
             </p>
             <p className="text-gray-600">
-              We value transparency, integrity, and independence. Each article goes through editorial review before publication. We do not publish sensational or misleading content.
+              We value <strong>transparency</strong>, <strong>integrity</strong>, and <strong>independence</strong>. Every article undergoes editorial review before publication. We’re committed to avoiding sensationalism and misinformation.
             </p>
           </div>
           <div>
@@ -49,22 +49,22 @@ export default function AboutUs() {
             {[
               {
                 title: 'Accuracy',
-                description: 'We deliver fact-checked news that you can trust.',
+                description: 'We deliver thoroughly fact-checked news you can rely on.',
                 icon: ShieldCheck,
               },
               {
                 title: 'Independence',
-                description: 'We operate independently without external influence.',
+                description: 'We report without external influence or bias.',
                 icon: PenTool,
               },
               {
                 title: 'Innovation',
-                description: 'We use modern tools to present stories in engaging ways.',
+                description: 'We use modern tools to share stories in engaging formats.',
                 icon: Globe,
               },
               {
                 title: 'Ownership',
-                description: 'Buzzlynow is independently owned by Eram Shaikh.',
+                description: 'Buzzlynow is independently owned and operated by Eram Shaikh.',
                 icon: Users,
               },
             ].map((value, index) => (
