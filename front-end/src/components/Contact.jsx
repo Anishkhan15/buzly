@@ -157,9 +157,15 @@ export default function Contact() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Connect With Us</h2>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
-                  <Facebook className="w-5 h-5" />
-                </a>
+              <a
+  href="https://www.facebook.com/profile.php?id=61576230010982"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"
+>
+  <Facebook className="w-5 h-5" />
+</a>
+
                 <a href="https://x.com/buzzlynow03" target="_blank" rel="noopener noreferrer" className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500">
                   <Twitter className="w-5 h-5" />
                 </a>
