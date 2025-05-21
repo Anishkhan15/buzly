@@ -83,7 +83,7 @@ export default function Header({ onLanguageChange }) {
         <div className="container mx-auto px-4 md:px-20 flex justify-between items-center">
           <span>{currentDate}</span>
           <div className="flex items-center space-x-3">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+            <a href="https://www.facebook.com/profile.php?id=61576230010982" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
               <Facebook className="w-5 h-5" />
             </a>
             <a href="https://www.instagram.com/buzzly.now/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">

@@ -19,7 +19,8 @@ function Footer() {
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: Facebook, link: "https://www.facebook.com/" },
+               { icon: Facebook, link: "https://www.facebook.com/profile.php?id=61576230010982" },
+
                 { icon: Twitter, link: "https://x.com/buzzlynow03" },
                 { icon: Instagram, link: "https://www.instagram.com/buzzly.now/" }
               ].map((social, index) => (
