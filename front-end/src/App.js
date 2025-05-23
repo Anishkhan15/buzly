@@ -75,47 +75,46 @@ function AppContent({ language, onLanguageChange, isLoading, setIsLoading }) {
     <div className="bg-gray-50">
       {isLoading && <FullScreenLoader />}
       <Suspense fallback={<FullScreenLoader />}>
-        {!isLoading && (
-          <>
-            <Header language={language} onLanguageChange={onLanguageChange} />
-            <div>
-              <Routes>
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route
-                  path="/"
-                  element={
-                    <main>
-                      <div className="px-4 md:px-10">
-                        <FeaturedNews language={language} />
-                      </div>
-                      <div className="px-4 md:px-10">
-                        <LatestNews language={language} />
-                      </div>
-                      {!isHiddenPage && <Trending language={language} />}
-                    </main>
-                  }
-                />
-       <Route path="/about" element={<AboutUs />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route
-                  path="/category/:lang/:category"
-                  element={<div className="px-4 md:px-40"><CategoryNewsPage /></div>}
-                />
+      {!isLoading && (
+  <>
+    <Header language={language} onLanguageChange={onLanguageChange} />
+    <div>
+      <Routes>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route
+          path="/"
+          element={
+            <main>
+              <div className="px-4 md:px-10">
+                <FeaturedNews language={language} />
+              </div>
+              <div className="px-4 md:px-10">
+                <LatestNews language={language} />
+              </div>
+              {!isHiddenPage && <Trending language={language} />}
+            </main>
+          }
+        />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/category/:lang/:category"
+          element={<div className="px-4 md:px-40"><CategoryNewsPage /></div>}
+        />
+        <Route
+          path="/news/:lang/:category/:slug"
+          element={<div className="px-4"><NewsDetails /></div>}
+        />
+        <Route path="/news/:category/:slug" element={<Navigate to={`/news/${language}/:category/:slug`} replace />} />
+        <Route path="/category/:category" element={<Navigate to={`/category/${language}/:category`} replace />} />
+      </Routes>
+    </div>
 
-                <Route
-                  path="/news/:lang/:category/:slug"
-                  element={<div className="px-4"><NewsDetails /></div>}
-                />
+    {location.pathname === '/' && <AutoAndCryptoNews language={language} />}
+    <Footer />
+  </>
+)}
 
-                <Route path="/news/:category/:slug" element={<Navigate to={`/news/${language}/:category/:slug`} replace />} />
-                <Route path="/category/:category" element={<Navigate to={`/category/${language}/:category`} replace />} />
-              </Routes>
-            </div>
-
-            <AutoAndCryptoNews language={language} />
-            <Footer />
-          </>
-        )}
       </Suspense>
     </div>
   );

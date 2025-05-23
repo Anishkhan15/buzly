@@ -53,7 +53,7 @@ const AutoAndCryptoNews = ({ language }) => {
   return (
     <div className="bg-black text-white py-6 px-4 pb-10 relative">
       <h2 className="text-xl font-semibold font-serif border-b border-gray-600 pb-2">
-        Automobile and Crypto News
+        Automobile News
       </h2>
       <div className="relative mt-4">
         {/* Left Scroll Button */}
